@@ -12,6 +12,7 @@ const chunkArray = (array: string[], chunkSize: number) => {
 };
 
 const Services = () => {
+  // TODO: Send every service their own page
   const services = [
     "Digital Strategy and Planning",
     "Creative Strategy and Web Graphics Design",
@@ -53,7 +54,7 @@ const Services = () => {
                   {service}
                 </p>
                 <Link
-                  href="our-services/digital-strategy-and-planning"
+                  href="our-services/creative-strategy-and-web-graphics-design"
                   className="w-8 h-8 md:w-12 md:h-12 md:text-2xl flex items-center justify-center bg-purple-500 text-white rounded-full"
                 >
                   +

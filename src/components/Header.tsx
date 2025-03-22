@@ -1,13 +1,14 @@
+import Link from "next/link";
 import React from "react";
 
 const Header = () => {
   return (
     <nav className="flex justify-between items-center px-8 py-4 bg-white shadow-md">
       {/* logo from public */}
-      <div className="flex items-center">
+      <Link href="/" className="flex items-center">
         <img src="/logo.svg" alt="logo" className="w-12" />
         <p className="text-2xl font-bold text-gray-800">Vertical Click</p>
-      </div>
+      </Link>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
