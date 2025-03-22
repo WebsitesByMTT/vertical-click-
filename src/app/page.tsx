@@ -9,22 +9,22 @@ export default function Home() {
       {/* header */}
       <Header />
       {/* hero */}
-      <div className="max-w-[70vw] mx-auto flex justify-center items-center h-screen">
+      <div className="max-w-[70vw] mx-auto flex justify-center items-center h-[50vh] lg:h-screen">
         <div className="text-center">
-          <h1 className="text-9xl font-bold uppercase">We innovate</h1>
-          {/* digital with #F05186 background color border radius */}
-          <h1 className="text-9xl font-bold uppercase bg-[#F05186] rounded-md text-white inline-block px-4 py-2">
+          <h1 className="text-5xl lg:text-9xl font-bold uppercase">
+            We innovate
+          </h1>
+          <h1 className="text-5xl lg:text-9xl font-bold uppercase bg-[#F05186] rounded-md text-white inline-block px-4 py-2">
             digital
           </h1>
-          <h1 className="text-9xl font-bold uppercase text-[#8F5BFE]">
+          <h1 className="text-5xl lg:text-9xl font-bold uppercase text-[#8F5BFE]">
             experiences
           </h1>
-          <h1 className="text-9xl font-bold uppercase">daily!</h1>
+          <h1 className="text-5xl lg:text-9xl font-bold uppercase">daily!</h1>
         </div>
       </div>
       {/* divider */}
-      <div className="max-w-[70vw] mx-auto h-0.5 bg-gray-200"></div>
-      {/* <Separator /> */}
+      <div className="max-w-[70vw] mx-auto h-0.5 bg-gray-200 my-10" />
       {/* what we provide */}
       <div className="max-w-[70vw] mx-auto space-y-6">
         {/* title */}
@@ -171,7 +171,7 @@ export default function Home() {
         </div>
       </div>
       {/* divider */}
-      <div className="max-w-[70vw] mx-auto h-0.5 bg-gray-200 my-10"></div>
+      <div className="max-w-[70vw] mx-auto h-0.5 bg-gray-200 my-10" />
       {/* Our Services */}
       <div className="max-w-[70vw] mx-auto space-y-6 flex flex-col justify-center items-center w-full">
         {/* heading */}
@@ -234,7 +234,7 @@ export default function Home() {
         </div>
       </div>
       {/* divider */}
-      <div className="max-w-[70vw] mx-auto h-0.5 bg-gray-200 my-10"></div>
+      <div className="max-w-[70vw] mx-auto h-0.5 bg-gray-200 my-10" />
       {/* why us */}
       <section className="max-w-[70vw] mx-auto bg-black text-white rounded-md">
         <div className="w-full mx-auto p-10">
@@ -309,7 +309,7 @@ export default function Home() {
         </div>
       </section>
       {/* divider */}
-      <div className="max-w-[70vw] mx-auto h-0.5 bg-gray-200 my-10"></div>
+      <div className="max-w-[70vw] mx-auto h-0.5 bg-gray-200 my-10" />
       {/* reviews */}
       <section className="max-w-[70vw] mx-auto flex">
         {/* content */}
