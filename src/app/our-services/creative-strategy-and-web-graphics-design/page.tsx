@@ -1,3 +1,4 @@
+import Divider from "@/components/Divider";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import ImageBox from "@/components/ImageBox";
@@ -20,8 +21,7 @@ const CSAWGD = () => {
         image="/images/osp.png"
         imageOrientation="right"
       />
-      {/* divider */}
-      <div className="max-w-[70vw] mx-auto h-0.5 bg-gray-200 my-10" />
+      <Divider />
       <section className="max-w-[70vw] mx-auto bg-black text-white p-14 rounded-md">
         <h1 className="text-5xl font-medium">Meet Our Powerhouse Team</h1>
         <p className="text-lg font-normal mt-5">
@@ -30,11 +30,9 @@ const CSAWGD = () => {
           campaigns that speak for themselves.
         </p>
       </section>
-      {/* divider */}
-      <div className="max-w-[70vw] mx-auto h-0.5 bg-gray-200 my-10" />
+      <Divider />
       <Highlights />
-      {/* divider */}
-      <div className="max-w-[70vw] mx-auto h-0.5 bg-gray-200 my-10" />
+      <Divider />
     </main>
   );
 };

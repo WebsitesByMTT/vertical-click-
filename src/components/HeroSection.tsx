@@ -4,7 +4,7 @@ interface HeroSectionProps {
   title: string;
   subtitle: string;
   pinkBgText: string;
-  description: string;
+  description?: string;
 }
 
 const HeroSection = ({
@@ -14,7 +14,7 @@ const HeroSection = ({
   description,
 }: HeroSectionProps) => {
   return (
-    <section className="max-w-[70vw] h-screen mx-auto flex flex-col justify-center items-center">
+    <section className="max-w-[70vw] h-[60vh] mx-auto flex flex-col justify-center items-center">
       <h1 className="text-5xl font-medium uppercase underline">{title}</h1>
       <h1 className="text-7xl font-bold uppercase text-center mt-10">
         {subtitle}

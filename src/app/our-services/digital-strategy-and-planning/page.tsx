@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import IconBox from "@/components/IconBox";
 import ImageBox from "@/components/ImageBox";
 import Header from "@/components/Header";
+import Divider from "@/components/Divider";
 
 const DSAP = () => {
   return (
@@ -15,8 +16,7 @@ const DSAP = () => {
         pinkBgText="Vertical Click’s Euless, Texas"
         description="A well-crafted strategy is the foundation of a successful campaign. At Vertical Click’s Euless, Texas, our team of experts leverages years of experience to develop and execute tailored strategies that drive real results for your business."
       />
-      {/* divider */}
-      <div className="max-w-[70vw] mx-auto h-0.5 bg-gray-200 my-10" />
+      <Divider />
       <ImageBox
         title="Our Approach to Digital Strategy & Planning"
         description="We're dedicated to growing your brand and increasing revenue through
@@ -38,8 +38,7 @@ const DSAP = () => {
         ]}
         imageOrientation="left"
       />
-      {/* divider */}
-      <div className="max-w-[70vw] mx-auto h-0.5 bg-gray-200 my-10" />
+      <Divider />
       {/* Our Team of Experts */}
       <section className="max-w-[70vw] mx-auto">
         <h1 className="text-5xl font-medium uppercase">Our Team of Experts</h1>
@@ -107,14 +106,12 @@ const DSAP = () => {
           />
         </div>
       </section>
-      {/* divider */}
-      <div className="max-w-[70vw] mx-auto h-0.5 bg-gray-200 my-10" />
+      <Divider />
       <h1 className="max-w-[70vw] mx-auto text-5xl font-medium uppercase text-center">
         Partnering with Vertical Click’s Euless, Texas has transformed our
         business approach and significantly increased our ROI.
       </h1>
-      {/* divider */}
-      <div className="max-w-[70vw] mx-auto h-0.5 bg-gray-200 my-10" />
+      <Divider />
     </main>
   );
 };

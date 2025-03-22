@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Divider from "@/components/Divider";
 
 export default function Home() {
   return (
@@ -23,8 +24,7 @@ export default function Home() {
           <h1 className="text-5xl lg:text-9xl font-bold uppercase">daily!</h1>
         </div>
       </div>
-      {/* divider */}
-      <div className="max-w-[70vw] mx-auto h-0.5 bg-gray-200 my-10" />
+      <Divider />
       {/* what we provide */}
       <div className="max-w-[70vw] mx-auto space-y-6">
         {/* title */}
@@ -170,8 +170,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      {/* divider */}
-      <div className="max-w-[70vw] mx-auto h-0.5 bg-gray-200 my-10" />
+      <Divider />
       {/* Our Services */}
       <div className="max-w-[70vw] mx-auto space-y-6 flex flex-col justify-center items-center w-full">
         {/* heading */}
@@ -233,8 +232,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      {/* divider */}
-      <div className="max-w-[70vw] mx-auto h-0.5 bg-gray-200 my-10" />
+      <Divider />
       {/* why us */}
       <section className="max-w-[70vw] mx-auto bg-black text-white rounded-md">
         <div className="w-full mx-auto p-10">
@@ -308,8 +306,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* divider */}
-      <div className="max-w-[70vw] mx-auto h-0.5 bg-gray-200 my-10" />
+      <Divider />
       {/* reviews */}
       <section className="max-w-[70vw] mx-auto flex">
         {/* content */}
@@ -326,8 +323,7 @@ export default function Home() {
         {/* image */}
         <img src="/images/happy-client.png" alt="happy client" width={500} />
       </section>
-      {/* divider */}
-      <div className="max-w-[70vw] mx-auto h-0.5 bg-gray-200 my-10" />
+      <Divider />
       {/* blogs */}
       <section className="max-w-[70vw] mx-auto">
         <div className="max-full mx-auto">
