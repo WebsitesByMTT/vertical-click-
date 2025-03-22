@@ -2,10 +2,12 @@ import React from "react";
 import HeroSection from "@/components/HeroSection";
 import IconBox from "@/components/IconBox";
 import ImageBox from "@/components/ImageBox";
+import Header from "@/components/Header";
 
 const DSAP = () => {
   return (
     <main>
+      <Header />
       {/* hero section */}
       <HeroSection
         title="Digital Strategy & Planning"
