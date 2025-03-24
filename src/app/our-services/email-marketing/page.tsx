@@ -11,38 +11,26 @@ function page() {
             title: 'Personalized Communication',
             subtitle: 'Customization',
             msg: 'Personalized and branded communication that </br> aligns with your goals',
-            img: '/images/email-marketing/email-marketing1.png'
+            img: '/images/video-gif/img1.png'
         },
         {
             title: 'Visually Appealing Design',
             subtitle: 'Design',
             msg: 'Design that captures attention',
-            img: '/images/email-marketing/email-marketing2.png'
+            img: '/images/video-gif/img2.png'
         },
         {
             title: 'Targeted Audience Selection',
             subtitle: 'Targeting',
             msg: 'Targeted audience selection for maximum <br/> conversions and ROI',
-            img: '/images/email-marketing/email-marketing3.png'
+            img: '/images/video-gif/img3.png'
         },
         {
             title: 'Streamlined Delivery Process',
             subtitle: 'Security',
             msg: 'Secure and easy sending',
-            img: '/images/email-marketing/email-marketing4.png'
-        },
-        {
-            title: 'Crafting Compelling Subject Lines',
-            subtitle: 'Crafting',
-            msg: 'Crafting compelling subject lines that avoid spam <br/>filters',
-            img: '/images/email-marketing/email-marketing5.png'
-        },
-        {
-            title: 'Testing and Optimization',
-            subtitle: 'Testing',
-            msg: 'Testing and optimization to ensure seamless <br/> delivery',
-            img: '/images/email-marketing/email-marketing6.png'
-        },
+            img: '/images/video-gif/img4.png'
+        }
     ]
 
 
@@ -63,7 +51,7 @@ function page() {
                         {
                             emailItems.map((item, index) => {
                                 return (
-                                    <div className='pt-4 px-4 relative mt-4 bg-[#feecf0] gap-2 flex flex-col justify-between rounded-md'>
+                                    <div key={index} className='pt-4 px-4 relative mt-4 bg-[#feecf0] gap-2 flex flex-col justify-between rounded-md'>
                                         <div>
                                             <h3 className='text-2xl'>{item.title.toUpperCase()}</h3>
                                             <p className='translate-y-6 text-sm text-gray-500 font-sans' dangerouslySetInnerHTML={{ __html: item.msg }} />
