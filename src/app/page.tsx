@@ -30,7 +30,7 @@ export default function Home() {
         {/* title */}
         <h1 className="text-5xl font-bold uppercase p-4">What we provide?</h1>
         {/* content */}
-        <div className="container flex justify-center items-center w-full">
+        <div className="flex justify-center items-center w-full">
           <div className="w-1/2">
             <Image
               src="/images/example.png"
@@ -40,14 +40,14 @@ export default function Home() {
               // className="w-full"
             />
           </div>
-          <div className="w-1/2">
+          <div className="w-1/2 flex flex-col justify-between items-start bg-amber-50 h-full">
             <h1 className="text-5xl font-bold uppercase bg-[#F05186] rounded-md text-white inline-block px-4 py-2">
               Digital
             </h1>
-            <h3 className="text-4xl font-light uppercase">
+            <h3 className="text-4xl font-light uppercase max-w-xl">
               We innovate digital experiences daily!
             </h3>
-            <p className="text-3xl">
+            <p className="text-2xl">
               Vertical Clicks, a leading digital marketing agency in Euless,
               Texas combines creativity and technical expertise to develop and
               execute successful digital strategies for clients.
