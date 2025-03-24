@@ -1,5 +1,8 @@
 import Divider from "@/components/Divider";
+import Footer from "@/components/footer/Footer";
 import Header from "@/components/Header";
+import HeroSection from "@/components/HeroSection";
+import ImageBox from "@/components/ImageBox";
 import { Separator } from "@/components/ui/Separator";
 import React from "react";
 
@@ -7,7 +10,124 @@ const AboutUs = () => {
   return (
     <main>
       <Header />
-      <section className="max-w-[90vw] md:max-w-[70vw] mx-auto text-center">
+      <HeroSection
+        title=""
+        subtitle="Ready to take your digital marketing to the next level?"
+        pinkBgText="We're here to help!"
+        description="At Vertical Click’s, we can help you capitalize on every opportunity and drive business success. Our team of highly skilled professionals at Vertical Click’s, a top SEO company in Euless, Texas - leverages years of expertise in digital marketing, SEO, SMO, content, web design, and development to drive business growth and achieve top search engine rankings."
+      />
+      <ImageBox
+        title=""
+        description="Vertical Click’s is a premier digital marketing company in the USA, providing a wide range of services, from website design and SEO to mobile app development and online reputation management, to help businesses engage their target audience."
+        image="/images/about-us.png"
+        imageOrientation="right"
+      />
+      <Divider />
+      <section className="max-w-[90vw] md:max-w-[70vw] mx-auto bg-black rounded-2xl text-white p-8 md:p-14">
+        <h1 className="text-4xl md:text-5xl font-medium uppercase">
+          Our Secret Sauce: Why We're Better
+        </h1>
+        <p className="text-xl md:text-2xl font-normal mt-4">
+          As a trusted digital marketing partner, Vertical Click’s has been
+          creating value for clients globally. Our team of skilled experts
+          manages multiple projects monthly, focusing on delivering exceptional
+          results that propel businesses forward.
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10">
+          <div className="border rounded-lg p-6">
+            <div className="flex justify-between">
+              <h2 className="text-2xl font-bold uppercase">Clients</h2>
+              <h2 className="text-4xl font-bold text-[#8F5BFE]">50+</h2>
+            </div>
+            <p className="text-xl font-normal">
+              Vertical Click’s proudly serves over 65 global clients, delivering
+              exceptional digital marketing services and innovative solutions.
+            </p>
+          </div>
+          <div className="border rounded-lg p-6">
+            <div className="flex justify-between">
+              <h2 className="text-2xl font-bold uppercase">Experience</h2>
+              <h2 className="text-4xl font-bold text-[#8F5BFE]">5+</h2>
+            </div>
+            <p className="text-xl font-normal">
+              Vertical Click’s wealth of experience in digital marketing enables
+              us to consistently deliver high-quality solutions that exceed
+              client expectations.
+            </p>
+          </div>
+          <div className="border rounded-lg p-6">
+            <div className="flex justify-between">
+              <h2 className="text-2xl font-bold uppercase">
+                Delivered Projects
+              </h2>
+              <h2 className="text-4xl font-bold text-[#8F5BFE]">60+</h2>
+            </div>
+            <p className="text-xl font-normal">
+              Our team provides comprehensive support, handling every aspect of
+              a project from start to finish, which has enabled us to
+              successfully deliver over 65 projects to date.
+            </p>
+          </div>
+          <div className="border rounded-lg p-6">
+            <div className="flex justify-between">
+              <h2 className="text-2xl font-bold uppercase">Offices</h2>
+              <h2 className="text-4xl font-bold text-[#8F5BFE]">2+</h2>
+            </div>
+            <p className="text-xl font-normal">
+              We have a pan-regional presence, with offices in Euless, Texas,
+              and USA, ensuring our services are accessible to a wide range of
+              clients.
+            </p>
+          </div>
+        </div>
+      </section>
+      <Divider />
+      <section className="max-w-[90vw] md:max-w-[70vw] mx-auto text-center space-y-2">
+        <h1 className="text-4xl md:text-5xl font-medium uppercase">
+          Our Story
+        </h1>
+        <p className="text-xl md:text-2xl font-normal mt-4">
+          At Vertical Clicks, a cutting-edge digital marketing agency, the team
+          was determined to shake things up. They believed businesses should
+          stop waiting for customers to find them and instead, take control of
+          their marketing.
+        </p>
+        <p className="text-xl md:text-2xl font-normal mt-4">
+          The agency started spreading awareness through workshops, webinars,
+          and social media. They shared success stories, highlighting the power
+          of targeted online campaigns.
+        </p>
+        <p className="text-xl md:text-2xl font-normal mt-4">
+          As businesses began to take notice, Vertical Clicks received a flood
+          of inquiries. The team crafted tailored strategies, driving real
+          results for their clients.
+        </p>
+        <p className="text-xl md:text-2xl font-normal mt-4">
+          With each success story, Vertical Clicks solidified its reputation as
+          a game-changer in the digital marketing landscape. By empowering
+          businesses to take charge of their marketing, the agency was
+          revolutionizing the way companies connected with their customers.
+        </p>
+        <div className="grid grid-col-1 grid-cols-2 gap-10 text-white">
+          <div className=" bg-[#F05186] rounded-lg p-6 space-y-6 flex flex-col justify-center items-center">
+            <h1 className="text-4xl font-bold uppercase">Our Mission</h1>
+            <p className="text-xl font-normal">
+              Transforming a businesses by promoting more proactive marketing
+              awareness, empowering them to seek out customers, drive growth,
+              and shape their destiny.
+            </p>
+          </div>
+          <div className=" bg-[#8F5BFE] rounded-lg p-6 space-y-6 flex flex-col justify-center items-center">
+            <h1 className="text-4xl font-bold uppercase">Our Vision</h1>
+            <p className="text-xl font-normal">
+              To create a marketing ecosystem where no business is left behind.
+            </p>
+          </div>
+        </div>
+      </section>
+      <Divider />
+      <Footer />
+      {/* <section className="max-w-[90vw] md:max-w-[70vw] mx-auto text-center">
         <h1 className="text-4xl md:text-5xl font-medium uppercase my-4">
           About Us
         </h1>
@@ -44,7 +164,6 @@ const AboutUs = () => {
                 solutions.
               </p>
             </div>
-            {/* Vertical Separator 1 */}
             <div className="hidden md:block w-0.5 bg-gray-300 absolute left-1/2 -translate-x-1/2 h-[calc(50%-2rem)]" />
             <div className="p-4 flex flex-col justify-center items-center">
               <h2 className="text-2xl font-semibold mb-4">Experience</h2>
@@ -55,7 +174,6 @@ const AboutUs = () => {
                 exceed client expectations.
               </p>
             </div>
-            {/* Horizontal Separator */}
             <div className="hidden md:block col-span-3 h-0.5 bg-gray-300" />
             <div className="p-4 flex flex-col justify-center items-center">
               <h2 className="text-2xl font-semibold mb-4">
@@ -68,7 +186,6 @@ const AboutUs = () => {
                 successfully deliver over 65 projects to date.
               </p>
             </div>
-            {/* Vertical Separator 1 */}
             <div className="hidden md:block w-0.5 bg-gray-300 absolute left-1/2 -translate-x-1/2 bottom-0 h-[calc(50%-2rem)]" />
             <div className="p-4 flex flex-col justify-center items-center">
               <h2 className="text-2xl font-semibold mb-4">Offices</h2>
@@ -101,11 +218,6 @@ const AboutUs = () => {
             connected with their customers.
           </p>
         </div>
-        {/* Our Mission
-        Transforming businesses by promoting proactive marketing awareness, empowering them to seek out customers, drive growth, and shape their destiny.
-        Our Vision
-        To create a marketing ecosystem where no business is left behind.
-        */}
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="bg-[#8F5BFE26] p-4 my-4 flex flex-col justify-center items-start">
             <h1 className="text-4xl font-medium uppercase my-4">Our Mission</h1>
@@ -122,7 +234,7 @@ const AboutUs = () => {
             </p>
           </div>
         </div>
-      </section>
+      </section>  */}
     </main>
   );
 };
