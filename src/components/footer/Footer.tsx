@@ -9,10 +9,10 @@ function Footer() {
   const footerItems = ['Explor' , 'Our Blogs' , 'Our Work' , 'Website Seo Audit' , 'Get in Touch' , 'Work with us']
 
   return (
-    <div className='mx-auto md:px-8 py-8 w-[100vw]  md:w-[90vw] border-t-2 md:border-t-4 border-gray-300'>
+    <div className='mx-auto md:px-8 py-8 w-[100vw]  md:w-[90vw]  border-gray-300'>
       <div className='flex flex-col justify-center mx-auto gap-4 md:gap-6 my-2 w-auto  py-2 md:pt-2 md:pb-8 '>
         <div className='flex justify-center flex-col gap-1'>
-          <span className='bg-pink-600 text-2xl font-medium md:text-6xl incline-block text-white text-center py-1  mx-auto px-2 md:px-4 rounded-sm'>GOT AN IDEA?</span>
+          <span className='bg-[#F05186] text-2xl font-medium md:text-6xl incline-block text-white text-center py-1  mx-auto px-2 md:px-4 rounded-sm'>GOT AN IDEA?</span>
           <span className='text-lg md:text-4xl text-center  text-violet-600'>Let's Work On it</span>
         </div>
         <div className='flex justify-center items-center gap-2'>
