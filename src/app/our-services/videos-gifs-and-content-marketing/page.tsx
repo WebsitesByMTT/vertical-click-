@@ -6,6 +6,33 @@ import ImageBox from "@/components/ImageBox";
 import React from "react";
 
 const VGCM = () => {
+  const videoCardItems = [
+    {
+      title: "Amplify customer engagement",
+      subtitle: "Engagement",
+      msg: "Engage your audience with compelling  <br/>video content.",
+      img: "/images/video-gif/img1.png",
+    },
+    {
+      title: "Educate audiences about your <br/> brand and business",
+      subtitle: "Education",
+      msg: "Provide valuable insights and information.",
+      img: "/images/video-gif/img2.png",
+    },
+    {
+      title: "Communicate your business <br/>vision",
+      subtitle: "Vision",
+      msg: "Share your story and mission effectively.",
+      img: "/images/video-gif/img3.png",
+    },
+    {
+      title: "Increase conversions",
+      subtitle: "Sales",
+      msg: "Drive more sales and leads with effective content.",
+      img: "/images/video-gif/img4.png",
+    },
+  ];
+
   return (
     <main>
       <Header />
@@ -38,6 +65,48 @@ const VGCM = () => {
         <h1 className="text-4xl md:text-5xl font-medium uppercase text-center">
           Our website video production services:
         </h1>
+        <div className="grid grid-cols-2 md:grid-cols-2 gap-4 mx-auto">
+          {videoCardItems.map((item, index) => {
+            return (
+              <div
+                key={index}
+                className="pt-4 flex flex-col justify-between px-4 mt-4 bg-[#fdeaf0]  rounded-lg"
+              >
+                <div>
+                  <h3
+                    className="text-3xl font-semibold"
+                    dangerouslySetInnerHTML={{
+                      __html: item.title.toUpperCase(),
+                    }}
+                  />
+                  <p
+                    className=" text-xl text-gray-800 font-sans pt-4"
+                    dangerouslySetInnerHTML={{ __html: item.msg }}
+                  />
+                </div>
+                <div className="relative  ">
+                  <div className="absolute left-[40%] top-[50%] flex flex-col gap-1 mb-2 p-4 bg-[#8F5BFE] shadow-md rounded-lg">
+                    <h4 className="text-white font-semibold text-md">
+                      {item.subtitle}
+                    </h4>
+                    <div className="flex gap-2 ">
+                      <div className="px-8 py-3 bg-[#a478f1] rounded-xl"></div>
+                      <div className="px-8 py-3 bg-[#a478f1] rounded-xl"></div>
+                    </div>
+                  </div>
+                  <div>
+                    <img
+                      src={item.img}
+                      width={100}
+                      alt=""
+                      className=" md:w-75 ml-auto"
+                    />
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
         {/* TODO: Add content */}
       </section>
       <Divider />

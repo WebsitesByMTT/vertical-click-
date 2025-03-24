@@ -1,7 +1,14 @@
+"use client"
 import Link from "next/link";
-import React from "react";
+import React , {useState} from "react";
+import Drawer from "./Drawer";
 
 const Header = () => {
+ const [show ,setShow] = useState(false)
+ const handleShow = ()=>{
+     setShow((prev)=>(!prev))
+ }
+
   return (
     <nav className="flex justify-between items-center px-8 py-4 bg-white shadow-md">
       {/* logo from public */}
@@ -16,14 +23,17 @@ const Header = () => {
         strokeWidth={1.5}
         stroke="currentColor"
         className="size-6 lg:hidden"
+        onClick={handleShow}
       >
+      
         <path
           strokeLinecap="round"
           strokeLinejoin="round"
           d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
         />
       </svg>
-
+      <Drawer show={show} setShow={handleShow}/>
+     
       <ul className="hidden lg:flex space-x-4">
         <li>
           <a href="/" className="hover:text-[#F05186]">
