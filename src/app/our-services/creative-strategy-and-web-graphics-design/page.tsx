@@ -1,4 +1,5 @@
 import Divider from "@/components/Divider";
+import Footer from "@/components/footer/Footer";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import ImageBox from "@/components/ImageBox";
@@ -22,8 +23,10 @@ const CSAWGD = () => {
         imageOrientation="right"
       />
       <Divider />
-      <section className="max-w-[70vw] mx-auto bg-black text-white p-14 rounded-md">
-        <h1 className="text-5xl font-medium">Meet Our Powerhouse Team</h1>
+      <section className="max-w-[90vw] md:max-w-[70vw] mx-auto bg-black text-white p-8 md:p-14 rounded-md">
+        <h1 className="text-4xl md:text-5xl font-medium">
+          Meet Our Powerhouse Team
+        </h1>
         <p className="text-lg font-normal mt-5">
           Our creative agency comprises young, talented individuals who embody
           innovation. We strive for excellence, delivering award-winning
@@ -33,6 +36,7 @@ const CSAWGD = () => {
       <Divider />
       <Highlights />
       <Divider />
+      <Footer />
     </main>
   );
 };

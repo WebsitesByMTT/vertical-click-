@@ -7,9 +7,11 @@ const AboutUs = () => {
   return (
     <main>
       <Header />
-      <section className="max-w-[70vw] mx-auto text-center">
-        <h1 className="text-5xl font-medium uppercase my-4">About Us</h1>
-        <p className="text-2xl font-normal">
+      <section className="max-w-[90vw] md:max-w-[70vw] mx-auto text-center">
+        <h1 className="text-4xl md:text-5xl font-medium uppercase my-4">
+          About Us
+        </h1>
+        <p className="text-xl md:text-2xl font-normal">
           Vertical Click’s is a premier digital marketing company in the USA,
           providing a wide range of services, from website design and SEO to
           mobile app development and online reputation management, to help
@@ -22,17 +24,17 @@ const AboutUs = () => {
           drive business growth and achieve top search engine rankings.
         </p>
         <div className="bg-[#8F5BFE26] rounded-md p-4 my-4 flex flex-col justify-center items-center">
-          <h1 className="text-4xl font-medium uppercase my-4">
+          <h1 className="text-3xl md:text-4xl font-medium uppercase my-4">
             Our Secret Sauce:
             <span className="font-bold"> Why We're Better</span>
           </h1>
-          <p className="text-2xl font-normal mx-20">
+          <p className="text-xl md:text-2xl font-normal md:mx-20">
             As a trusted digital marketing partner, Vertical Click’s has been
             creating value for clients globally. Our team of skilled experts
             manages multiple projects monthly, focusing on delivering
             exceptional results that propel businesses forward.
           </p>
-          <div className="grid grid-cols-2 gap-4 relative p-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 relative p-4">
             <div className="p-4 flex flex-col justify-center items-center">
               <h2 className="text-2xl font-semibold mb-4">Clients</h2>
               <h2 className="text-2xl font-semibold mb-4">50+</h2>
@@ -43,7 +45,7 @@ const AboutUs = () => {
               </p>
             </div>
             {/* Vertical Separator 1 */}
-            <div className="w-0.5 bg-gray-300 absolute left-1/2 -translate-x-1/2 h-[calc(50%-2rem)]" />
+            <div className="hidden md:block w-0.5 bg-gray-300 absolute left-1/2 -translate-x-1/2 h-[calc(50%-2rem)]" />
             <div className="p-4 flex flex-col justify-center items-center">
               <h2 className="text-2xl font-semibold mb-4">Experience</h2>
               <h2 className="text-2xl font-semibold mb-4">5+</h2>
@@ -54,7 +56,7 @@ const AboutUs = () => {
               </p>
             </div>
             {/* Horizontal Separator */}
-            <div className="col-span-3 h-0.5 bg-gray-300" />
+            <div className="hidden md:block col-span-3 h-0.5 bg-gray-300" />
             <div className="p-4 flex flex-col justify-center items-center">
               <h2 className="text-2xl font-semibold mb-4">
                 Delivered Projects
@@ -67,7 +69,7 @@ const AboutUs = () => {
               </p>
             </div>
             {/* Vertical Separator 1 */}
-            <div className=" w-0.5 bg-gray-300 absolute left-1/2 -translate-x-1/2 bottom-0 h-[calc(50%-2rem)]" />
+            <div className="hidden md:block w-0.5 bg-gray-300 absolute left-1/2 -translate-x-1/2 bottom-0 h-[calc(50%-2rem)]" />
             <div className="p-4 flex flex-col justify-center items-center">
               <h2 className="text-2xl font-semibold mb-4">Offices</h2>
               <h2 className="text-2xl font-semibold mb-4">2+</h2>
@@ -80,8 +82,10 @@ const AboutUs = () => {
           </div>
         </div>
         <div className="p-4 my-4 flex flex-col justify-center items-center">
-          <h1 className="text-4xl font-medium uppercase my-4">Our Story</h1>
-          <p className="text-2xl font-normal mx-20">
+          <h1 className="text-3xl md:text-4xl font-medium uppercase my-4">
+            Our Story
+          </h1>
+          <p className="text-xl md:text-2xl font-normal md:mx-20">
             At Vertical Clicks, a cutting-edge digital marketing agency, the
             team was determined to shake things up. They believed businesses
             should stop waiting for customers to find them and instead, take
@@ -102,7 +106,7 @@ const AboutUs = () => {
         Our Vision
         To create a marketing ecosystem where no business is left behind.
         */}
-        <div className="grid grid-cols-2">
+        <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="bg-[#8F5BFE26] p-4 my-4 flex flex-col justify-center items-start">
             <h1 className="text-4xl font-medium uppercase my-4">Our Mission</h1>
             <p className="text-2xl font-normal text-start">

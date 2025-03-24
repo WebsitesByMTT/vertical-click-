@@ -1,4 +1,5 @@
 import Divider from "@/components/Divider";
+import Footer from "@/components/footer/Footer";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import IconBox from "@/components/IconBox";
@@ -15,7 +16,7 @@ const SEO = () => {
         pinkBgText="SEO Services"
         description="In today's competitive digital landscape, standing out is crucial. At Vertical Click, we leverage the best SEO tools, strategies, and solutions to deliver tangible results for our clients."
       />
-      <div className="space-y-20">
+      <div className="space-y-10 md:space-y-20">
         <TextBox
           title="Transparent and Effective SEO Approach"
           description="We believe in simplicity and transparency. Our SEO journey begins with in-depth keyword research, identifying the terms and phrases your audience uses. We then strategically integrate these keywords into your website's content, meta tags, and other critical areas."
@@ -38,11 +39,11 @@ const SEO = () => {
         />
       </div>
       <Divider />
-      <section className="max-w-[70vw] mx-auto bg-black text-white p-14 rounded-2xl">
-        <h1 className="text-5xl font-medium uppercase">
+      <section className="max-w-[90vw] md:max-w-[70vw] mx-auto bg-black text-white p-8 md:p-14 rounded-2xl">
+        <h1 className="text-4xl md:text-5xl font-medium uppercase">
           Why Partner with Our SEO Company?
         </h1>
-        <p className="text-2xl font-normal mt-4">
+        <p className="text-xl md:text-2xl font-normal mt-4">
           Discover the benefits of teaming up with us to propel your business
           forward. We're committed to transparency and authenticity, delivering
           organic results that drive real growth.
@@ -50,9 +51,11 @@ const SEO = () => {
       </section>
       <Divider />
       {/* key benefits */}
-      <section className="max-w-[70vw] mx-auto">
-        <h1 className="text-5xl font-medium uppercase">Key Benefits</h1>
-        <div className="flex flex-wrap justify-evenly gap-4 mt-8">
+      <section className="max-w-[90vw] md:max-w-[70vw] mx-auto">
+        <h1 className="text-4xl md:text-5xl font-medium uppercase">
+          Key Benefits
+        </h1>
+        <div className="flex flex-wrap jsutify-start md:justify-evenly gap-4 mt-8">
           <div className="max-w-sm bg-[#8F5BFE26] flex justify-center items-center rounded-md px-5">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -74,7 +77,7 @@ const SEO = () => {
               />
             </svg>
 
-            <h1 className="text-2xl font-normal text-[#8F5BFE]">
+            <h1 className="text-xl md:text-2xl font-normal text-[#8F5BFE]">
               Organic results and transparency
             </h1>
           </div>
@@ -99,7 +102,7 @@ const SEO = () => {
               />
             </svg>
 
-            <h1 className="text-2xl font-normal text-[#8F5BFE]">
+            <h1 className="text-xl md:text-2xl font-normal text-[#8F5BFE]">
               Proven credibility and expertise
             </h1>
           </div>
@@ -124,7 +127,7 @@ const SEO = () => {
               />
             </svg>
 
-            <h1 className="text-2xl font-normal text-[#8F5BFE]">
+            <h1 className="text-xl md:text-2xl font-normal text-[#8F5BFE]">
               Targeted traffic and increased conversions
             </h1>
           </div>
@@ -149,7 +152,7 @@ const SEO = () => {
               />
             </svg>
 
-            <h1 className="text-2xl font-normal text-[#8F5BFE]">
+            <h1 className="text-xl md:text-2xl font-normal text-[#8F5BFE]">
               Long-term SEO solutions
             </h1>
           </div>
@@ -174,14 +177,14 @@ const SEO = () => {
               />
             </svg>
 
-            <h1 className="text-2xl font-normal text-[#8F5BFE]">
+            <h1 className="text-xl md:text-2xl font-normal text-[#8F5BFE]">
               Continuous adaptation to algorithm updates
             </h1>
           </div>
         </div>
       </section>
       <Divider />
-      <div className="space-y-20">
+      <div className="space-y-8 md:space-y-20">
         <TextBox
           title="Proven Credibility"
           description="Search for 'Social media agency in Delhi' or 'Digital marketing agency in Delhi' and you'll find us at the top of organic search listings. This demonstrates our expertise in driving organic traffic and achieving top rankings."
@@ -196,6 +199,7 @@ const SEO = () => {
         />
       </div>
       <Divider />
+      <Footer />
     </main>
   );
 };

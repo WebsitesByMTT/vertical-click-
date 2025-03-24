@@ -1,4 +1,5 @@
 import Divider from "@/components/Divider";
+import Footer from "@/components/footer/Footer";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import ImageBox from "@/components/ImageBox";
@@ -13,18 +14,18 @@ const VGCM = () => {
         subtitle="The Key to Unlocking Your"
         pinkBgText="Brand's Potential"
       />
-      <section className="max-w-[70vw] mx-auto flex gap-8">
-        <h1 className="text-5xl font-medium uppercase">
+      <section className="max-w-[90vw] md:max-w-[70vw] mx-auto flex flex-col md:flex-row gap-8">
+        <h1 className="text-4xl md:text-5xl font-medium uppercase">
           In today's digital landscape, content is king.
         </h1>
-        <p className="text-2xl font-normal max-w-2xl">
+        <p className="text-xl md:text-2xl font-normal max-w-2xl">
           When marketed effectively, it can propel your brand and business to
           new heights. The most popular content formats now include videos,
           GIFs, and interactive media, in addition to traditional text and
           static images.
         </p>
       </section>
-      <section className="max-w-[70vw] mx-auto bg-[#8F5BFE17] rounded-md mt-10">
+      <section className="max-w-[90vw] md:max-w-[70vw] mx-auto bg-[#8F5BFE17] rounded-md mt-10 p-4 md:p-0">
         <ImageBox
           title="Our Expertise"
           description="At Vertical Click’s, a leading digital marketing agency in Delhi, our in-house team crafts unique and captivating online video content that resonates with your audience. Our social media and design experts collaborate to deliver high-quality video content that exceeds client expectations."
@@ -33,8 +34,8 @@ const VGCM = () => {
         />
       </section>
       <Divider />
-      <section className="max-w-[70vw] mx-auto">
-        <h1 className="text-5xl font-medium uppercase text-center">
+      <section className="max-w-[90vw] md:max-w-[70vw] mx-auto">
+        <h1 className="text-4xl md:text-5xl font-medium uppercase text-center">
           Our website video production services:
         </h1>
         {/* TODO: Add content */}
@@ -53,11 +54,12 @@ const VGCM = () => {
         image="/images/osacci.png"
         imageOrientation="right"
       />
-      <h1 className="max-w-[70vw] mx-auto text-5xl font-medium uppercase text-center">
+      <h1 className="max-w-[90vw] md:max-w-[70vw] mx-auto text-4xl md:text-5xl font-medium uppercase text-center mt-8 md:mt-0">
         Partner with Vertical Click’s to unlock the full potential of your
         content marketing strategy.
       </h1>
       <Divider />
+      <Footer />
     </main>
   );
 };

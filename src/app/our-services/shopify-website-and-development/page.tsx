@@ -1,4 +1,5 @@
 import Divider from "@/components/Divider";
+import Footer from "@/components/footer/Footer";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import TextBox from "@/components/TextBox";
@@ -19,9 +20,11 @@ const SWD = () => {
         description="At Vertical Click, our team of experts specializes in Shopify store development, providing end-to-end solutions tailored to your business needs. We analyze your business, understand your requirements, and design a store that reflects your brand."
       />
       <Divider />
-      <section className="max-w-[70vw] mx-auto bg-black rounded-2xl text-white p-14">
-        <h1 className="text-5xl font-medium uppercase">Why Choose Shopify?</h1>
-        <p className="text-2xl font-normal mt-4">
+      <section className="max-w-[90vw] md:max-w-[70vw] mx-auto bg-black rounded-2xl text-white p-8 md:p-14">
+        <h1 className="text-4xl md:text-5xl font-medium uppercase">
+          Why Choose Shopify?
+        </h1>
+        <p className="text-xl md:text-2xl font-normal mt-4">
           With Shopify, you can sell anywhere, anytime, and manage your business
           from a single dashboard. Since its inception, Shopify has empowered
           over 1 million businesses in 175 countries, generating over $200
@@ -29,11 +32,11 @@ const SWD = () => {
         </p>
       </section>
       <Divider />
-      <section className="max-w-[70vw] mx-auto">
-        <h1 className="text-5xl font-medium uppercase">
+      <section className="max-w-[90vw] md:max-w-[70vw] mx-auto">
+        <h1 className="text-4xl md:text-5xl font-medium uppercase">
           Our Shopify Development Services
         </h1>
-        <div className="max-w-4xl mx-auto grid grid-cols-2 gap-4 justify-center items-center content-center mt-10">
+        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 justify-center items-center content-center mt-10">
           <div className="bg-[#8F5BFE1A] rounded-md p-6">
             <p className="text-2xl font-normal text-[#8F5BFE]">
               Custom Shopify store design and development
@@ -54,7 +57,7 @@ const SWD = () => {
               Synergy between your business and Shopify store
             </p>
           </div>
-          <div className="bg-[#8F5BFE1A] rounded-md p-6 col-span-2 text-center">
+          <div className="bg-[#8F5BFE1A] rounded-md p-6 md:col-span-2 text-center">
             <p className="text-2xl font-normal text-[#8F5BFE]">
               State-of-the-art online store development
             </p>
@@ -62,11 +65,12 @@ const SWD = () => {
         </div>
       </section>
       <Divider />
-      <h1 className="max-w-[70vw] mx-auto text-5xl font-medium uppercase text-center mt-10">
+      <h1 className="max-w-[90vw] md:max-w-[70vw] mx-auto text-4xl md:text-5xl font-medium uppercase text-center mt-10">
         Partner with Vertical Click’s to unlock the full potential of Shopify
         and drive your business forward.
       </h1>
       <Divider />
+      <Footer />
     </main>
   );
 };

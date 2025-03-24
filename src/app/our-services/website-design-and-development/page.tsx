@@ -1,4 +1,5 @@
 import Divider from "@/components/Divider";
+import Footer from "@/components/footer/Footer";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import ImageBox from "@/components/ImageBox";
@@ -26,28 +27,28 @@ const WDD = () => {
         description="In today's digital landscape, your website is often the first point of contact with your audience. It plays a crucial role in shaping consumer perceptions and influencing buying behavior."
       />
       <Divider />
-      <section className="max-w-[70vw] mx-auto">
-        <h1 className="text-5xl font-medium uppercase">
+      <section className="max-w-[90vw] md:max-w-[70vw] mx-auto">
+        <h1 className="text-4xl md:text-5xl font-medium uppercase">
           Our team of experts offers
         </h1>
-        <div className="flex justify-center items-start">
-          <div className="flex flex-col w-1/3 m-4">
+        <div className="flex flex-col md:flex-row justify-center items-start">
+          <div className="flex flex-col md:w-1/3 md:m-4 my-4 md:my-0">
             <img src="/images/example.png" alt="" className="w-full" />
-            <h3 className="text-3xl font-bold">Website Design</h3>
+            <h3 className="text-3xl font-bold my-2">Website Design</h3>
             <p className="text-2xl font-normal">
               Custom website design for e-commerce and corporate websites.
             </p>
           </div>
-          <div className="flex flex-col w-1/3 m-4">
+          <div className="flex flex-col md:w-1/3 my-4 md:my-0 md:m-4">
             <img src="/images/example.png" alt="" className="w-full" />
-            <h3 className="text-3xl font-bold">Optimization</h3>
+            <h3 className="text-3xl font-bold my-2">Optimization</h3>
             <p className="text-2xl font-normal">
               Website optimization for brand awareness and lead generation.
             </p>
           </div>
-          <div className="flex flex-col w-1/3 m-4">
+          <div className="flex flex-col md:w-1/3 my-4 md:my-0 md:m-4">
             <img src="/images/example.png" alt="" className="w-full" />
-            <h3 className="text-3xl font-bold">E-commerce Solutions</h3>
+            <h3 className="text-3xl font-bold my-2">E-commerce Solutions</h3>
             <p className="text-2xl font-normal">
               E-commerce solutions, including shopping cart integration and
               payment gateways.
@@ -56,11 +57,12 @@ const WDD = () => {
         </div>
       </section>
       <Divider />
-      <h1 className="max-w-[70vw] mx-auto text-5xl font-medium uppercase text-center">
+      <h1 className="max-w-[90vw] md:max-w-[70vw] mx-auto text-4xl md:text-5xl font-medium uppercase text-center">
         Partner with Vertical Click’s USA to unlock the full potential of your
         website and elevate your online presence.
       </h1>
       <Divider />
+      <Footer />
     </main>
   );
 };
