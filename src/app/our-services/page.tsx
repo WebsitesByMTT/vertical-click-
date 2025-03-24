@@ -11,10 +11,10 @@ const OurServicesPage = () => {
     <React.Fragment>
       <Header />
       {/* <Services /> */}
-      <Services1/>
-      <Highlights />
-      <Divider/>
-      <Footer/>
+      <Services1 />
+      {/* <Highlights /> */}
+      <Divider />
+      <Footer />
     </React.Fragment>
   );
 };
