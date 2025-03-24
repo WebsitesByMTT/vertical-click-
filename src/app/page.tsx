@@ -40,7 +40,7 @@ export default function Home() {
               // className="w-full"
             />
           </div>
-          <div className="w-1/2 flex flex-col justify-between items-start bg-amber-50 h-full">
+          <div className="w-1/2 flex flex-col justify-between items-start h-full">
             <h1 className="text-5xl font-bold uppercase bg-[#F05186] rounded-md text-white inline-block px-4 py-2">
               Digital
             </h1>
