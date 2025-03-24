@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import React from "react";
 interface ImageBoxProps {
   title: string;
@@ -15,12 +16,15 @@ const ImageBox: React.FC<ImageBoxProps> = ({
   imageOrientation,
 }) => {
   return (
-    <section className="max-w-[70vw] mx-auto flex items-center justify-between">
-      {imageOrientation === "left" && (
-        <img src={image} alt={title} width={500} className="mr-8" />
+    <section
+      className={cn(
+        "max-w-[90vw] md:max-w-[70vw] mx-auto flex flex-col items-center justify-between",
+        imageOrientation === "right" ? "md:flex-row-reverse" : "md:flex-row"
       )}
+    >
+      <img src={image} alt={title} width={500} className="mr-8" />
       <div>
-        <h1 className="text-5xl font-medium uppercase">{title}</h1>
+        <h1 className="mt-4 md:mt-0 text-5xl font-medium uppercase">{title}</h1>
         {description && (
           <p className="text-2xl font-normal mt-4 max-w-2xl">{description}</p>
         )}
@@ -32,9 +36,6 @@ const ImageBox: React.FC<ImageBoxProps> = ({
           </ul>
         )}
       </div>
-      {imageOrientation === "right" && (
-        <img src={image} alt={title} width={500} className="ml-8" />
-      )}
     </section>
   );
 };

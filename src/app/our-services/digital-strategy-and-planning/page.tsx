@@ -4,6 +4,7 @@ import IconBox from "@/components/IconBox";
 import ImageBox from "@/components/ImageBox";
 import Header from "@/components/Header";
 import Divider from "@/components/Divider";
+import Footer from "@/components/footer/Footer";
 
 const DSAP = () => {
   return (
@@ -40,12 +41,14 @@ const DSAP = () => {
       />
       <Divider />
       {/* Our Team of Experts */}
-      <section className="max-w-[70vw] mx-auto">
-        <h1 className="text-5xl font-medium uppercase">Our Team of Experts</h1>
-        <h3 className="text-2xl font-normal">
+      <section className="max-w-[90vw] md:max-w-[70vw] mx-auto">
+        <h1 className="text-4xl md:text-5xl font-medium uppercase">
+          Our Team of Experts
+        </h1>
+        <h3 className="text-xl md:text-2xl font-normal">
           Our young, creative, and highly experienced teams specialize in:
         </h3>
-        <div className="flex justify-center gap-6 mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-6 mt-10">
           {/* icon box */}
           <IconBox
             title="Social, design, and digital planning"
@@ -107,11 +110,12 @@ const DSAP = () => {
         </div>
       </section>
       <Divider />
-      <h1 className="max-w-[70vw] mx-auto text-5xl font-medium uppercase text-center">
+      <h1 className="max-w-[90vw] md:max-w-[70vw] mx-auto text-3xl md:text-5xl font-medium uppercase text-center">
         Partnering with Vertical Click’s Euless, Texas has transformed our
         business approach and significantly increased our ROI.
       </h1>
       <Divider />
+      <Footer />
     </main>
   );
 };

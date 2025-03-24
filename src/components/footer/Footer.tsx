@@ -64,6 +64,7 @@ function Footer() {
         {footerItems?.map((item, index) => {
           return (
             <div
+              key={index}
               className={`px-1 md:px-4 flex-1 text-xs md:text-2xl font-thin md:font-normal text-gray-600 border-gray-300 text-center  ${
                 index == footerItems.length - 1 ? "" : " border-r md:border-r-2"
               }`}
