@@ -11,19 +11,19 @@ import React from "react";
 const WDD = () => {
   const ote = [
     {
-      image: "/images/example.png",
+      image: "/images/team-expert-1.png",
       title: "Website Design",
       description:
         "Custom website design for e-commerce and corporate websites.",
     },
     {
-      image: "/images/example.png",
+      image: "/images/team-expert-2.png",
       title: "Optimization",
       description:
         "Website optimization for brand awareness and lead generation.",
     },
     {
-      image: "/images/example.png",
+      image: "/images/team-expert-3.png",
       title: "Maintenance and Support",
       description:
         "E-commerce solutions, including shopping cart integration and payment gateways.",
@@ -57,7 +57,7 @@ const WDD = () => {
           <div className="flex flex-col items-start justify-center md:flex-row">
             {ote.map((item, index) => (
               <div key={index} className="my-4 flex flex-col md:m-4 md:my-0">
-                <img src={item.image} alt={item.title} className="w-full" />
+                <img src={item.image} alt={item.title} className="h-60 w-60" />
                 <h3 className="my-2 text-2xl font-bold lg:text-3xl">
                   {item.title}
                 </h3>
@@ -66,28 +66,6 @@ const WDD = () => {
                 </p>
               </div>
             ))}
-            {/* <div className="my-4 flex flex-col md:m-4 md:my-0 md:w-1/3">
-              <img src="/images/example.png" alt="" className="w-full" />
-              <h3 className="my-2 text-3xl font-bold">Website Design</h3>
-              <p className="text-2xl font-normal">
-                Custom website design for e-commerce and corporate websites.
-              </p>
-            </div>
-            <div className="my-4 flex flex-col md:m-4 md:my-0 md:w-1/3">
-              <img src="/images/example.png" alt="" className="w-full" />
-              <h3 className="my-2 text-3xl font-bold">Optimization</h3>
-              <p className="text-2xl font-normal">
-                Website optimization for brand awareness and lead generation.
-              </p>
-            </div>
-            <div className="my-4 flex flex-col md:m-4 md:my-0 md:w-1/3">
-              <img src="/images/example.png" alt="" className="w-full" />
-              <h3 className="my-2 text-3xl font-bold">E-commerce Solutions</h3>
-              <p className="text-2xl font-normal">
-                E-commerce solutions, including shopping cart integration and
-                payment gateways.
-              </p>
-            </div> */}
           </div>
         </section>
         <Divider />

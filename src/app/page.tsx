@@ -16,7 +16,7 @@ export default function Home() {
         "Vertical Clicks, a leading digital marketing agency in Euless, Texas combines creativity and technical expertise to develop and execute successful digital strategies for clients.",
       button: "About Us",
       link: "/about-us",
-      image: "/images/example.png",
+      image: "/images/we-provide-1.png",
     },
     {
       purpleTitle: "As well as many more digital innovations",
@@ -26,7 +26,7 @@ export default function Home() {
         "We design immersive digital experiences that captivate audiences and achieve desired outcomes, leveraging targeted performance marketing to elevate your brand's visibility and appeal.",
       button: "Our Services",
       link: "/our-services",
-      image: "/images/example.png",
+      image: "/images/we-provide-2.png",
     },
     {
       pinkBgTitle: "Comprehensive Digital Services",
@@ -34,7 +34,7 @@ export default function Home() {
       subtext: "Where Data, Metrics, and Analytics Converge",
       description:
         "In a world where digital connections are omnipresent, we recognize the importance of a unified approach to digital communications. Our solution integrates creative vision, technical prowess, and a diverse array of digital marketing disciplines.",
-      image: "/images/example.png",
+      image: "/images/we-provide-3.png",
     },
   ];
   const ourServices = [
@@ -282,9 +282,13 @@ export default function Home() {
         <section className="flex">
           {/* content */}
           <div className="pr-10">
-            <div className="text-3xl font-normal">Multiple Award Winning</div>
-            <div className="text-5xl font-bold">Digital Marketing Agency</div>
-            <p className="my-10 text-xl font-normal">
+            <div className="text-2xl font-normal xl:text-3xl">
+              Multiple Award Winning
+            </div>
+            <div className="text-4xl font-bold xl:text-5xl">
+              Digital Marketing Agency
+            </div>
+            <p className="my-10 text-lg font-normal xl:text-xl">
               Vertical Click’s dedication to excellence in digital marketing has
               earned us a reputation for outstanding achievement, as evidenced
               by our impressive array of awards and client testimonials.
@@ -301,7 +305,7 @@ export default function Home() {
             alt="happy client"
             height={500}
             width={500}
-            className="hidden w-100 lg:block 2xl:w-150"
+            className="hidden w-90 lg:block xl:w-100 2xl:w-150"
           />
         </section>
         <Divider />
