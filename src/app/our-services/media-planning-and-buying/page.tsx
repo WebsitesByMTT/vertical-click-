@@ -3,7 +3,14 @@ import Divider from "@/components/Divider";
 import Footer from "@/components/footer/Footer";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Media Planning & Buying Services | Maximize Ad Reach & ROI",
+  description:
+    "Vertical Click offers expert media planning & buying services to optimize ad placements, maximize reach, and boost ROI across digital & traditional channels.",
+};
 
 const MPB = () => {
   return (

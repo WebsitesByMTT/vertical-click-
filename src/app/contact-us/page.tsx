@@ -5,6 +5,13 @@ import { MessageSquare, MapPin, Phone } from "lucide-react";
 import Footer from "@/components/footer/Footer";
 import Link from "next/link";
 import Container from "@/components/Container";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact Us | Get in Touch with Our Marketing Experts.",
+  description:
+    "Have questions or need digital marketing help? Contact Vertical Click for expert SEO, PPC, and social media strategies to grow your business today!",
+};
 
 // Define types for form data
 interface FormData {

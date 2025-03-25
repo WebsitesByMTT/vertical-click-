@@ -4,7 +4,14 @@ import Footer from "@/components/footer/Footer";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import ImageBox from "@/components/ImageBox";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Video, GIF & Content Marketing Services | Engage & Convert",
+  description:
+    "Vertical Click creates high-impact videos, GIFs & content marketing strategies to boost engagement, brand awareness & drive conversions. Start growing!",
+};
 
 const VGCM = () => {
   const videoCardItems = [
@@ -76,24 +83,24 @@ const VGCM = () => {
                 >
                   <div>
                     <h3
-                      className=" text-xl md:text-2xl xl:text-3xl font-semibold"
+                      className="text-xl font-semibold md:text-2xl xl:text-3xl"
                       dangerouslySetInnerHTML={{
                         __html: item.title.toUpperCase(),
                       }}
                     />
                     <p
-                      className=" pt-1 md:pt-4 font-sans text-md md:text-lg xl:text-xl text-gray-800"
+                      className="text-md pt-1 font-sans text-gray-800 md:pt-4 md:text-lg xl:text-xl"
                       dangerouslySetInnerHTML={{ __html: item.msg }}
                     />
                   </div>
-                  
-                  <div className="mx-auto ">
-                  <img
-                        src={item.img}
-                        width={100}
-                        alt=""
-                        className="ml-auto w-full md:w-full"
-                      />
+
+                  <div className="mx-auto">
+                    <img
+                      src={item.img}
+                      width={100}
+                      alt=""
+                      className="ml-auto w-full md:w-full"
+                    />
                   </div>
                 </div>
               );

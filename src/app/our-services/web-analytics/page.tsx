@@ -5,6 +5,13 @@ import Footer from "@/components/footer/Footer";
 import Divider from "@/components/Divider";
 import TextBox from "@/components/TextBox";
 import Container from "@/components/Container";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Web Analytics Services | Data-Driven Insights for Better Performance",
+  description:
+    "Unlock growth with Vertical Click’s web analytics services. Track user behavior, measure performance & optimize marketing strategies with real-time data.",
+};
 
 function page() {
   const analyticsItems = [
@@ -58,10 +65,13 @@ function page() {
         <section className="mx-auto my-0 sm:my-4">
           <div className="py-0 sm:py-8">
             <h3 className="pb-4 text-center text-3xl sm:text-4xl">
-            EXPERT ANALYSIS AND INSIGHTS
+              EXPERT ANALYSIS AND INSIGHTS
             </h3>
             <p className="sm:text-md text-center text-sm md:text-lg">
-            Our business and media teams are experts in measuring, collecting, reporting, and analyzing web data, usage, and <br/> analytics. This expertise enables us to optimize web usage and inform future strategies.
+              Our business and media teams are experts in measuring, collecting,
+              reporting, and analyzing web data, usage, and <br /> analytics.
+              This expertise enables us to optimize web usage and inform future
+              strategies.
             </p>
 
             <div className="mx-auto grid auto-rows-fr grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">

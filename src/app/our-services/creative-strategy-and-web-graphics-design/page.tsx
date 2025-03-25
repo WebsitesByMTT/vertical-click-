@@ -5,7 +5,14 @@ import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import ImageBox from "@/components/ImageBox";
 import Highlights from "@/components/key-highlights/Highlights";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Creative Strategy & Web Graphics Design | Elevate Your Brand",
+  description:
+    "Vertical Click delivers innovative creative strategy & web graphics design, crafting visually stunning and conversion-driven designs to grow your brand.",
+};
 
 const CSAWGD = () => {
   return (

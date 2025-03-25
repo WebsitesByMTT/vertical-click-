@@ -5,8 +5,15 @@ import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import ImageBox from "@/components/ImageBox";
 import TextBox from "@/components/TextBox";
+import { Metadata } from "next";
 import { title } from "process";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Website Design & Development | Custom Websites for Business Growth.",
+  description:
+    "Vertical Click offers professional website design & development services, creating responsive, SEO-friendly sites to enhance user experience & conversions.",
+};
 
 const WDD = () => {
   const ote = [

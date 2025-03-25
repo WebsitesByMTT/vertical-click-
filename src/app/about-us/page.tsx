@@ -4,7 +4,14 @@ import Footer from "@/components/footer/Footer";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import ImageBox from "@/components/ImageBox";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "About Us | Vertical Click - Expert Digital Marketing & SEO Solutions",
+  description:
+    "Discover Vertical Click, a results-driven digital marketing agency specializing in SEO, PPC, social media, and branding to grow your business online.",
+};
 
 const AboutUs = () => {
   const wwb = [
