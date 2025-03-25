@@ -15,27 +15,27 @@ function Footer() {
   ];
 
   return (
-    <div className="mx-auto md:px-8 md:py-8 w-[100vw] md:w-[90vw] border-gray-300">
-      <div className="flex flex-col justify-center mx-auto gap-4 md:gap-6 md:my-2 w-auto md:py-2 md:pt-2 md:pb-8 ">
-        <div className="flex justify-center flex-col gap-1">
-          <span className="bg-[#F05186] text-2xl font-medium md:text-6xl incline-block text-white text-center py-1  mx-auto px-2 md:px-4 rounded-sm">
+    <div className="mx-auto w-[100vw] border-gray-300 md:px-8 md:py-8">
+      <div className="mx-auto flex w-auto flex-col justify-center gap-4 md:my-2 md:gap-6 md:py-2 md:pt-2 md:pb-8">
+        <div className="flex flex-col justify-center gap-1">
+          <span className="incline-block mx-auto rounded-sm bg-[#F05186] px-2 py-1 text-center text-2xl font-medium text-white md:px-4 md:text-6xl">
             GOT AN IDEA?
           </span>
-          <span className="text-lg md:text-4xl text-center  text-violet-600">
+          <span className="text-center text-lg text-violet-600 md:text-4xl">
             Let's Work On it
           </span>
         </div>
-        <div className="flex justify-center items-center gap-2">
+        <div className="flex items-center justify-center gap-2">
           <input
             type="text"
-            className="border border-gray-400 py-1 md:py-2 px-2 md:px-6 rounded-sm md:w-[30%]"
+            className="rounded-sm border border-gray-400 px-2 py-1 md:w-[30%] md:px-6 md:py-2"
             placeholder="Enter your email"
           />
-          <button className="text-white md:text-md bg-violet-400 px-2  md:px-6 py-1 md:py-2 rounded-sm ">
+          <button className="md:text-md rounded-sm bg-violet-400 px-2 py-1 text-white md:px-6 md:py-2">
             search
           </button>
         </div>
-        <div className="flex justify-center items-center gap-1 pb-4">
+        <div className="flex items-center justify-center gap-1 pb-4">
           <Image
             src={FacebookIcon}
             height={100}
@@ -60,13 +60,13 @@ function Footer() {
         </div>
       </div>
 
-      <div className="flex justify-between items-center ">
+      <div className="flex items-center justify-between">
         {footerItems?.map((item, index) => {
           return (
             <div
               key={index}
-              className={`px-1 md:px-4 flex-1 text-xs md:text-2xl font-thin md:font-normal text-gray-600 border-gray-300 text-center  ${
-                index == footerItems.length - 1 ? "" : " border-r md:border-r-2"
+              className={`flex-1 border-gray-300 px-1 text-center text-xs font-thin text-gray-600 md:px-4 md:text-2xl md:font-normal ${
+                index == footerItems.length - 1 ? "" : "border-r md:border-r-2"
               }`}
             >
               {item}
