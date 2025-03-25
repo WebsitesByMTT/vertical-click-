@@ -14,18 +14,18 @@ const HeroSection = ({
   description,
 }: HeroSectionProps) => {
   return (
-    <section className="max-w-[90vw] md:max-w-[70vw] h-[60vh] mx-auto flex flex-col justify-center items-center">
-      <h1 className="text-4xl md:text-5xl font-medium uppercase underline text-center">
+    <section className="mx-auto flex h-[60vh] w-full flex-col items-center justify-center">
+      <h1 className="text-center text-4xl font-medium uppercase underline xl:text-5xl">
         {title}
       </h1>
-      <h1 className="text-3xl md:text-7xl font-bold uppercase text-center mt-4 md:mt-10">
+      <h1 className="mt-4 text-center text-3xl font-bold uppercase md:mt-10 md:text-5xl xl:text-7xl">
         {subtitle}
       </h1>
-      <h1 className="text-3xl md:text-7xl font-bold uppercase text-center bg-[#F05186] text-white px-2 rounded-md mb-4 md:mb-10">
+      <h1 className="mb-4 rounded-md bg-[#F05186] px-2 text-center text-3xl font-bold text-white uppercase md:mb-10 md:text-5xl xl:text-7xl">
         {pinkBgText}
       </h1>
       {description && (
-        <p className=" text-sm md:text-lg font-normal text-center max-w-4xl">
+        <p className="max-w-4xl text-center text-sm font-normal md:text-lg">
           {description}
         </p>
       )}

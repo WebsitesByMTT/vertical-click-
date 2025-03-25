@@ -1,9 +1,16 @@
+"use client";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
+import Drawer from "./Drawer";
 
 const Header = () => {
+  const [show, setShow] = useState(false);
+  const handleShow = () => {
+    setShow((prev) => !prev);
+  };
+
   return (
-    <nav className="flex justify-between items-center px-8 py-4 bg-white shadow-md">
+    <nav className="flex items-center justify-between overflow-hidden bg-white px-8 py-4 shadow-md">
       {/* logo from public */}
       <Link href="/" className="flex items-center">
         <img src="/logo.svg" alt="logo" className="w-12" />
@@ -16,6 +23,7 @@ const Header = () => {
         strokeWidth={1.5}
         stroke="currentColor"
         className="size-6 lg:hidden"
+        onClick={handleShow}
       >
         <path
           strokeLinecap="round"
@@ -23,18 +31,40 @@ const Header = () => {
           d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
         />
       </svg>
+      <Drawer show={show} setShow={handleShow} />
 
-      <ul className="hidden lg:flex space-x-4">
+      <ul className="hidden space-x-4 lg:flex">
         <li>
-          <a href="/" className="hover:text-[#F05186]">
+          <Link
+            href="/"
+            className="text-lg font-normal hover:text-[#F05186] xl:text-xl"
+          >
             Home
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/about-us">About</a>
+          <Link
+            href="/about-us"
+            className="text-lg font-normal hover:text-[#F05186] xl:text-xl"
+          >
+            About
+          </Link>
         </li>
         <li>
-          <a href="/our-services">Our Services</a>
+          <Link
+            href="/our-services"
+            className="text-lg font-normal hover:text-[#F05186] xl:text-xl"
+          >
+            Our Services
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/contact-us"
+            className="text-lg font-normal hover:text-[#F05186] xl:text-xl"
+          >
+            Contact Us
+          </Link>
         </li>
       </ul>
     </nav>

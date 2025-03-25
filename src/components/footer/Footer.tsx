@@ -6,7 +6,7 @@ import TweetIcon from "@/assets/images/tweetIcon.png";
 
 function Footer() {
   const footerItems = [
-    "Explor",
+    "Explore",
     "Our Blogs",
     "Our Work",
     "Website Seo Audit",
@@ -14,60 +14,53 @@ function Footer() {
     "Work with us",
   ];
 
+  const SocialIcons = [FacebookIcon, InstaIcon, TweetIcon];
+
   return (
-    <div className="mx-auto md:px-8 md:py-8 w-[100vw] md:w-[90vw] border-gray-300">
-      <div className="flex flex-col justify-center mx-auto gap-4 md:gap-6 md:my-2 w-auto md:py-2 md:pt-2 md:pb-8 ">
-        <div className="flex justify-center flex-col gap-1">
-          <span className="bg-[#F05186] text-2xl font-medium md:text-6xl incline-block text-white text-center py-1  mx-auto px-2 md:px-4 rounded-sm">
+    <div className="mx-auto overflow-hidden border-gray-300 py-2 md:px-8 md:py-8">
+      <div className="mx-auto flex w-auto flex-col justify-center gap-4 md:my-2 md:gap-6 md:py-2 md:pt-2 md:pb-8">
+        <div className="flex flex-col justify-center gap-1">
+          <span className="incline-block mx-auto rounded-sm bg-[#F05186] px-2 text-center text-2xl font-medium text-white md:px-4 md:text-3xl lg:text-4xl">
             GOT AN IDEA?
           </span>
-          <span className="text-lg md:text-4xl text-center  text-violet-600">
+          <span className="pt-1 text-center text-lg font-thin text-violet-600 md:pt-2 md:text-2xl lg:text-3xl">
             Let's Work On it
           </span>
         </div>
-        <div className="flex justify-center items-center gap-2">
+        <div className="flex items-center justify-center gap-2">
           <input
             type="text"
-            className="border border-gray-400 py-1 md:py-2 px-2 md:px-6 rounded-sm md:w-[30%]"
+            className="w-[45%] rounded-sm border border-gray-400 px-2 py-1 md:w-[50%] md:px-6 md:py-2 lg:w-[30%]"
             placeholder="Enter your email"
           />
-          <button className="text-white md:text-md bg-violet-400 px-2  md:px-6 py-1 md:py-2 rounded-sm ">
+          <button className="md:text-md rounded-sm bg-violet-400 px-4 py-1 text-white md:px-6 md:py-2">
             search
           </button>
         </div>
-        <div className="flex justify-center items-center gap-1 pb-4">
-          <Image
-            src={FacebookIcon}
-            height={100}
-            width={100}
-            alt="Facebook"
-            className="w-8 md:w-12"
-          ></Image>
-          <Image
-            src={InstaIcon}
-            height={100}
-            width={100}
-            alt="Facebook"
-            className="w-8 md:w-12"
-          ></Image>
-          <Image
-            src={TweetIcon}
-            height={100}
-            width={100}
-            alt="Facebook"
-            className="w-8 md:w-12"
-          ></Image>
+        <div className="flex items-center justify-center gap-1 pb-4">
+          {SocialIcons.map((icon, index) => {
+            return (
+              <Image
+                key={index}
+                src={icon}
+                height={100}
+                width={100}
+                alt="Facebook"
+                className="w-8 md:w-10 lg:w-12"
+              ></Image>
+            );
+          })}
         </div>
       </div>
 
-      <div className="flex justify-between items-center ">
+      <div className="flex flex-wrap items-center justify-between">
         {footerItems?.map((item, index) => {
           return (
             <div
               key={index}
-              className={`px-1 md:px-4 flex-1 text-xs md:text-2xl font-thin md:font-normal text-gray-600 border-gray-300 text-center  ${
-                index == footerItems.length - 1 ? "" : " border-r md:border-r-2"
-              }`}
+              className={`md:text-md border-gray-300 px-1 text-center text-xs font-thin text-gray-600 sm:text-sm md:px-4 md:font-normal lg:text-lg xl:text-xl ${
+                index == footerItems.length - 1 ? "" : "border-r md:border-r-2"
+              } ${index == 3 ? "flex-2" : "flex-1"}`}
             >
               {item}
             </div>
