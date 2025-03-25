@@ -38,7 +38,7 @@ const ImageBox: React.FC<ImageBoxProps> = ({
           </p>
         )}
         {bulletPoints && bulletPoints.length > 0 && (
-          <ul className="mt-4 list-disc space-y-2 pl-6 text-lg md:text-xl">
+          <ul className="mt-4 list-disc space-y-2 pl-6 text-lg md:text-sm lg:text-lg xl:text-xl">
             {bulletPoints.map((point, index) => (
               <li key={index}>{point}</li>
             ))}
