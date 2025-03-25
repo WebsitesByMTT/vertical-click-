@@ -10,7 +10,7 @@ const Header = () => {
  }
 
   return (
-    <nav className="flex justify-between items-center px-8 py-4 bg-white shadow-md">
+    <nav className=" flex justify-between items-center px-8 py-4 bg-white shadow-md overflow-hidden">
       {/* logo from public */}
       <Link href="/" className="flex items-center">
         <img src="/logo.svg" alt="logo" className="w-12" />
@@ -36,15 +36,18 @@ const Header = () => {
      
       <ul className="hidden lg:flex space-x-4">
         <li>
-          <a href="/" className="hover:text-[#F05186]">
+          <Link href="/" className="hover:text-[#F05186]">
             Home
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/about-us">About</a>
+          <Link href="/about-us">About</Link>
         </li>
         <li>
-          <a href="/our-services">Our Services</a>
+          <Link href="/our-services">Our Services</Link>
+        </li>
+        <li>
+          <Link href="/contact-us">Contact Us</Link>
         </li>
       </ul>
     </nav>

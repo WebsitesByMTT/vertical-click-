@@ -11,93 +11,112 @@ function page() {
       title: "Personalized Communication",
       subtitle: "Customization",
       msg: "Personalized and branded communication that </br> aligns with your goals",
-      img: "/images/video-gif/img1.png",
+      img: "/images/email-marketing/email-marketing1.png",
     },
     {
       title: "Visually Appealing Design",
       subtitle: "Design",
       msg: "Design that captures attention",
-      img: "/images/video-gif/img2.png",
+      img: "/images/email-marketing/email-marketing2.png",
     },
     {
       title: "Targeted Audience Selection",
       subtitle: "Targeting",
       msg: "Targeted audience selection for maximum <br/> conversions and ROI",
-      img: "/images/video-gif/img3.png",
+      img: "/images/email-marketing/email-marketing3.png",
     },
     {
       title: "Streamlined Delivery Process",
       subtitle: "Security",
       msg: "Secure and easy sending",
-      img: "/images/video-gif/img4.png",
+      img: "/images/email-marketing/email-marketing4.png",
+    },
+    {
+      title: "Crafting Compelling Subject Lines",
+      subtitle: "Crafting",
+      msg: "Crafting compelling subject lines that avoid spam <br/>filters",
+      img: "/images/email-marketing/email-marketing5.png",
+    },
+    {
+      title: "Testing and Optimization",
+      subtitle: "Testing",
+      msg: "Testing and optimization to ensure seamless delivery",
+      img: "/images/email-marketing/email-marketing6.png",
     },
   ];
 
   return (
-    <main>
+    <React.Fragment>
       <Header />
       <Container>
         <HeroSection
-          title="Digital Strategy & Planning"
-          subtitle="Unlocking Successful Campaigns with"
-          pinkBgText="Vertical Click’s Euless, Texas"
-          description="A well-crafted strategy is the foundation of a successful campaign. At Vertical Click’s Euless, Texas, our team of experts leverages years of experience to develop and execute tailored strategies that drive real results for your business."
+          title="Email Marketing"
+          subtitle="Unlock the Power of Email Marketing"
+          pinkBgText="Marketing with Vertical Click’s USA"
+          description="A well-crafted subject line and visually appealing emailer can make all the difference in driving clicks and conversions. Email marketing offers a unique set of benefits that can help you build strong relationships with customers, reach new leads, and maintain connections with past customers."
         />
-        <section className=" my-4">
-          <div className="py-8 bg-[#FFFBFA]">
-            <h3 className="text-center text-4xl pb-4">OUR SERVICES INCLUDE</h3>
-            <p className="text-center">
+        <section className="mx-auto my-[5%] w-[90vw] overflow-hidden lg:w-[70vw]">
+          <div className="bg-[#FFFBFA] py-8">
+            <h3 className="pb-4 text-center text-3xl sm:text-4xl">
+              OUR SERVICES INCLUDE
+            </h3>
+            <p className="text-center text-sm leading-relaxed sm:text-base">
               At Vertical Click’s USA, our team of experienced marketers and
-              designers can help you create effective email <br /> marketing
-              campaigns that resonate with your audience.
+              designers can help you create effective email{" "}
+              <br className="hidden sm:block" />
+              marketing campaigns that resonate with your audience.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto">
-              {emailItems.map((item, index) => {
-                return (
-                  <div
-                    key={index}
-                    className="max-w-xl pt-4 px-4 relative mt-4 bg-[#feecf0] gap-2 flex flex-col justify-between rounded-md"
-                  >
-                    <div>
-                      <h3 className="text-2xl">{item.title.toUpperCase()}</h3>
-                      <p
-                        className="translate-y-6 text-sm text-gray-500 font-sans"
-                        dangerouslySetInnerHTML={{ __html: item.msg }}
+
+            <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 2xl:grid-cols-3">
+              {emailItems.map((item, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col justify-between gap-4 rounded-lg bg-[#feecf0] px-4 pt-2 shadow-md"
+                >
+                  <div>
+                    <h3 className="text-xl font-semibold sm:text-lg">
+                      {item.title.toUpperCase()}
+                    </h3>
+                    <p
+                      className="mt-4 font-sans text-sm text-gray-500"
+                      dangerouslySetInnerHTML={{ __html: item.msg }}
+                    />
+                  </div>
+
+                  <div className="mt-4 flex items-end justify-between gap-4">
+                    <div className="mb-8 ml-4 flex flex-col gap-2 rounded-lg bg-gray-100 p-3 shadow-sm">
+                      <h4 className="text-xs font-semibold text-purple-600 sm:text-sm">
+                        {item.subtitle}
+                      </h4>
+                      <div className="flex gap-2">
+                        <div className="rounded-lg bg-gray-200 px-6 py-2"></div>
+                        <div className="rounded-lg bg-gray-200 px-6 py-2"></div>
+                      </div>
+                    </div>
+
+                    <div className="flex-shrink-0">
+                      <img
+                        src={item.img}
+                        alt="Service Image"
+                        className="max-w-[40vw] sm:max-w-[25vw] md:max-w-[10vw]"
                       />
                     </div>
-                    <div className="flex justify-around items-end gap-6">
-                      <div className="flex flex-col gap-1 mb-2 p-2 bg-gray-100 shadow-md rounded-md">
-                        <h4 className="text-purple-600 font-semibold text-sm">
-                          {item.subtitle}
-                        </h4>
-                        <div className="flex gap-2 ">
-                          <div className="px-8 py-3 bg-gray-200 rounded-xl"></div>
-                          <div className="px-8 py-3 bg-gray-200 rounded-xl"></div>
-                        </div>
-                      </div>
-                      <div>
-                        <img
-                          src={item.img}
-                          //   height={100}
-                          alt=""
-                          className=" md:size-50"
-                        />
-                      </div>
-                    </div>
                   </div>
-                );
-              })}
+                </div>
+              ))}
             </div>
           </div>
+
+          <h1 className="mx-auto mt-8 max-w-[90vw] text-center text-2xl leading-tight font-medium uppercase sm:text-4xl md:max-w-[70vw] md:text-5xl">
+            Partnering with Vertical Click’s Euless, Texas has transformed our
+            business approach and significantly increased our ROI.
+          </h1>
         </section>
-        <h1 className=" text-3xl md:text-5xl mt-8 font-medium uppercase text-center">
-          Partnering with Vertical Click’s Euless, Texas has transformed our
-          business approach and significantly increased our ROI.
-        </h1>
         <Divider />
       </Container>
+
       <Footer />
-    </main>
+    </React.Fragment>
   );
 }
 

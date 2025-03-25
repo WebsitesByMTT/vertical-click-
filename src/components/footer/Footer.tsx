@@ -15,7 +15,7 @@ function Footer() {
   ];
 
   return (
-    <div className="mx-auto w-[100vw] border-gray-300 md:px-8 md:py-8">
+    <div className="mx-auto max-w-[100vw] overflow-hidden border-gray-300 py-2 md:max-w-[90vw] md:px-8 md:py-8">
       <div className="mx-auto flex w-auto flex-col justify-center gap-4 md:my-2 md:gap-6 md:py-2 md:pt-2 md:pb-8">
         <div className="flex flex-col justify-center gap-1">
           <span className="incline-block mx-auto rounded-sm bg-[#F05186] px-2 py-1 text-center text-2xl font-medium text-white md:px-4 md:text-6xl">
@@ -60,14 +60,14 @@ function Footer() {
         </div>
       </div>
 
-      <div className="flex items-center justify-between">
+      <div className="flex flex-wrap items-center justify-between">
         {footerItems?.map((item, index) => {
           return (
             <div
               key={index}
-              className={`flex-1 border-gray-300 px-1 text-center text-xs font-thin text-gray-600 md:px-4 md:text-2xl md:font-normal ${
+              className={`border-gray-300 px-1 text-center text-xs font-thin text-gray-600 md:px-4 md:text-2xl md:font-normal ${
                 index == footerItems.length - 1 ? "" : "border-r md:border-r-2"
-              }`}
+              } ${index == 3 ? "flex-2" : "flex-1"}`}
             >
               {item}
             </div>
