@@ -36,15 +36,15 @@ function Highlights() {
   ];
 
   return (
-    <div className="px-4 w-auto md:w-[70vw] mx-auto ">
-      <h2 className="text-lg font-medium md:text-5xl py-4 pb-8 mx-auto">
+    <div className="mx-auto w-full px-4">
+      <h2 className="mx-auto py-4 pb-8 text-lg font-medium md:text-5xl">
         KEY HIGHLIGHTS
       </h2>
-      <div className=" grid grid-cols-2 md:grid-cols-3 gap-4 mx-auto">
+      <div className="mx-auto grid grid-cols-2 gap-4 md:grid-cols-3">
         {hitems.map((item, index) => (
           <div
             key={index}
-            className="px-6 md:px-10 py-2 md:py-10 rounded-md bg-violet-100 "
+            className="rounded-md bg-violet-100 px-6 py-2 md:px-10 md:py-10"
           >
             <Image
               src={item.icon}
@@ -53,7 +53,7 @@ function Highlights() {
               height={100}
               className="size-6 md:size-12"
             />
-            <span className="text-xs md:text-2xl font-normal mt-4">
+            <span className="mt-4 text-xs font-normal md:text-2xl">
               {item.msg}
             </span>
           </div>

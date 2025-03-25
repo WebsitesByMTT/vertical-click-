@@ -6,10 +6,15 @@ interface TextBoxProps {
 }
 
 const TextBox = ({ title, description }: TextBoxProps) => {
+  //max-w-[90vw] md:max-w-[70vw]
   return (
-    <section className="max-w-[90vw] md:max-w-[70vw] mx-auto flex flex-col md:flex-row justify-between space-x-32 mt-6 md:mt-0">
-      <h1 className="text-4xl md:text-5xl font-medium uppercase">{title}</h1>
-      <p className="text-xl md:text-2xl font-normal max-w-xl">{description}</p>
+    <section className="mx-auto mt-6 flex flex-col justify-between space-x-11 py-4 sm:py-0 md:mt-0 md:flex-row lg:space-x-32">
+      <h1 className="py-1 text-xl font-medium uppercase sm:py-0 sm:text-xl md:text-2xl lg:text-4xl">
+        {title}
+      </h1>
+      <p className="max-w-xl font-normal md:text-lg lg:text-2xl">
+        {description}
+      </p>
     </section>
   );
 };
