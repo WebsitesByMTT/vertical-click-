@@ -63,7 +63,7 @@ const WDD = () => {
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="w-full rounded-md md:h-60"
+                  className="w-full rounded-md md:h-60 lg:h-max"
                 />
                 <h3 className="my-2 text-2xl font-bold lg:text-3xl">
                   {item.title}
