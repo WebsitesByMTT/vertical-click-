@@ -53,10 +53,10 @@ function page() {
         pinkBgText="Vertical Click’s Euless, Texas"
         description="A well-crafted strategy is the foundation of a successful campaign. At Vertical Click’s Euless, Texas, our team of experts leverages years of experience to develop and execute tailored strategies that drive real results for your business."
       />
-      <section className="max-w-[90vw] md:w-[70vw] mx-auto  my-4">
-        <div className="py-8 ">
-          <h3 className="text-center text-4xl pb-4">OUR SERVICES INCLUDE</h3>
-          <p className="text-center">
+      <section className="max-w-[90vw] md:w-[70vw] mx-auto my-0 sm:my-4">
+        <div className="py-0 sm:py-8 ">
+          <h3 className="text-center text-3xl sm:text-4xl pb-4">OUR SERVICES INCLUDE</h3>
+          <p className="text-center text-sm sm:text-md md:text-lg">
             At Vertical Click’s USA, our team of experienced marketers and
             designers can help you create effective email <br /> marketing
             campaigns that resonate with your audience.
@@ -95,7 +95,7 @@ function page() {
           </div>
         </div>
         <Divider />
-        <div className="mt-8 flex flex-col justify-between items-center gap-4">
+        <div className="mt-8 flex flex-col justify-between items-center gap-4 ">
           {analyticBottomContent.map((item, index) => {
             return (
               <TextBox key={index} title={item.title} description={item.msg} />
