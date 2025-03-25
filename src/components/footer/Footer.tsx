@@ -20,7 +20,7 @@ function Footer() {
     <div className="mx-auto overflow-hidden border-gray-300 py-2 md:px-8 md:py-8">
       <div className="mx-auto flex w-auto flex-col justify-center gap-4 md:my-2 md:gap-6 md:py-2 md:pt-2 md:pb-8">
         <div className="flex flex-col justify-center gap-1">
-          <span className="incline-block mx-auto rounded-sm bg-[#F05186] px-2 text-center text-2xl font-medium text-white md:px-4 md:text-3xl lg:text-4xl">
+          <span className="incline-block mx-auto rounded-sm bg-[#F05186] px-2 text-center text-3xl font-medium text-white md:px-4 md:text-3xl lg:text-4xl">
             GOT AN IDEA?
           </span>
           <span className="pt-1 text-center text-lg font-thin text-violet-600 md:pt-2 md:text-2xl lg:text-3xl">
@@ -30,7 +30,7 @@ function Footer() {
         <div className="flex items-center justify-center gap-2">
           <input
             type="text"
-            className="w-[45%] rounded-sm border border-gray-400 px-2 py-1 md:w-[50%] md:px-6 md:py-2 lg:w-[30%]"
+            className="w-[50%] rounded-sm border border-gray-400 px-2 py-1 md:w-[50%] md:px-6 md:py-2 lg:w-[30%]"
             placeholder="Enter your email"
           />
           <button className="md:text-md rounded-sm bg-violet-400 px-4 py-1 text-white md:px-6 md:py-2">
@@ -53,12 +53,12 @@ function Footer() {
         </div>
       </div>
 
-      <div className="flex flex-wrap items-center justify-between">
+      <div className="flex  items-center justify-between">
         {footerItems?.map((item, index) => {
           return (
             <div
               key={index}
-              className={`md:text-md border-gray-300 px-1 text-center text-xs font-thin text-gray-600 sm:text-sm md:px-4 md:font-normal lg:text-lg xl:text-xl ${
+              className={`md:text-md border-gray-300 px-1 text-center text-sm font-thin text-gray-600 sm:text-sm md:px-4 md:font-normal lg:text-lg xl:text-xl ${
                 index == footerItems.length - 1 ? "" : "border-r md:border-r-2"
               } ${index == 3 ? "flex-2" : "flex-1"}`}
             >

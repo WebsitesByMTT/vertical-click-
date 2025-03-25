@@ -64,7 +64,7 @@ const Services1 = () => {
         <h2 className="text-2xl font-semibold md:text-6xl">OUR SERVICES</h2>
       </section>
 
-      <div className="p-4">
+      <div className="p-2 sm:p-4">
         {chunkedServices.map((chunk, chunkIndex) => (
           <div
             key={chunkIndex}
@@ -73,9 +73,9 @@ const Services1 = () => {
             {chunk.map((service: any, index: number) => (
               <div
                 key={index}
-                className={`relative flex flex-1 flex-col items-center justify-between gap-4 border-gray-300 p-4 md:gap-12 ${index === 0 ? "border-r-2" : ""}`}
+                className={`relative flex flex-1 flex-col items-center justify-between gap-4 border-gray-300 p-6 md:p-4 md:gap-12 ${index === 0 ? "border-r-2" : ""}`}
               >
-                <p className="pb-16 text-center text-sm font-thin md:text-3xl">
+                <p className="pb-16 text-center text-lg font-medium md:font-thin md:text-3xl">
                   {service.title}
                 </p>
                 {/* <button className="w-8 h-8 md:w-12 md:h-12 md:text-2xl flex items-center justify-center bg-purple-500 text-white rounded-full">+</button> */}

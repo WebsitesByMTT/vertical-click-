@@ -12,25 +12,25 @@ const VGCM = () => {
       title: "Amplify customer engagement",
       subtitle: "Engagement",
       msg: "Engage your audience with compelling  <br/>video content.",
-      img: "/images/video-gif/img1.png",
+      img: "/images/video-gif2/img1.png",
     },
     {
       title: "Educate audiences about your <br/> brand and business",
       subtitle: "Education",
       msg: "Provide valuable insights and information.",
-      img: "/images/video-gif/img2.png",
+      img: "/images/video-gif2/img2.png",
     },
     {
       title: "Communicate your business <br/>vision",
       subtitle: "Vision",
       msg: "Share your story and mission effectively.",
-      img: "/images/video-gif/img3.png",
+      img: "/images/video-gif2/img3.png",
     },
     {
       title: "Increase conversions",
       subtitle: "Sales",
       msg: "Drive more sales and leads with effective content.",
-      img: "/images/video-gif/img4.png",
+      img: "/images/video-gif2/img4.png",
     },
   ];
 
@@ -76,34 +76,24 @@ const VGCM = () => {
                 >
                   <div>
                     <h3
-                      className="text-3xl font-semibold"
+                      className=" text-xl md:text-2xl xl:text-3xl font-semibold"
                       dangerouslySetInnerHTML={{
                         __html: item.title.toUpperCase(),
                       }}
                     />
                     <p
-                      className="pt-4 font-sans text-xl text-gray-800"
+                      className=" pt-1 md:pt-4 font-sans text-md md:text-lg xl:text-xl text-gray-800"
                       dangerouslySetInnerHTML={{ __html: item.msg }}
                     />
                   </div>
-                  <div className="relative">
-                    <div className="absolute top-[50%] left-[40%] mb-2 flex flex-col gap-1 rounded-lg bg-[#8F5BFE] p-4 shadow-md">
-                      <h4 className="text-md font-semibold text-white">
-                        {item.subtitle}
-                      </h4>
-                      <div className="flex gap-2">
-                        <div className="rounded-xl bg-[#a478f1] px-8 py-3"></div>
-                        <div className="rounded-xl bg-[#a478f1] px-8 py-3"></div>
-                      </div>
-                    </div>
-                    <div>
-                      <img
+                  
+                  <div className="mx-auto ">
+                  <img
                         src={item.img}
                         width={100}
                         alt=""
-                        className="ml-auto md:w-75"
+                        className="ml-auto w-full md:w-full"
                       />
-                    </div>
                   </div>
                 </div>
               );
