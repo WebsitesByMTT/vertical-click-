@@ -87,16 +87,18 @@ export default function Home() {
         {/* hero */}
         <div className="flex h-[50vh] items-center justify-center lg:h-screen">
           <div className="text-center">
-            <h1 className="text-5xl font-bold uppercase lg:text-9xl">
+            <h2 className="text-5xl font-bold uppercase md:text-6xl lg:text-8xl xl:text-9xl">
               We innovate
-            </h1>
-            <h1 className="inline-block rounded-md bg-[#F05186] px-4 py-2 text-5xl font-bold text-white uppercase lg:text-9xl">
+            </h2>
+            <h2 className="inline-block rounded-md bg-[#F05186] px-4 py-2 text-5xl font-bold text-white uppercase md:text-6xl lg:text-8xl xl:text-9xl">
               digital
-            </h1>
-            <h1 className="text-5xl font-bold text-[#8F5BFE] uppercase lg:text-9xl">
+            </h2>
+            <h2 className="text-5xl font-bold text-[#8F5BFE] uppercase md:text-6xl lg:text-8xl xl:text-9xl">
               experiences
-            </h1>
-            <h1 className="text-5xl font-bold uppercase lg:text-9xl">daily!</h1>
+            </h2>
+            <h2 className="text-5xl font-bold uppercase md:text-6xl lg:text-8xl xl:text-9xl">
+              daily!
+            </h2>
           </div>
         </div>
         <Divider />
@@ -305,7 +307,7 @@ export default function Home() {
             alt="happy client"
             height={500}
             width={500}
-            className="hidden w-90 lg:block xl:w-100 2xl:w-150"
+            className="hidden w-90 lg:block xl:w-100 2xl:w-110"
           />
         </section>
         <Divider />
