@@ -66,33 +66,33 @@ function page() {
               campaigns that resonate with your audience.
             </p>
 
-            <div className="mx-auto grid auto-rows-fr grid-cols-1 gap-4 md:grid-cols-3">
+            <div className="mx-auto grid auto-rows-fr grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
               {analyticsItems.map((item, index) => (
                 <div
                   key={index}
-                  className={`relative mt-4 flex flex-col justify-between gap-2 rounded-md bg-[#f2ebff] px-4 pt-4 ${
+                  className={`relative mt-4 flex flex-col justify-between rounded-md bg-[#f2ebff] ${
                     index === 0 || index === analyticsItems.length - 1
-                      ? "md:col-span-2"
-                      : "md:col-span-1"
+                      ? "lg:col-span-2"
+                      : "lg:col-span-1"
                   }`}
                 >
-                  <div>
-                    <h3 className="text-2xl">{item.title.toUpperCase()}</h3>
+                  <div className="px-4 pt-4">
+                    <h3 className="text-2xl xl:text-3xl">
+                      {item.title.toUpperCase()}
+                    </h3>
                     <p
-                      className="translate-y-6 font-sans text-sm text-gray-500"
+                      className="font-sans text-sm text-gray-500 xl:text-lg"
                       dangerouslySetInnerHTML={{ __html: item.msg }}
                     />
                   </div>
-                  <div className="flex items-end justify-around gap-6">
-                    <div>
-                      <img
-                        src={item.img}
-                        width={100}
-                        alt=""
-                        className="md:w-100"
-                      />
-                    </div>
-                  </div>
+
+                  <img
+                    src={item.img}
+                    width={500}
+                    height={500}
+                    alt=""
+                    className="h-full w-full object-cover"
+                  />
                 </div>
               ))}
             </div>
