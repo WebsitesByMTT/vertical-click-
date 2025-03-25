@@ -6,7 +6,7 @@ import TweetIcon from "@/assets/images/tweetIcon.png";
 
 function Footer() {
   const footerItems = [
-    "Explor",
+    "Explore",
     "Our Blogs",
     "Our Work",
     "Website Seo Audit",
@@ -15,8 +15,8 @@ function Footer() {
   ];
 
   return (
-    <div className="mx-auto max-w-[100vw] overflow-hidden border-gray-300 py-2 md:max-w-[90vw] md:px-8 md:py-8">
-      <div className="mx-auto flex w-auto flex-col justify-center gap-4 md:my-2 md:gap-6 md:py-2 md:pt-2 md:pb-8">
+    <div className="mx-auto max-w-[100vw] overflow-hidden border-gray-300 md:py-8">
+      <div className="mx-auto flex w-auto flex-col justify-center gap-4 md:gap-6 md:pt-2 md:pb-8">
         <div className="flex flex-col justify-center gap-1">
           <span className="incline-block mx-auto rounded-sm bg-[#F05186] px-2 py-1 text-center text-2xl font-medium text-white md:px-4 md:text-6xl">
             GOT AN IDEA?

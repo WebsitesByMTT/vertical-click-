@@ -103,7 +103,7 @@ export default function Home() {
         {/* what we provide */}
         <div className="mx-auto space-y-6">
           {/* title */}
-          <h1 className="text-3xl font-bold uppercase md:p-4 md:text-4xl lg:p-0">
+          <h1 className="text-3xl font-bold uppercase lg:text-4xl">
             What we provide?
           </h1>
           {/* content */}
@@ -121,16 +121,16 @@ export default function Home() {
               />
               <div className="flex h-full max-w-md flex-col items-start justify-around text-start xl:max-w-none">
                 {item.purpleTitle && (
-                  <h1 className="mt-2 inline-block content-start py-2 text-3xl font-bold text-[#8F5BFE] uppercase md:mt-0 md:py-0 xl:text-4xl">
+                  <h1 className="mt-2 inline-block content-start py-2 text-3xl font-bold text-[#8F5BFE] uppercase md:mt-0 md:py-0 md:text-xl lg:text-3xl xl:text-4xl">
                     {item.purpleTitle}
                   </h1>
                 )}
                 {item.pinkBgTitle && (
-                  <h1 className="mt-2 inline-block rounded-md bg-[#F05186] px-4 py-2 text-3xl font-bold text-white uppercase md:mt-0 xl:text-4xl">
+                  <h1 className="mt-2 inline-block rounded-md bg-[#F05186] px-4 py-2 text-3xl font-bold text-white uppercase md:mt-0 md:text-xl lg:text-3xl xl:text-4xl">
                     {item.pinkBgTitle}
                   </h1>
                 )}
-                <h3 className="text-2xl font-light uppercase xl:text-3xl">
+                <h3 className="text-2xl font-light uppercase md:text-xl lg:text-2xl xl:text-3xl">
                   {item.subtitle}
                 </h3>
                 {item.subtext && (
@@ -167,7 +167,6 @@ export default function Home() {
         {/* Our Services */}
         <div className="flex flex-col items-center justify-center space-y-6">
           {/* heading */}
-
           <h1 className="p-4 text-4xl font-bold uppercase xl:text-5xl">
             Our Services
           </h1>
@@ -176,9 +175,9 @@ export default function Home() {
             {ourServices.map((service, index) => (
               <div
                 key={index}
-                className={cn("rounded-2xl p-4 xl:p-8", service.color)}
+                className={cn("rounded-2xl p-4 2xl:p-8", service.color)}
               >
-                <h1 className="min-h-28 text-4xl leading-tight font-bold uppercase lg:min-h-20 lg:text-2xl xl:text-4xl">
+                <h1 className="min-h-28 text-4xl leading-tight font-bold uppercase lg:min-h-20 lg:text-2xl xl:min-h-24 xl:text-4xl">
                   {service.title}
                 </h1>
                 <img
@@ -203,7 +202,7 @@ export default function Home() {
         <section className="rounded-md bg-black text-white">
           <div className="mx-auto w-full p-6 xl:p-10">
             <div className="mb-8 flex w-full flex-col items-center justify-center md:mb-20 md:flex-row lg:mb-0">
-              <h1 className="mb-6 text-2xl leading-tight font-bold md:text-3xl xl:text-5xl">
+              <h1 className="mb-6 text-2xl leading-tight font-bold md:text-3xl lg:text-4xl 2xl:text-5xl">
                 WHY IS VERTICAL CLICKS THE BEST DIGITAL MARKETING COMPANY FOR
                 YOUR BUSINESS?
               </h1>
@@ -302,7 +301,7 @@ export default function Home() {
             alt="happy client"
             height={500}
             width={500}
-            className="hidden w-100 lg:block"
+            className="hidden w-100 lg:block 2xl:w-150"
           />
         </section>
         <Divider />
