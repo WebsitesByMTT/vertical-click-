@@ -4,6 +4,7 @@ import HeroSection from "@/components/HeroSection";
 import Footer from "@/components/footer/Footer";
 import Divider from "@/components/Divider";
 import TextBox from "@/components/TextBox";
+import Container from "@/components/Container";
 
 function page() {
   const analyticsItems = [
@@ -47,63 +48,70 @@ function page() {
   return (
     <React.Fragment>
       <Header />
-      <HeroSection
-        title="Digital Strategy & Planning"
-        subtitle="Unlocking Successful Campaigns with"
-        pinkBgText="Vertical Click’s Euless, Texas"
-        description="A well-crafted strategy is the foundation of a successful campaign. At Vertical Click’s Euless, Texas, our team of experts leverages years of experience to develop and execute tailored strategies that drive real results for your business."
-      />
-      <section className="max-w-[90vw] md:w-[70vw] mx-auto my-0 sm:my-4">
-        <div className="py-0 sm:py-8 ">
-          <h3 className="text-center text-3xl sm:text-4xl pb-4">OUR SERVICES INCLUDE</h3>
-          <p className="text-center text-sm sm:text-md md:text-lg">
-            At Vertical Click’s USA, our team of experienced marketers and
-            designers can help you create effective email <br /> marketing
-            campaigns that resonate with your audience.
-          </p>
+      <Container>
+        <HeroSection
+          title="Digital Strategy & Planning"
+          subtitle="Unlocking Successful Campaigns with"
+          pinkBgText="Vertical Click’s Euless, Texas"
+          description="A well-crafted strategy is the foundation of a successful campaign. At Vertical Click’s Euless, Texas, our team of experts leverages years of experience to develop and execute tailored strategies that drive real results for your business."
+        />
+        <section className="mx-auto my-0 sm:my-4">
+          <div className="py-0 sm:py-8">
+            <h3 className="pb-4 text-center text-3xl sm:text-4xl">
+              OUR SERVICES INCLUDE
+            </h3>
+            <p className="sm:text-md text-center text-sm md:text-lg">
+              At Vertical Click’s USA, our team of experienced marketers and
+              designers can help you create effective email <br /> marketing
+              campaigns that resonate with your audience.
+            </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mx-auto auto-rows-fr">
-            {analyticsItems.map((item, index) => (
-              <div
-                key={index}
-                className={`pt-4 px-4 relative mt-4 bg-[#f2ebff] gap-2 flex flex-col justify-between rounded-md 
-            ${
-              index === 0 || index === analyticsItems.length - 1
-                ? "md:col-span-2"
-                : "md:col-span-1"
-            }`}
-              >
-                <div>
-                  <h3 className="text-2xl">{item.title.toUpperCase()}</h3>
-                  <p
-                    className="translate-y-6 text-sm text-gray-500 font-sans"
-                    dangerouslySetInnerHTML={{ __html: item.msg }}
-                  />
-                </div>
-                <div className="flex justify-around items-end gap-6">
+            <div className="mx-auto grid auto-rows-fr grid-cols-1 gap-4 md:grid-cols-3">
+              {analyticsItems.map((item, index) => (
+                <div
+                  key={index}
+                  className={`relative mt-4 flex flex-col justify-between gap-2 rounded-md bg-[#f2ebff] px-4 pt-4 ${
+                    index === 0 || index === analyticsItems.length - 1
+                      ? "md:col-span-2"
+                      : "md:col-span-1"
+                  }`}
+                >
                   <div>
-                    <img
-                      src={item.img}
-                      width={100}
-                      alt=""
-                      className="md:w-100"
+                    <h3 className="text-2xl">{item.title.toUpperCase()}</h3>
+                    <p
+                      className="translate-y-6 font-sans text-sm text-gray-500"
+                      dangerouslySetInnerHTML={{ __html: item.msg }}
                     />
                   </div>
+                  <div className="flex items-end justify-around gap-6">
+                    <div>
+                      <img
+                        src={item.img}
+                        width={100}
+                        alt=""
+                        className="md:w-100"
+                      />
+                    </div>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
-        <Divider />
-        <div className="mt-8 flex flex-col justify-between items-center gap-4 ">
-          {analyticBottomContent.map((item, index) => {
-            return (
-              <TextBox key={index} title={item.title} description={item.msg} />
-            );
-          })}
-        </div>
-        <Divider />
-      </section>
+          <Divider />
+          <div className="mt-8 flex flex-col items-center justify-between gap-4">
+            {analyticBottomContent.map((item, index) => {
+              return (
+                <TextBox
+                  key={index}
+                  title={item.title}
+                  description={item.msg}
+                />
+              );
+            })}
+          </div>
+          <Divider />
+        </section>
+      </Container>
       <Footer />
     </React.Fragment>
   );
