@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
-import React, { useState, ChangeEvent, FormEvent } from 'react';
-import { MessageSquare, MapPin, Phone } from 'lucide-react';
-import Footer from '@/components/footer/Footer';
-import Link from 'next/link';
-
+import React, { useState, ChangeEvent, FormEvent } from "react";
+import { MessageSquare, MapPin, Phone } from "lucide-react";
+import Footer from "@/components/footer/Footer";
+import Link from "next/link";
+import Container from "@/components/Container";
 
 // Define types for form data
 interface FormData {
@@ -19,207 +19,278 @@ interface FormData {
 
 const ContactPage: React.FC = () => {
   const [formData, setFormData] = useState<FormData>({
-    name: '',
-    email: '',
-    phone: '',
-    interest: '',
-    city: '',
-    budget: '',
-    message: ''
+    name: "",
+    email: "",
+    phone: "",
+    interest: "",
+    city: "",
+    budget: "",
+    message: "",
   });
 
-  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>,
+  ) => {
     const { name, value } = e.target;
-    setFormData(prevState => ({
+    setFormData((prevState) => ({
       ...prevState,
-      [name]: value
+      [name]: value,
     }));
   };
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    alert("Form Submission Pending")
+    alert("Form Submission Pending");
   };
 
   return (
     <React.Fragment>
-    <div className="max-w-[90vw] md:max-w-[70vw] mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        {/* Contact Form Section */}
-        <div className="lg:col-span-2">
-          <h1 className="text-4xl font-bold mb-8">WRITE TO US!</h1>
-          
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div>
-              <label htmlFor="name" className="block text-sm font-medium mb-1">Name</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                className="w-full px-3 py-2 border border-gray-300 rounded-sm"
-                required
-              />
+      <Container>
+        <div className="px-4 py-8 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+            {/* Contact Form Section */}
+            <div className="lg:col-span-2">
+              <h1 className="mb-8 text-4xl font-bold">WRITE TO US!</h1>
+
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div>
+                  <label
+                    htmlFor="name"
+                    className="mb-1 block text-sm font-medium"
+                  >
+                    Name
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    className="w-full rounded-sm border border-gray-300 px-3 py-2"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label
+                    htmlFor="email"
+                    className="mb-1 block text-sm font-medium"
+                  >
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    className="w-full rounded-sm border border-gray-300 px-3 py-2"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label
+                    htmlFor="phone"
+                    className="mb-1 block text-sm font-medium"
+                  >
+                    Phone Number
+                  </label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    className="w-full rounded-sm border border-gray-300 px-3 py-2"
+                  />
+                </div>
+
+                <div>
+                  <label
+                    htmlFor="interest"
+                    className="mb-1 block text-sm font-medium"
+                  >
+                    I am interested in...
+                  </label>
+                  <select
+                    id="interest"
+                    name="interest"
+                    value={formData.interest}
+                    onChange={handleChange}
+                    className="w-full appearance-none rounded-sm border border-gray-300 bg-white px-3 py-2"
+                  >
+                    <option value="">Select an option</option>
+                    <option value="web-design">Web Design</option>
+                    <option value="seo">SEO Services</option>
+                    <option value="marketing">Digital Marketing</option>
+                    <option value="other">Other Services</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label
+                    htmlFor="city"
+                    className="mb-1 block text-sm font-medium"
+                  >
+                    Select City
+                  </label>
+                  <select
+                    id="city"
+                    name="city"
+                    value={formData.city}
+                    onChange={handleChange}
+                    className="w-full appearance-none rounded-sm border border-gray-300 bg-white px-3 py-2"
+                  >
+                    <option value="">Select a city</option>
+                    <option value="new-york">New York</option>
+                    <option value="commack">Commack</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label
+                    htmlFor="budget"
+                    className="mb-1 block text-sm font-medium"
+                  >
+                    Select Budget
+                  </label>
+                  <select
+                    id="budget"
+                    name="budget"
+                    value={formData.budget}
+                    onChange={handleChange}
+                    className="w-full appearance-none rounded-sm border border-gray-300 bg-white px-3 py-2"
+                  >
+                    <option value="">Select a budget range</option>
+                    <option value="1000-5000">$1,000 - $5,000</option>
+                    <option value="5000-10000">$5,000 - $10,000</option>
+                    <option value="10000+">$10,000+</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label
+                    htmlFor="message"
+                    className="mb-1 block text-sm font-medium"
+                  >
+                    Message
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    rows={5}
+                    className="w-full rounded-sm border border-gray-300 px-3 py-2"
+                  ></textarea>
+                </div>
+
+                <div>
+                  <button
+                    type="submit"
+                    className="rounded-sm bg-purple-500 px-6 py-2 text-white transition-colors hover:bg-purple-600"
+                  >
+                    SUBMIT
+                  </button>
+                </div>
+              </form>
             </div>
-            
-            <div>
-              <label htmlFor="email" className="block text-sm font-medium mb-1">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                className="w-full px-3 py-2 border border-gray-300 rounded-sm"
-                required
-              />
-            </div>
-            
-            <div>
-              <label htmlFor="phone" className="block text-sm font-medium mb-1">Phone Number</label>
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                value={formData.phone}
-                onChange={handleChange}
-                className="w-full px-3 py-2 border border-gray-300 rounded-sm"
-              />
-            </div>
-            
-            <div>
-              <label htmlFor="interest" className="block text-sm font-medium mb-1">I am interested in...</label>
-              <select
-                id="interest"
-                name="interest"
-                value={formData.interest}
-                onChange={handleChange}
-                className="w-full px-3 py-2 border border-gray-300 rounded-sm appearance-none bg-white"
-              >
-                <option value="">Select an option</option>
-                <option value="web-design">Web Design</option>
-                <option value="seo">SEO Services</option>
-                <option value="marketing">Digital Marketing</option>
-                <option value="other">Other Services</option>
-              </select>
-            </div>
-            
-            <div>
-              <label htmlFor="city" className="block text-sm font-medium mb-1">Select City</label>
-              <select
-                id="city"
-                name="city"
-                value={formData.city}
-                onChange={handleChange}
-                className="w-full px-3 py-2 border border-gray-300 rounded-sm appearance-none bg-white"
-              >
-                <option value="">Select a city</option>
-                <option value="new-york">New York</option>
-                <option value="commack">Commack</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-            
-            <div>
-              <label htmlFor="budget" className="block text-sm font-medium mb-1">Select Budget</label>
-              <select
-                id="budget"
-                name="budget"
-                value={formData.budget}
-                onChange={handleChange}
-                className="w-full px-3 py-2 border border-gray-300 rounded-sm appearance-none bg-white"
-              >
-                <option value="">Select a budget range</option>
-                <option value="1000-5000">$1,000 - $5,000</option>
-                <option value="5000-10000">$5,000 - $10,000</option>
-                <option value="10000+">$10,000+</option>
-              </select>
-            </div>
-            
-            <div>
-              <label htmlFor="message" className="block text-sm font-medium mb-1">Message</label>
-              <textarea
-                id="message"
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                rows={5}
-                className="w-full px-3 py-2 border border-gray-300 rounded-sm"
-              ></textarea>
-            </div>
-            
-            <div>
-              <button
-                type="submit"
-                className="bg-purple-500 text-white px-6 py-2 rounded-sm hover:bg-purple-600 transition-colors"
-              >
-                SUBMIT
-              </button>
-            </div>
-          </form>
-        </div>
-        
-        {/* Contact Information Section */}
-        <div className="space-y-10">
-          <div className="bg-gray-100 p-6 rounded-lg">
-            <div className="flex items-start space-x-3">
-              <MessageSquare className="flex-shrink-0 text-gray-500 mt-1" size={20} />
-              <div>
-                <h2 className="text-xl font-bold">CHAT WITH US</h2>
-                <p className="text-gray-700">Our friendly team is here to help.</p>
-                <a href="mailto:hi@verticalclick.com" className="text-black hover:underline">
-                  hi@verticalclick.com
-                </a>
+
+            {/* Contact Information Section */}
+            <div className="space-y-10">
+              <div className="rounded-lg bg-gray-100 p-6">
+                <div className="flex items-start space-x-3">
+                  <MessageSquare
+                    className="mt-1 flex-shrink-0 text-gray-500"
+                    size={20}
+                  />
+                  <div>
+                    <h2 className="text-xl font-bold">CHAT WITH US</h2>
+                    <p className="text-gray-700">
+                      Our friendly team is here to help.
+                    </p>
+                    <a
+                      href="mailto:hi@verticalclick.com"
+                      className="text-black hover:underline"
+                    >
+                      hi@verticalclick.com
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="rounded-lg bg-gray-100 p-6">
+                <div className="flex items-start space-x-3">
+                  <MapPin
+                    className="mt-1 flex-shrink-0 text-gray-500"
+                    size={20}
+                  />
+                  <div>
+                    <h2 className="text-xl font-bold">VISIT US</h2>
+                    <p className="text-gray-700">
+                      Come say hello at our office HQ.
+                    </p>
+                    <p className="text-black">
+                      85 Crooked Hill Road, Commack NY 11725
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="rounded-lg bg-gray-100 p-6">
+                <div className="flex items-start space-x-3">
+                  <Phone
+                    className="mt-1 flex-shrink-0 text-gray-500"
+                    size={20}
+                  />
+                  <div>
+                    <h2 className="text-xl font-bold">CALL US</h2>
+                    <p className="text-gray-700">Mon-Fri from 9am to 5pm.</p>
+                    <a
+                      href="tel:+5303933738788"
+                      className="text-black hover:underline"
+                    >
+                      +5303933738788
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          
-          <div className="bg-gray-100 p-6 rounded-lg">
-            <div className="flex items-start space-x-3">
-              <MapPin className="flex-shrink-0 text-gray-500 mt-1" size={20} />
-              <div>
-                <h2 className="text-xl font-bold">VISIT US</h2>
-                <p className="text-gray-700">Come say hello at our office HQ.</p>
-                <p className="text-black">
-                  85 Crooked Hill Road, Commack NY 11725
+
+          {/* Logo and Navigation */}
+          <div className="border-t border-gray-200 py-8 md:mt-16 md:pt-8">
+            <div className="flex flex-col items-center justify-between md:flex-row">
+              <Link href="/" className="flex items-center">
+                <img src="/logo.svg" alt="logo" className="w-12" />
+                <p className="text-2xl font-bold text-gray-800">
+                  Vertical Click
                 </p>
-              </div>
+              </Link>
+
+              <nav className="flex space-x-6">
+                <Link href="/" className="text-gray-600 hover:text-gray-900">
+                  Home
+                </Link>
+                <Link
+                  href="/about-us"
+                  className="text-gray-600 hover:text-gray-900"
+                >
+                  About us
+                </Link>
+                <Link
+                  href="/our-services"
+                  className="text-gray-600 hover:text-gray-900"
+                >
+                  Our Services
+                </Link>
+              </nav>
             </div>
           </div>
-          
-          <div className="bg-gray-100 p-6 rounded-lg">
-            <div className="flex items-start space-x-3">
-              <Phone className="flex-shrink-0 text-gray-500 mt-1" size={20} />
-              <div>
-                <h2 className="text-xl font-bold">CALL US</h2>
-                <p className="text-gray-700">Mon-Fri from 9am to 5pm.</p>
-                <a href="tel:+5303933738788" className="text-black hover:underline">
-                  +5303933738788
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      {/* Logo and Navigation */}
-      <div className=" py-8 md:mt-16 md:pt-8 border-t border-gray-200">
-        <div className="flex flex-col md:flex-row justify-between items-center">
-         <Link href="/" className="flex items-center">
-        <img src="/logo.svg" alt="logo" className="w-12" />
-        <p className="text-2xl font-bold text-gray-800">Vertical Click</p>
-      </Link>
-          
-          <nav className="flex space-x-6">
-            <Link href="/" className="text-gray-600 hover:text-gray-900">Home</Link>
-            <Link href="/about-us" className="text-gray-600 hover:text-gray-900">About us</Link>
-            <Link href="/our-services" className="text-gray-600 hover:text-gray-900">Our Services</Link>
-          </nav>
-        </div>
-      </div>
-       
-      {/* Call to Action 
+
+          {/* Call to Action 
       <div className="mt-16 text-center">
         <div className="bg-pink-500 text-white inline-block px-6 py-3 rounded-lg text-2xl font-bold">
           GOT AN IDEA?
@@ -280,9 +351,9 @@ const ContactPage: React.FC = () => {
           <a href="#" className="hover:text-gray-900">Work with us</a>
         </div>
       </div>*/}
-      
-    </div>
-    <Footer/>
+        </div>
+      </Container>
+      <Footer />
     </React.Fragment>
   );
 };
