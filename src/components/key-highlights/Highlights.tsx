@@ -37,9 +37,9 @@ function Highlights() {
 
   return (
     <div className="mx-auto w-full px-4">
-      <h2 className="mx-auto py-4 pb-8 text-lg font-medium md:text-5xl">
+      <h6 className="mx-auto py-4 pb-8 text-lg font-medium md:text-5xl">
         KEY HIGHLIGHTS
-      </h2>
+      </h6>
       <div className="mx-auto grid grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-3">
         {hitems.map((item, index) => (
           <div
