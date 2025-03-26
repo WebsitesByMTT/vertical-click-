@@ -16,9 +16,21 @@ function Footer() {
   ];
 
   const SocialIcons = [
-    { name: "Facebook", icon: FacebookIcon },
-    { name: "Instagram", icon: InstaIcon },
-    { name: "Tweeter", icon: TweetIcon },
+    {
+      name: "Facebook",
+      icon: FacebookIcon,
+      link: "https://www.facebook.com/VerticalClick",
+    },
+    {
+      name: "Instagram",
+      icon: InstaIcon,
+      link: "https://www.instagram.com/vertical_click",
+    },
+    {
+      name: "Tweeter",
+      icon: TweetIcon,
+      link: "https://www.linkedin.com/in/vertical-click-b34110349",
+    },
   ];
 
   return (
@@ -45,7 +57,12 @@ function Footer() {
         <div className="flex items-center justify-center gap-1 pb-4">
           {SocialIcons.map((item, index) => {
             return (
-              <a key={index} href="">
+              <Link
+                key={index}
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Image
                   src={item.icon}
                   height={100}
@@ -53,7 +70,7 @@ function Footer() {
                   alt={item.name}
                   className="w-8 md:w-10 lg:w-12"
                 ></Image>
-              </a>
+              </Link>
             );
           })}
         </div>
