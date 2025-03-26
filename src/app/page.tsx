@@ -43,10 +43,22 @@ export default function Home() {
       color: "bg-[#F05186]",
       image: "/images/services-1.png",
       services: [
-        "Brand Marketing",
-        "Social Media Marketing",
-        "Branding",
-        "Brand Campaign",
+        {
+          tag: "Brand Marketing",
+          link: "/our-services/digital-strategy-and-planning",
+        },
+        {
+          tag: "Social Media Marketing",
+          link: "/our-services/social-media-marketing",
+        },
+        {
+          tag: "Branding",
+          link: "/our-services/creative-strategy-and-web-graphics-design",
+        },
+        {
+          tag: "Brand Campaign",
+          link: "/our-services/digital-strategy-and-planning",
+        },
       ],
     },
     {
@@ -54,11 +66,26 @@ export default function Home() {
       color: "bg-[#8F5BFE]",
       image: "/images/services-2.png",
       services: [
-        "E-Commerce Solutions",
-        "Website Maintenance",
-        "UI/ UX",
-        "App Development",
-        "Game Development",
+        {
+          tag: "E-Commerce Solutions",
+          link: "/our-services/shopify-website-and-development",
+        },
+        {
+          tag: "Website Maintenance",
+          link: "/our-services/website-design-and-development",
+        },
+        {
+          tag: "UI/ UX",
+          link: "/our-services/creative-strategy-and-web-graphics-design",
+        },
+        {
+          tag: "App Development",
+          link: "/our-services/website-design-and-development",
+        },
+        {
+          tag: "Game Development",
+          link: "/our-services/website-design-and-development",
+        },
       ],
     },
     {
@@ -66,17 +93,38 @@ export default function Home() {
       color: "bg-[#F05186]",
       image: "/images/services-3.png",
       services: [
-        "Response Management",
-        "Perception Management",
-        "Listening",
-        "CRM",
+        {
+          tag: "Response Management",
+          link: "/our-services/digital-strategy-and-planning",
+        },
+        {
+          tag: "Perception Management",
+          link: "/our-services/digital-strategy-and-planning",
+        },
+        { tag: "Listening", link: "/our-services/web-analytics" },
+        { tag: "CRM", link: "/our-services/email-marketing" },
       ],
     },
     {
       title: "Search",
       color: "bg-[#8F5BFE]",
       image: "/images/services-4.png",
-      services: ["SEO", "SEM", "Paid Media", "E-Commerce SEO", "Local SEO"],
+      services: [
+        {
+          tag: "SEO",
+          link: "/our-services/search-engine-optimization",
+        },
+        { tag: "SEM", link: "/our-services/search-engine-optimization" },
+        {
+          tag: "Paid Media",
+          link: "/our-services/media-planning-and-buying",
+        },
+        {
+          tag: "E-Commerce SEO",
+          link: "/our-services/search-engine-optimization",
+        },
+        { tag: "Local SEO", link: "/our-services/search-engine-optimization" },
+      ],
     },
   ];
   return (
@@ -181,14 +229,17 @@ export default function Home() {
                   alt={service.title}
                   className="mb-4 w-full"
                 />
-                {service.services.map((service, index) => (
-                  <p
+                <div className="flex flex-col gap-2 text-center">
+                  {service.services.map((item, index) => (
+                    <Link
                     key={index}
-                    className="content-center text-center text-2xl font-normal lg:text-xl"
+                      href={item.link}
+                      className="text-2xl font-normal lg:text-xl"
                   >
-                    {service}
-                  </p>
+                      {item.tag}
+                    </Link>
                 ))}
+                </div>
               </div>
             ))}
           </div>
