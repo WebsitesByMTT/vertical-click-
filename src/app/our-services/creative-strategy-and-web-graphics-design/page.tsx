@@ -33,9 +33,9 @@ const CSAWGD = () => {
         />
         <Divider />
         <section className="rounded-md bg-black p-8 text-white md:p-14">
-          <h1 className="text-4xl font-medium md:text-5xl">
+          <h2 className="text-4xl font-medium md:text-5xl">
             Meet Our Powerhouse Team
-          </h1>
+          </h2>
           <p className="mt-5 text-lg font-normal">
             Our creative agency comprises young, talented individuals who embody
             innovation. We strive for excellence, delivering award-winning

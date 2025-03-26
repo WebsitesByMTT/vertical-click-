@@ -10,7 +10,7 @@ const Header = () => {
   };
 
   return (
-    <nav className="flex items-center justify-between overflow-hidden bg-white px-8 py-4 shadow-md">
+    <nav className="sticky top-0 z-10 flex items-center justify-between overflow-hidden bg-white px-8 py-4 shadow-md">
       {/* logo from public */}
       <Link href="/" className="flex items-center">
         <img src="/images/logo.png" alt="logo" className="mr-2 w-12" />

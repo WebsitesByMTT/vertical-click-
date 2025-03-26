@@ -30,9 +30,9 @@ const SWD = () => {
         />
         <Divider />
         <section className="rounded-2xl bg-black p-6 text-white lg:p-14">
-          <h1 className="text-4xl font-medium uppercase md:text-5xl">
+          <h2 className="text-4xl font-medium uppercase md:text-5xl">
             Why Choose Shopify?
-          </h1>
+          </h2>
           <p className="mt-4 text-xl font-normal md:text-2xl">
             With Shopify, you can sell anywhere, anytime, and manage your
             business from a single dashboard. Since its inception, Shopify has
@@ -42,9 +42,9 @@ const SWD = () => {
         </section>
         <Divider />
         <section>
-          <h1 className="text-4xl font-medium uppercase md:text-5xl">
+          <h2 className="text-4xl font-medium uppercase md:text-5xl">
             Our Shopify Development Services
-          </h1>
+          </h2>
           <div className="mx-auto mt-10 grid max-w-4xl grid-cols-1 content-center items-center justify-center gap-4 md:grid-cols-2">
             <div className="rounded-md bg-[#8F5BFE1A] p-6">
               <p className="text-2xl font-normal text-[#8F5BFE]">
@@ -74,10 +74,10 @@ const SWD = () => {
           </div>
         </section>
         <Divider />
-        <h1 className="mt-10 text-center text-4xl font-medium uppercase md:text-5xl">
+        <h2 className="mt-10 text-center text-4xl font-medium uppercase md:text-5xl">
           Partner with Vertical Click’s to unlock the full potential of Shopify
           and drive your business forward.
-        </h1>
+        </h2>
         <Divider />
       </Container>
       <Footer />
