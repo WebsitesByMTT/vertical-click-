@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import Head from "next/head";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,6 +35,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <meta
+          name="google-site-verification"
+          content="A9IPkQrZRNxrrT6bahoACofVPDAjgaApAyU7Duixbvs"
+        />
+      </Head>
       <body
         className={`${bandeins.className} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
