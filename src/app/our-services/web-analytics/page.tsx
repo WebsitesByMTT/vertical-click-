@@ -5,6 +5,13 @@ import Footer from "@/components/footer/Footer";
 import Divider from "@/components/Divider";
 import TextBox from "@/components/TextBox";
 import Container from "@/components/Container";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Web Analytics Services | Data-Driven Insights for Better Performance",
+  description:
+    "Unlock growth with Vertical Click’s web analytics services. Track user behavior, measure performance & optimize marketing strategies with real-time data.",
+};
 
 function page() {
   const analyticsItems = [
@@ -50,49 +57,50 @@ function page() {
       <Header />
       <Container>
         <HeroSection
-          title="Digital Strategy & Planning"
-          subtitle="Unlocking Successful Campaigns with"
-          pinkBgText="Vertical Click’s Euless, Texas"
-          description="A well-crafted strategy is the foundation of a successful campaign. At Vertical Click’s Euless, Texas, our team of experts leverages years of experience to develop and execute tailored strategies that drive real results for your business."
+          title="Web Analytics"
+          subtitle="Data-Driven Marketing: The Key to "
+          pinkBgText="Unlocking Success"
+          description="At Vertical Click’s, we believe that data-driven marketing is the most effective way to ensure campaign success. Our approach involves not only executing strategies but also meticulously analyzing the results."
         />
         <section className="mx-auto my-0 sm:my-4">
           <div className="py-0 sm:py-8">
             <h3 className="pb-4 text-center text-3xl sm:text-4xl">
-              OUR SERVICES INCLUDE
+              EXPERT ANALYSIS AND INSIGHTS
             </h3>
             <p className="sm:text-md text-center text-sm md:text-lg">
-              At Vertical Click’s USA, our team of experienced marketers and
-              designers can help you create effective email <br /> marketing
-              campaigns that resonate with your audience.
+              Our business and media teams are experts in measuring, collecting,
+              reporting, and analyzing web data, usage, and <br /> analytics.
+              This expertise enables us to optimize web usage and inform future
+              strategies.
             </p>
 
-            <div className="mx-auto grid auto-rows-fr grid-cols-1 gap-4 md:grid-cols-3">
+            <div className="mx-auto grid auto-rows-fr grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
               {analyticsItems.map((item, index) => (
                 <div
                   key={index}
-                  className={`relative mt-4 flex flex-col justify-between gap-2 rounded-md bg-[#f2ebff] px-4 pt-4 ${
+                  className={`relative mt-4 flex flex-col justify-between rounded-md bg-[#f2ebff] ${
                     index === 0 || index === analyticsItems.length - 1
-                      ? "md:col-span-2"
-                      : "md:col-span-1"
+                      ? "lg:col-span-2"
+                      : "lg:col-span-1"
                   }`}
                 >
-                  <div>
-                    <h3 className="text-2xl">{item.title.toUpperCase()}</h3>
+                  <div className="px-4 pt-4">
+                    <h3 className="text-2xl xl:text-3xl">
+                      {item.title.toUpperCase()}
+                    </h3>
                     <p
-                      className="translate-y-6 font-sans text-sm text-gray-500"
+                      className="font-sans text-sm text-gray-500 xl:text-lg"
                       dangerouslySetInnerHTML={{ __html: item.msg }}
                     />
                   </div>
-                  <div className="flex items-end justify-around gap-6">
-                    <div>
-                      <img
-                        src={item.img}
-                        width={100}
-                        alt=""
-                        className="md:w-100"
-                      />
-                    </div>
-                  </div>
+
+                  <img
+                    src={item.img}
+                    width={500}
+                    height={500}
+                    alt=""
+                    className="h-full w-full object-cover"
+                  />
                 </div>
               ))}
             </div>

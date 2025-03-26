@@ -5,7 +5,14 @@ import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import IconBox from "@/components/IconBox";
 import TextBox from "@/components/TextBox";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "SEO Services | Boost Rankings & Organic Traffic with Expert SEO",
+  description:
+    "Vertical Click offers expert SEO services, including keyword optimization, on-page & technical SEO, to improve search rankings & drive organic traffic.",
+};
 
 const SEO = () => {
   return (
