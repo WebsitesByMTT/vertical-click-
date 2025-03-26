@@ -75,9 +75,9 @@ const Services1 = () => {
                 key={index}
                 className={`relative flex flex-1 flex-col items-center justify-between gap-4 border-gray-300 p-6 md:gap-12 md:p-4 ${index === 0 ? "border-r-2" : ""}`}
               >
-                <p className="pb-16 text-center text-lg font-medium md:text-3xl md:font-thin">
+                <h2 className="pb-16 text-center text-lg font-medium md:text-3xl md:font-thin">
                   {service.title}
-                </p>
+                </h2>
                 {/* <button className="w-8 h-8 md:w-12 md:h-12 md:text-2xl flex items-center justify-center bg-purple-500 text-white rounded-full">+</button> */}
                 <Link
                   href={`/our-services/${service.link}`}

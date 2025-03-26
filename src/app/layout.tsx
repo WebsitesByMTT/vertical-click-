@@ -42,7 +42,7 @@ export default function RootLayout({
         />
       </Head>
       <body
-        className={`${bandeins.className} ${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${bandeins.className} ${geistSans.variable} ${geistMono.variable} `}
       >
         {children}
         <GoogleAnalytics gaId="G-EK11VJ6YW4" />
