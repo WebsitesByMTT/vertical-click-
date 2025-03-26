@@ -86,7 +86,7 @@ const ContactPage: React.FC = () => {
           <div className="border-t border-gray-200 py-8 md:mt-16 md:pt-8">
             <div className="flex flex-col items-center justify-between md:flex-row">
               <Link href="/" className="flex items-center">
-                <img src="/logo.svg" alt="logo" className="w-12" />
+                <img src="/images/logo.png" alt="logo" className="w-12" />
                 <p className="text-2xl font-bold text-gray-800">
                   Vertical Click
                 </p>

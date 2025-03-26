@@ -51,9 +51,9 @@ const VGCM = () => {
           pinkBgText="Brand's Potential"
         />
         <section className="flex flex-col gap-8 md:flex-row">
-          <h1 className="text-4xl font-medium uppercase lg:text-5xl">
+          <h3 className="text-4xl font-medium uppercase lg:text-5xl">
             In today's digital landscape, content is king.
-          </h1>
+          </h3>
           <p className="max-w-2xl text-xl font-normal lg:text-2xl">
             When marketed effectively, it can propel your brand and business to
             new heights. The most popular content formats now include videos,
@@ -71,9 +71,9 @@ const VGCM = () => {
         </section>
         <Divider />
         <section>
-          <h1 className="text-center text-4xl font-medium uppercase md:text-5xl">
+          <h2 className="text-center text-4xl font-medium uppercase md:text-5xl">
             Our website video production services:
-          </h1>
+          </h2>
           <div className="mx-auto grid grid-cols-1 gap-4 md:grid-cols-2">
             {videoCardItems.map((item, index) => {
               return (
@@ -122,10 +122,10 @@ const VGCM = () => {
           image="/images/osacci.png"
           imageOrientation="right"
         />
-        <h1 className="mt-8 text-center text-4xl font-medium uppercase md:text-5xl">
+        <h2 className="mt-8 text-center text-4xl font-medium uppercase md:text-5xl">
           Partner with Vertical Click’s to unlock the full potential of your
           content marketing strategy.
-        </h1>
+        </h2>
         <Divider />
       </Container>
       <Footer />

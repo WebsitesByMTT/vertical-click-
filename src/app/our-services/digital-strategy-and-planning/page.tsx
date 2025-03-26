@@ -51,9 +51,9 @@ const DSAP = () => {
         <Divider />
         {/* Our Team of Experts */}
         <section className="mx-auto max-w-[90vw] md:max-w-[70vw]">
-          <h1 className="text-4xl font-medium uppercase md:text-5xl">
+          <h2 className="text-4xl font-medium uppercase md:text-5xl">
             Our Team of Experts
-          </h1>
+          </h2>
           <h3 className="text-xl font-normal md:text-2xl">
             Our young, creative, and highly experienced teams specialize in:
           </h3>
@@ -119,10 +119,10 @@ const DSAP = () => {
           </div>
         </section>
         <Divider />
-        <h1 className="mx-auto max-w-[90vw] text-center text-3xl font-medium uppercase md:max-w-[70vw] md:text-5xl">
+        <h2 className="mx-auto max-w-[90vw] text-center text-3xl font-medium uppercase md:max-w-[70vw] md:text-5xl">
           Partnering with Vertical Click’s Euless, Texas has transformed our
           business approach and significantly increased our ROI.
-        </h1>
+        </h2>
         <Divider />
       </Container>
       <Footer />

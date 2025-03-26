@@ -54,9 +54,9 @@ const SMM = () => {
         </div>
         <Divider />
         <section className="rounded-4xl bg-black p-8 text-white lg:p-14">
-          <h1 className="mb-4 text-4xl font-medium md:text-5xl">
+          <h2 className="mb-4 text-4xl font-medium md:text-5xl">
             Why Choose Vertical Click’s USA?
-          </h1>
+          </h2>
           <p className="text-xl font-normal md:text-2xl">
             When you partner with us, you gain access to:
           </p>
@@ -72,9 +72,9 @@ const SMM = () => {
         </section>
         <Divider />
         <section>
-          <h1 className="mb-4 text-4xl font-medium uppercase md:text-5xl">
+          <h2 className="mb-4 text-4xl font-medium uppercase md:text-5xl">
             Key Highlights
-          </h1>
+          </h2>
           <div className="flex flex-wrap justify-between gap-6">
             <div className="flex items-center justify-center rounded-md bg-[#8F5BFE26] p-3">
               <svg
@@ -97,9 +97,9 @@ const SMM = () => {
                 />
               </svg>
 
-              <h1 className="text-xl font-normal text-[#8F5BFE] md:text-2xl">
+              <h3 className="text-xl font-normal text-[#8F5BFE] md:text-2xl">
                 Innovative Designs
-              </h1>
+              </h3>
             </div>
             <div className="flex items-center justify-center rounded-md bg-[#8F5BFE26] p-3">
               <svg
@@ -122,9 +122,9 @@ const SMM = () => {
                 />
               </svg>
 
-              <h1 className="text-xl font-normal text-[#8F5BFE] md:text-2xl">
+              <h3 className="text-xl font-normal text-[#8F5BFE] md:text-2xl">
                 Creative Solutions
-              </h1>
+              </h3>
             </div>
             <div className="flex items-center justify-center rounded-md bg-[#8F5BFE26] p-3">
               <svg
@@ -147,9 +147,9 @@ const SMM = () => {
                 />
               </svg>
 
-              <h1 className="text-xl font-normal text-[#8F5BFE] md:text-2xl">
+              <h3 className="text-xl font-normal text-[#8F5BFE] md:text-2xl">
                 Social Media Expertise
-              </h1>
+              </h3>
             </div>
             <div className="flex items-center justify-center rounded-md bg-[#8F5BFE26] p-3">
               <svg
@@ -172,9 +172,9 @@ const SMM = () => {
                 />
               </svg>
 
-              <h1 className="text-xl font-normal text-[#8F5BFE] md:text-2xl">
+              <h3 className="text-xl font-normal text-[#8F5BFE] md:text-2xl">
                 Tailored Strategies
-              </h1>
+              </h3>
             </div>
             <div className="flex items-center justify-center rounded-md bg-[#8F5BFE26] p-3">
               <svg
@@ -197,9 +197,9 @@ const SMM = () => {
                 />
               </svg>
 
-              <h1 className="text-xl font-normal text-[#8F5BFE] md:text-2xl">
+              <h3 className="text-xl font-normal text-[#8F5BFE] md:text-2xl">
                 Global Content Powerhouse
-              </h1>
+              </h3>
             </div>
             <div className="flex items-center justify-center rounded-md bg-[#8F5BFE26] p-3">
               <svg
@@ -222,9 +222,9 @@ const SMM = () => {
                 />
               </svg>
 
-              <h1 className="text-xl font-normal text-[#8F5BFE] md:text-2xl">
+              <h3 className="text-xl font-normal text-[#8F5BFE] md:text-2xl">
                 Exceptional Results
-              </h1>
+              </h3>
             </div>
           </div>
         </section>

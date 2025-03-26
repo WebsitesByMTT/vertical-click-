@@ -24,9 +24,9 @@ const MPB = () => {
           description="Media planning and buying is a crucial component of a comprehensive digital marketing strategy. It enhances your content's reach and resonance with your target audience. At Vertical Click’s USA, our team leverages an extensive network of media partners to deliver immersive, integrated experiences."
         />
         <div className="flex flex-col gap-2 md:flex-row">
-          <h1 className="text-4xl font-medium uppercase md:max-w-1/3 lg:text-5xl">
+          <h2 className="text-4xl font-medium uppercase md:max-w-1/3 lg:text-5xl">
             Expert Media Solutions
-          </h1>
+          </h2>
           <p className="text-xl font-normal md:max-w-1/3 lg:text-2xl">
             We offer accredited communication patterns and solutions tailored to
             your requirements and target audience. Our media channels include
@@ -44,9 +44,9 @@ const MPB = () => {
           </div>
         </div>
         <div className="mt-10 flex flex-col gap-2 md:flex-row">
-          <h1 className="text-4xl font-medium uppercase md:max-w-1/3 lg:text-5xl">
+          <h2 className="text-4xl font-medium uppercase md:max-w-1/3 lg:text-5xl">
             Results-Driven Media Campaigns
-          </h1>
+          </h2>
           <p className="text-xl font-normal md:max-w-1/3 lg:text-2xl">
             Our media team crafts effective campaigns with a strong strategy,
             optimizing client budgets for maximum ROI. We
@@ -65,9 +65,9 @@ const MPB = () => {
         </div>
         <Divider />
         <div className="flex flex-col items-center justify-center text-center">
-          <h1 className="my-4 text-4xl font-medium uppercase md:text-5xl">
+          <h2 className="my-4 text-4xl font-medium uppercase md:text-5xl">
             Optimizing Media Platforms
-          </h1>
+          </h2>
           <p className="text-xl font-normal md:text-2xl">
             Our team helps you select the ideal combination of media platforms
             to effectively convey your message. On social media and online
@@ -75,6 +75,11 @@ const MPB = () => {
             Facebook, etc.), and ensure relevant keywords and engaging content.
           </p>
         </div>
+        <Divider />
+        <h2 className="my-4 text-center text-3xl font-medium uppercase md:text-4xl xl:text-5xl">
+          By partnering with Vertical Click’s USA, you can amplify your digital
+          marketing campaign and achieve your goals.
+        </h2>
         <Divider />
       </Container>
       <Footer />

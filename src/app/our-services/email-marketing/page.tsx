@@ -96,10 +96,10 @@ function page() {
             </div>
           </div>
 
-          <h1 className="mx-auto mt-8 text-center text-2xl leading-tight font-medium uppercase sm:text-4xl xl:text-5xl">
+          <h2 className="mx-auto mt-8 text-center text-2xl leading-tight font-medium uppercase sm:text-4xl xl:text-5xl">
             Partnering with Vertical Click’s Euless, Texas has transformed our
             business approach and significantly increased our ROI.
-          </h1>
+          </h2>
         </section>
         <Divider />
       </Container>
