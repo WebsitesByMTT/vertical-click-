@@ -49,9 +49,9 @@ const SEO = () => {
         </div>
         <Divider />
         <section className="rounded-2xl bg-black p-6 text-white lg:p-14">
-          <h1 className="text-4xl font-medium uppercase md:text-5xl">
+          <h2 className="text-4xl font-medium uppercase md:text-5xl">
             Why Partner with Our SEO Company?
-          </h1>
+          </h2>
           <p className="mt-4 text-xl font-normal md:text-2xl">
             Discover the benefits of teaming up with us to propel your business
             forward. We're committed to transparency and authenticity,
@@ -61,9 +61,9 @@ const SEO = () => {
         <Divider />
         {/* key benefits */}
         <section>
-          <h1 className="text-4xl font-medium uppercase md:text-5xl">
+          <h2 className="text-4xl font-medium uppercase md:text-5xl">
             Key Benefits
-          </h1>
+          </h2>
           <div className="jsutify-start mt-8 flex flex-wrap gap-4 md:justify-evenly">
             <div className="flex items-center justify-center rounded-md bg-[#8F5BFE26] p-5 lg:max-w-sm">
               <svg
@@ -86,9 +86,9 @@ const SEO = () => {
                 />
               </svg>
 
-              <h1 className="text-xl font-normal text-[#8F5BFE] md:text-2xl">
+              <h3 className="text-xl font-normal text-[#8F5BFE] md:text-2xl">
                 Organic results and transparency
-              </h1>
+              </h3>
             </div>
             <div className="flex items-center justify-center rounded-md bg-[#8F5BFE26] p-5 lg:max-w-sm">
               <svg
@@ -111,9 +111,9 @@ const SEO = () => {
                 />
               </svg>
 
-              <h1 className="text-xl font-normal text-[#8F5BFE] md:text-2xl">
+              <h3 className="text-xl font-normal text-[#8F5BFE] md:text-2xl">
                 Proven credibility and expertise
-              </h1>
+              </h3>
             </div>
             <div className="flex items-center justify-center rounded-md bg-[#8F5BFE26] p-5 lg:max-w-sm">
               <svg
@@ -136,9 +136,9 @@ const SEO = () => {
                 />
               </svg>
 
-              <h1 className="text-xl font-normal text-[#8F5BFE] md:text-2xl">
+              <h3 className="text-xl font-normal text-[#8F5BFE] md:text-2xl">
                 Targeted traffic and increased conversions
-              </h1>
+              </h3>
             </div>
             <div className="flex items-center justify-center rounded-md bg-[#8F5BFE26] p-5 lg:max-w-sm">
               <svg
@@ -161,9 +161,9 @@ const SEO = () => {
                 />
               </svg>
 
-              <h1 className="text-xl font-normal text-[#8F5BFE] md:text-2xl">
+              <h3 className="text-xl font-normal text-[#8F5BFE] md:text-2xl">
                 Long-term SEO solutions
-              </h1>
+              </h3>
             </div>
             <div className="flex items-center justify-center rounded-md bg-[#8F5BFE26] p-5 lg:max-w-sm">
               <svg
@@ -186,9 +186,9 @@ const SEO = () => {
                 />
               </svg>
 
-              <h1 className="text-xl font-normal text-[#8F5BFE] md:text-2xl">
+              <h3 className="text-xl font-normal text-[#8F5BFE] md:text-2xl">
                 Continuous adaptation to algorithm updates
-              </h1>
+              </h3>
             </div>
           </div>
         </section>

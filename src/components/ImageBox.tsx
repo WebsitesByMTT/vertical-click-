@@ -29,9 +29,9 @@ const ImageBox: React.FC<ImageBoxProps> = ({
         className="w-full md:w-90 lg:mr-8"
       />
       <div>
-        <h1 className="mt-4 text-4xl font-medium uppercase md:mt-0 md:text-2xl xl:text-5xl">
+        <h3 className="mt-4 text-4xl font-medium uppercase md:mt-0 md:text-2xl xl:text-5xl">
           {title}
-        </h1>
+        </h3>
         {description && (
           <p className="mt-4 max-w-2xl text-lg font-normal md:text-xl xl:text-2xl">
             {description}

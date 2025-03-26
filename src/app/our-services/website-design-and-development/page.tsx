@@ -58,9 +58,9 @@ const WDD = () => {
         />
         <Divider />
         <section>
-          <h1 className="text-4xl font-medium uppercase md:mb-4 lg:text-5xl">
+          <h2 className="text-4xl font-medium uppercase md:mb-4 lg:text-5xl">
             Our team of experts offers
-          </h1>
+          </h2>
           <div className="flex flex-col items-start justify-center md:flex-row">
             {ote.map((item, index) => (
               <div
@@ -83,10 +83,10 @@ const WDD = () => {
           </div>
         </section>
         <Divider />
-        <h1 className="text-center text-4xl font-medium uppercase lg:text-5xl">
+        <h2 className="text-center text-4xl font-medium uppercase lg:text-5xl">
           Partner with Vertical Click’s USA to unlock the full potential of your
           website and elevate your online presence.
-        </h1>
+        </h2>
         <Divider />
       </Container>
       <Footer />
