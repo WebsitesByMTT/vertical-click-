@@ -4,10 +4,15 @@ import HeroSection from "@/components/HeroSection";
 import Footer from "@/components/footer/Footer";
 import Divider from "@/components/Divider";
 import Container from "@/components/Container";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Email Marketing Services | Drive Engagement & Conversion.",
+  description:
+    "Boost sales & customer retention with Vertical Click’s email marketing services. We craft targeted campaigns that increase engagement & conversions.",
+};
 
 function page() {
-  
-  
   const emailItems = [
     {
       title: "Personalized Communication",
@@ -84,11 +89,7 @@ function page() {
                     />
                   </div>
                   <div className="mx-auto">
-                      <img 
-                         src={item.img} 
-                         alt="emailImage" 
-                         className="w-full"
-                        />
+                    <img src={item.img} alt="emailImage" className="w-full" />
                   </div>
                 </div>
               ))}

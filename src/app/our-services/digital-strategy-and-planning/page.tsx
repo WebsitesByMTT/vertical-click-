@@ -6,6 +6,13 @@ import Header from "@/components/Header";
 import Divider from "@/components/Divider";
 import Footer from "@/components/footer/Footer";
 import Container from "@/components/Container";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Digital Strategy & Planning | Data-Driven Marketing Solutions.",
+  description:
+    "Optimize your business with Vertical Click’s digital strategy & planning services. We create data-driven marketing plans for growth, visibility & success!",
+};
 
 const DSAP = () => {
   return (

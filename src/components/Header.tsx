@@ -13,7 +13,7 @@ const Header = () => {
     <nav className="flex items-center justify-between overflow-hidden bg-white px-8 py-4 shadow-md">
       {/* logo from public */}
       <Link href="/" className="flex items-center">
-        <img src="/logo.svg" alt="logo" className="w-12" />
+        <img src="/images/logo.png" alt="logo" className="mr-2 w-12" />
         <p className="text-2xl font-bold text-gray-800">Vertical Click</p>
       </Link>
       <svg

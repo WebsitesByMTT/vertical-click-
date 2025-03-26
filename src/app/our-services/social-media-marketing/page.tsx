@@ -5,7 +5,14 @@ import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import IconBox from "@/components/IconBox";
 import ImageBox from "@/components/ImageBox";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Social Media Marketing Services | Grow Your Brand & Engagement",
+  description:
+    "Boost your brand with Vertical Click’s social media marketing services. We drive engagement, visibility & sales through strategic content & paid ads!",
+};
 
 const SMM = () => {
   return (

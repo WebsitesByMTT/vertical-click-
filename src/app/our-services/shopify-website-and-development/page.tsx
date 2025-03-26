@@ -4,7 +4,14 @@ import Footer from "@/components/footer/Footer";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import TextBox from "@/components/TextBox";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Shopify Website Development | Custom Shopify Store Solutions",
+  description:
+    "Get a high-performing Shopify store with Vertical Click’s expert development services. We design, optimize & scale your eCommerce business for success.",
+};
 
 const SWD = () => {
   return (

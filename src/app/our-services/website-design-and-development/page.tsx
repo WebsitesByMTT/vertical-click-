@@ -5,8 +5,15 @@ import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import ImageBox from "@/components/ImageBox";
 import TextBox from "@/components/TextBox";
+import { Metadata } from "next";
 import { title } from "process";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Website Design & Development | Custom Websites for Business Growth.",
+  description:
+    "Vertical Click offers professional website design & development services, creating responsive, SEO-friendly sites to enhance user experience & conversions.",
+};
 
 const WDD = () => {
   const ote = [
@@ -56,8 +63,15 @@ const WDD = () => {
           </h1>
           <div className="flex flex-col items-start justify-center md:flex-row">
             {ote.map((item, index) => (
-              <div key={index} className="my-4 flex flex-col md:m-4 md:my-0">
-                <img src={item.image} alt={item.title} className="h-60 w-60" />
+              <div
+                key={index}
+                className="mt-2 flex flex-col md:mx-2 md:mt-0 md:w-1/3"
+              >
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="w-full rounded-md md:h-60 lg:h-max"
+                />
                 <h3 className="my-2 text-2xl font-bold lg:text-3xl">
                   {item.title}
                 </h3>
