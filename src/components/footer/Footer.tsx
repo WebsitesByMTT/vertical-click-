@@ -15,7 +15,11 @@ function Footer() {
     "Work with us",
   ];
 
-  const SocialIcons = [{ name: "Facebook", icon: FacebookIcon }, { name: "Instagram", icon: InstaIcon }, { name: "Tweeter", icon: TweetIcon }];
+  const SocialIcons = [
+    { name: "Facebook", icon: FacebookIcon },
+    { name: "Instagram", icon: InstaIcon },
+    { name: "Tweeter", icon: TweetIcon },
+  ];
 
   return (
     <footer className="mx-auto overflow-hidden border-gray-300 py-2 md:px-8 md:py-8">
@@ -34,16 +38,15 @@ function Footer() {
             className="w-[50%] rounded-sm border border-gray-400 px-2 py-1 md:w-[50%] md:px-6 md:py-2 lg:w-[30%]"
             placeholder="Enter your email"
           />
-          <button className="md:text-md rounded-sm bg-violet-400 px-4 py-1 text-white md:px-6 md:py-2 cursor-pointer">
+          <button className="md:text-md cursor-pointer rounded-sm bg-violet-400 px-4 py-1 text-white md:px-6 md:py-2">
             search
           </button>
         </div>
         <div className="flex items-center justify-center gap-1 pb-4">
           {SocialIcons.map((item, index) => {
             return (
-              <a href="">
+              <a key={index} href="">
                 <Image
-                  key={index}
                   src={item.icon}
                   height={100}
                   width={100}
@@ -51,19 +54,20 @@ function Footer() {
                   className="w-8 md:w-10 lg:w-12"
                 ></Image>
               </a>
-
             );
           })}
         </div>
       </div>
 
-      <div className="flex  items-center justify-between">
+      <div className="flex items-center justify-between">
         {footerItems?.map((item, index) => {
           return (
-            <Link href=""
+            <Link
+              href=""
               key={index}
-              className={`md:text-md border-gray-300 px-1 text-center text-sm font-thin text-gray-600 sm:text-sm md:px-4 md:font-normal lg:text-lg xl:text-xl ${index == footerItems.length - 1 ? "" : "border-r md:border-r-2"
-                } ${index == 3 ? "flex-2" : "flex-1"}`}
+              className={`md:text-md border-gray-300 px-1 text-center text-sm font-thin text-gray-600 sm:text-sm md:px-4 md:font-normal lg:text-lg xl:text-xl ${
+                index == footerItems.length - 1 ? "" : "border-r md:border-r-2"
+              } ${index == 3 ? "flex-2" : "flex-1"}`}
             >
               {item}
             </Link>
