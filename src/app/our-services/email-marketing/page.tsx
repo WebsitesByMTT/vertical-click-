@@ -61,7 +61,7 @@ function page() {
           pinkBgText="Marketing with Vertical Click’s USA"
           description="A well-crafted subject line and visually appealing emailer can make all the difference in driving clicks and conversions. Email marketing offers a unique set of benefits that can help you build strong relationships with customers, reach new leads, and maintain connections with past customers."
         />
-        <section className="mx-auto my-[5%] overflow-hidden">
+        <section className="mx-auto overflow-hidden">
           <div className="bg-[#FFFBFA] py-8">
             <h3 className="pb-4 text-center text-3xl sm:text-4xl">
               OUR SERVICES INCLUDE
