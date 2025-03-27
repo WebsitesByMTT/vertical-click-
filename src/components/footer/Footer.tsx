@@ -4,15 +4,19 @@ import InstaIcon from "@/assets/images/instaIcon.png";
 import FacebookIcon from "@/assets/images/facebookIcon.png";
 import TweetIcon from "@/assets/images/tweetIcon.png";
 import Image from "next/image";
+import { link } from "fs";
 
 function Footer() {
   const footerItems = [
-    "Explore",
-    "Our Blogs",
-    "Our Work",
-    "Website Seo Audit",
-    "Get in Touch",
-    "Work with us",
+    { tag: "Explore", link: "/our-services" },
+    { tag: "Our Blogs", link: "" },
+    { tag: "Our Work", link: "" },
+    {
+      tag: "Website Seo Audit",
+      link: "/our-services/search-engine-optimization",
+    },
+    { tag: "Get in Touch", link: "/contact-us" },
+    { tag: "Work with us", link: "" },
   ];
 
   const SocialIcons = [
@@ -46,11 +50,11 @@ function Footer() {
             {footerItems?.map((item, index) => {
               return (
                 <Link
-                  href=""
+                  href={item.link}
                   key={index}
                   className="text-sm text-gray-600 transition-colors hover:text-violet-500 md:text-base"
                 >
-                  {item}
+                  {item.tag}
                 </Link>
               );
             })}
