@@ -1,7 +1,8 @@
-"use client";
+"use client"
 import React, { useState } from "react";
 import Footer from "../footer/Footer";
 import Link from "next/link";
+
 
 const services = [
   {
@@ -64,31 +65,8 @@ const services = [
     desc: "Searching for a trusted partner to develop your Shopify website? Look no further – you're in the right place!",
     link: "shopify-website-and-development",
   },
-  {
-    id: 11,
-    title: "Software Development",
-    desc: "",
-    link: "software-development",
-  },
-  {
-    id: 12,
-    title: "Game Development",
-    desc: "",
-    link: "game-development",
-  },
-  {
-    id: 13,
-    title: "Online Reputation Management(ORM)",
-    desc: "",
-    link: "online-reputation-management",
-  },
-  {
-    id: 14,
-    title: "App Development",
-    desc: "",
-    link: "app-development",
-  },
 ];
+
 
 // Function to chunk an array into smaller arrays of size 2
 const chunkArray = (array: object[], chunkSize: number) => {
@@ -99,12 +77,16 @@ const chunkArray = (array: object[], chunkSize: number) => {
   return result;
 };
 
+
+
 const Services1 = () => {
-  const [hoveredId, setHoveredId] = useState(null);
+  const [hoveredId, setHoveredId] = useState(null)
 
   const chunkedServices = chunkArray(services, 2);
 
   return (
+   
+
     <div className="w-auto bg-white text-black">
       <section className="my-8 text-center">
         <h1 className="text-2xl font-semibold md:text-6xl">OUR SERVICES</h1>
@@ -122,17 +104,21 @@ const Services1 = () => {
           return (
             <div
               key={service.id}
-              className={`group flex flex-col items-center justify-between gap-4 border-gray-300 p-6 ${index % 2 !== 0 ? "md:border-l-2" : ""} ${isLastRowMobile ? "border-b-0" : "border-b-2"} ${isLastRowDesktop ? "md:border-b-0" : "md:border-b-2"} `}
+              className={`group flex flex-col items-center justify-between gap-4 border-gray-300 p-6
+                ${index % 2 !== 0 ? "md:border-l-2" : ""}
+                ${isLastRowMobile ? "border-b-0" : "border-b-2"}
+                ${isLastRowDesktop ? "md:border-b-0" : "md:border-b-2"}
+              `}
             >
               <h2 className="text-center text-lg font-medium md:text-3xl md:font-thin">
                 {service.title}
               </h2>
 
-              <div className="flex h-30 w-[80%] items-center justify-center md:h-65 lg:h-45">
-                <p className="py-8 text-center font-sans text-sm text-gray-600 md:hidden md:text-xl lg:py-16">
+              <div className="h-30 md:h-65 lg:h-45 flex items-center justify-center w-[80%]">
+                <p className="text-center text-sm md:text-xl text-gray-600 font-sans py-8 lg:py-16 md:hidden">
                   {service.desc}
                 </p>
-                <p className="hidden py-8 text-center font-sans text-sm text-gray-600 md:text-xl md:group-hover:block lg:py-16">
+                <p className="hidden text-center text-sm md:text-xl text-gray-600 font-sans  py-8 lg:py-16 md:group-hover:block">
                   {service.desc}
                 </p>
               </div>

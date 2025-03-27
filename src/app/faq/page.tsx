@@ -167,7 +167,7 @@ function FAQPage() {
         <h1 className="text-3xl font-bold text-center mb-8">Frequently Asked Questions</h1>
 
         {/* Category buttons */}
-        <div className="flex flex-wrap justify-center gap-2 mb-10">
+        <div className="flex  flex-wrap justify-start md:justify-center gap-2 mb-10">
           {categories.map((category) => (
             <button
               key={category.id}
