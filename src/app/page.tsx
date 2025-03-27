@@ -71,20 +71,20 @@ export default function Home() {
           link: "/our-services/shopify-website-and-development",
         },
         {
-          tag: "Website Maintenance",
-          link: "/our-services/website-design-and-development",
-        },
-        {
-          tag: "UI/ UX",
-          link: "/our-services/creative-strategy-and-web-graphics-design",
+          tag: "Software Development",
+          link: "/our-services/software-development",
         },
         {
           tag: "App Development",
-          link: "/our-services/website-design-and-development",
+          link: "/our-services/app-development",
         },
         {
           tag: "Game Development",
-          link: "/our-services/website-design-and-development",
+          link: "/our-services/game-development",
+        },
+        {
+          tag: "Custom Web Development",
+          link: "/our-services",
         },
       ],
     },
@@ -95,11 +95,11 @@ export default function Home() {
       services: [
         {
           tag: "Response Management",
-          link: "/our-services/digital-strategy-and-planning",
+          link: "/our-services/online-reputation-management",
         },
         {
           tag: "Perception Management",
-          link: "/our-services/digital-strategy-and-planning",
+          link: "/our-services/online-reputation-management",
         },
         { tag: "Listening", link: "/our-services/web-analytics" },
         { tag: "CRM", link: "/our-services/email-marketing" },

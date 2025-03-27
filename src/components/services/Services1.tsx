@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "../footer/Footer";
 import Link from "next/link";
 
 // Function to chunk an array into smaller arrays of size 2
@@ -52,6 +51,22 @@ const Services1 = () => {
     {
       title: "Shopify Website & Development",
       link: "shopify-website-and-development",
+    },
+    {
+      title: "Software Development",
+      link: "software-development",
+    },
+    {
+      title: "Game Development",
+      link: "game-development",
+    },
+    {
+      title: "Online Reputation Management(ORM)",
+      link: "online-reputation-management",
+    },
+    {
+      title: "App Development",
+      link: "app-development",
     },
   ];
 
