@@ -1,5 +1,5 @@
 import Header from "@/components/Header";
-import Services1 from "@/components/services/Services1";
+import Services from "@/components/services/Services";
 import Footer from "@/components/footer/Footer";
 import React from "react";
 import Divider from "@/components/Divider";
@@ -18,7 +18,7 @@ const OurServicesPage = () => {
       <Header />
       <Container>
         {/* <Services /> */}
-        <Services1 />
+        <Services/>
         {/* <Highlights /> */}
         <Divider />
       </Container>
