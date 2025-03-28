@@ -6,6 +6,14 @@ import Divider from "@/components/Divider";
 import Container from "@/components/Container";
 import TextCardList from "@/components/TextCardList";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Digital Marketing Agency | Grow Your Business Online.",
+  description:
+    "Boost your online presence with our expert digital marketing services. We offer SEO, SEM, Paid Media, and more to drive traffic, leads, and sales.",
+};
+
 const TextCardArr = [
   {
     headerText : 'Search Engine Optimization (SEO)' , 
@@ -69,8 +77,9 @@ const DigitalMarketing = () => {
           </p>
         </section>
       </main>
+      <Divider />
     </Container>
-    <Divider />
+    
     <Footer />
   </React.Fragment>
   )

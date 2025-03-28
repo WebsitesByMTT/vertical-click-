@@ -6,6 +6,14 @@ import Divider from "@/components/Divider";
 import Container from "@/components/Container";
 import TextCardList from "@/components/TextCardList";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Custom Web Development Services | Scalable & Secure Solutions",
+  description:
+    "Get tailored web development solutions for your business. We build responsive, secure, and high-performance websites to enhance user experience and growth.",
+};
+
 const TextCardArr = [
     {
       headerText : 'Custom Website Development' , 
