@@ -6,6 +6,14 @@ import Divider from "@/components/Divider";
 import Container from "@/components/Container";
 import TextCardList from "@/components/TextCardList";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Online Reputation Management (ORM) Services | Build Your Brand.",
+  description:
+    "Protect and enhance your brand's image with our ORM services. We manage reviews, mitigate negativity, and boost your online reputation for long-term success.",
+};
+
 const TextCardArr = [
   {
     headerText : 'Response Management' , 

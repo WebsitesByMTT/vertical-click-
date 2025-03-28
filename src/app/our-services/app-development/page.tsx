@@ -6,6 +6,14 @@ import Divider from "@/components/Divider";
 import Container from "@/components/Container";
 import TextCardList from "@/components/TextCardList";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "App Development Services | Custom Mobile App Solutions",
+  description:
+    "Build powerful and user-friendly mobile apps with our expert app development services. We create custom iOS, Android, and cross-platform solutions for businesses.",
+};
+
 const TextCardArr = [
   {
     headerText : 'Custom Mobile App Development' , 
