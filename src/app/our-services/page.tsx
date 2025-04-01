@@ -18,7 +18,7 @@ const OurServicesPage = () => {
       <Header />
       <Container>
         {/* <Services /> */}
-        <Services/>
+        <Services />
         {/* <Highlights /> */}
         <Divider />
       </Container>

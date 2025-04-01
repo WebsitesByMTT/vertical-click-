@@ -10,7 +10,7 @@ function Footer() {
   const footerItems = [
     { tag: "Explore", link: "/our-services" },
     { tag: "Our Blogs", link: "" },
-    { tag: "Our Work", link: "" },
+    { tag: "Our Work", link: "/our-work" },
     {
       tag: "Website Seo Audit",
       link: "/our-services/search-engine-optimization",

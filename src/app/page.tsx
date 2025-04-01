@@ -376,17 +376,19 @@ export default function Home() {
         <Divider className="hidden lg:block" />
         {/* reviews */}
         <section className="hidden lg:block">
-          <h2 className="mb-8 text-center text-5xl font-bold md:mb-16 md:text-6xl">
+          <h2 className="mb-8 text-center text-5xl font-bold md:mb-16 xl:text-6xl">
             Here are our happy clients
           </h2>
-          <div className="flex">
-            <Image
-              src="/images/reviews.png"
-              alt="reviews"
-              height={500}
-              width={500}
-              className="hidden w-full lg:block"
-            />
+          <div className="flex items-center justify-center">
+            <div>
+              <Image
+                src="/images/reviews.png"
+                alt="reviews"
+                height={900}
+                width={900}
+                className="hidden w-full lg:block"
+              />
+            </div>
             <Image
               src="/images/happy-client.png"
               alt="happy client"
