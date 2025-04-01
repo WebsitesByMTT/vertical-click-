@@ -145,13 +145,13 @@ const OurWorkPage = () => {
           keyword: "how many inches of snow will cancel a flight",
           position: 1,
           country: "USA",
-          image: "/images/we-provide-1.png", // NA
+          image: "/images/our-work/Trippybug-8.png",
         },
         {
           keyword: "does snow delay flights",
           position: 6,
           country: "USA",
-          image: "/images/we-provide-1.png", // NA
+          image: "/images/our-work/Trippybug-8.png",
         },
       ],
     },
@@ -171,13 +171,13 @@ const OurWorkPage = () => {
           keyword: "how many inches of snow will cancel a flight",
           position: 1,
           country: "USA",
-          image: "/images/our-work/Trippybug2.png" //   NA
+          image: "/images/our-work/Trippybug-8.png",
         },
         {
           keyword: "does snow delay flights",
           position: 6,
           country: "USA",
-          image: "/images/our-work/Trippybug3.png"  // NA
+          image: "/images/our-work/Trippybug-8.png",
         },
         {
           keyword: "Volaris carry on weight",
