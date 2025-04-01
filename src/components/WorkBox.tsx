@@ -98,7 +98,7 @@ const WorkBox = ({ data }: { data: WorkBoxProps }) => {
           alt="trueadblocker"
           width={1000}
           height={1000}
-          className="w-full"
+          className="w-full my-12 rounded-md border"
         />
       )}
     </div>
