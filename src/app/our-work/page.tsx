@@ -165,7 +165,7 @@ const OurWorkPage = () => {
           keyword: "do flights get cancelled for snow",
           position: 8,
           country: "USA",
-          image: "/images/our-work/Trippybug-8.png"
+          image: "/images/our-work/Trippybug-8.png",
         },
         {
           keyword: "how many inches of snow will cancel a flight",
@@ -183,25 +183,25 @@ const OurWorkPage = () => {
           keyword: "Volaris carry on weight",
           position: 12,
           country: "USA",
-          image: "/images/our-work/Trippybug-12.png"
+          image: "/images/our-work/Trippybug-12.png",
         },
         {
           keyword: "Can you bring zyns on a plane",
           position: 19,
           country: "USA",
-          image:"/images/our-work/Trippybug-19.png"
+          image: "/images/our-work/Trippybug-19.png",
         },
         {
           keyword: "What size deodorant can you bring on a plane",
           position: 20,
           country: "USA",
-          image: "/images/our-work/Trippybug-20.png"
+          image: "/images/our-work/Trippybug-20.png",
         },
         {
           keyword: "Huttopia Paradise springs",
           position: 18,
           country: "USA",
-          image: "/images/our-work/Trippybug-18.png"
+          image: "/images/our-work/Trippybug-18.png",
         },
       ],
     },
@@ -240,10 +240,12 @@ const OurWorkPage = () => {
             to social media growth, we help businesses rank higher, attract more
             customers, and scale effectively."
         />
-        {data.map((item, index) => (
-          <WorkBox data={item} key={index} />
-        ))}
-        <Divider />
+        <div className="space-y-4">
+          {data.map((item, index) => (
+            <WorkBox data={item} key={index} />
+          ))}
+        </div>
+        {/* <Divider /> */}
       </Container>
       <Footer />
     </main>

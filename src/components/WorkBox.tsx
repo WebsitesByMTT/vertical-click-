@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import Divider from "./Divider";
 
 interface WorkBoxProps {
   title: string;
@@ -20,9 +21,9 @@ const WorkBox = ({ data }: { data: WorkBoxProps }) => {
   const [selectedRow, setSelectedRow] = React.useState<number>(0);
   return (
     <div>
-      <div className="flex">
-        <div className="m-4 space-y-4">
-          <h3 className="rounded-md bg-[#F05186] p-2 text-5xl font-medium text-white uppercase">
+      <div className="flex flex-col lg:flex-row">
+        <div className="flex flex-col items-start space-y-4 md:m-4">
+          <h3 className="rounded-md bg-[#F05186] p-2 text-start text-4xl font-medium text-white uppercase md:text-5xl">
             {data.title}
           </h3>
           <p className="text-[#8F5BFE]">
@@ -45,8 +46,10 @@ const WorkBox = ({ data }: { data: WorkBoxProps }) => {
             </p>
           ))}
         </div>
-        <div className="mx-auto w-full max-w-4xl p-4">
-          <h1 className="mb-6 text-4xl font-bold">RANKED KEY WORDS</h1>
+        <div className="mx-auto mt-4 w-full max-w-4xl md:mt-0 md:p-4">
+          <h1 className="mb-6 text-3xl font-bold md:text-4xl">
+            RANKED KEY WORDS
+          </h1>
           <div className="overflow-x-auto">
             <table className="w-full border-collapse">
               <thead>
@@ -98,9 +101,10 @@ const WorkBox = ({ data }: { data: WorkBoxProps }) => {
           alt="trueadblocker"
           width={1000}
           height={1000}
-          className="w-full my-12 rounded-md border"
+          className="my-12 w-full rounded-md border"
         />
       )}
+      <Divider />
     </div>
   );
 };
