@@ -1,9 +1,9 @@
 import React from "react";
 
 interface HeroSectionProps {
-  title: string;
-  subtitle: string;
-  pinkBgText: string;
+  title?: string;
+  subtitle?: string;
+  pinkBgText?: string;
   description?: string;
 }
 

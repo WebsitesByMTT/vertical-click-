@@ -90,14 +90,19 @@ function Footer() {
             <div className="flex items-start gap-3">
               <MapPin className="mt-1 h-5 w-5 text-[#F05186]" />
               <p className="text-sm text-gray-600 md:text-base">
-                123 Digital Avenue, Tech Park, <br />
-                Silicon Valley, CA 94025
+                1001 W Euless Blvd, suit 408, Euless, TX 76040, United States
               </p>
             </div>
+            {/* <div className="flex items-start gap-3">
+              <MapPin className="mt-1 h-5 w-5 text-[#F05186]" />
+              <p className="text-sm text-gray-600 md:text-base">
+                1001 W Euless Blvd, suit 408, Euless, TX 76040, United States
+              </p>
+            </div> */}
             <div className="flex items-center gap-3">
               <Phone className="h-5 w-5 text-[#F05186]" />
               <p className="text-sm text-gray-600 md:text-base">
-                +1 (555) 123-4567
+                +1 469-810-5586
               </p>
             </div>
             <div className="flex items-center gap-3">
