@@ -43,10 +43,22 @@ export default function Home() {
       color: "bg-[#F05186]",
       image: "/images/services-1.png",
       services: [
-        "Brand Marketing",
-        "Social Media Marketing",
-        "Branding",
-        "Brand Campaign",
+        {
+          tag: "Brand Marketing",
+          link: "/our-services/digital-strategy-and-planning",
+        },
+        {
+          tag: "Social Media Marketing",
+          link: "/our-services/social-media-marketing",
+        },
+        {
+          tag: "Branding",
+          link: "/our-services/creative-strategy-and-web-graphics-design",
+        },
+        {
+          tag: "Brand Campaign",
+          link: "/our-services/digital-strategy-and-planning",
+        },
       ],
     },
     {
@@ -54,11 +66,26 @@ export default function Home() {
       color: "bg-[#8F5BFE]",
       image: "/images/services-2.png",
       services: [
-        "E-Commerce Solutions",
-        "Website Maintenance",
-        "UI/ UX",
-        "App Development",
-        "Game Development",
+        {
+          tag: "E-Commerce Solutions",
+          link: "/our-services/shopify-website-and-development",
+        },
+        {
+          tag: "Software Development",
+          link: "/our-services/software-development",
+        },
+        {
+          tag: "App Development",
+          link: "/our-services/app-development",
+        },
+        {
+          tag: "Game Development",
+          link: "/our-services/game-development",
+        },
+        {
+          tag: "Custom Web Development",
+          link: "/our-services",
+        },
       ],
     },
     {
@@ -66,19 +93,41 @@ export default function Home() {
       color: "bg-[#F05186]",
       image: "/images/services-3.png",
       services: [
-        "Response Management",
-        "Perception Management",
-        "Listening",
-        "CRM",
+        {
+          tag: "Response Management",
+          link: "/our-services/online-reputation-management",
+        },
+        {
+          tag: "Perception Management",
+          link: "/our-services/online-reputation-management",
+        },
+        { tag: "Listening", link: "/our-services/web-analytics" },
+        { tag: "CRM", link: "/our-services/email-marketing" },
       ],
     },
     {
       title: "Search",
       color: "bg-[#8F5BFE]",
       image: "/images/services-4.png",
-      services: ["SEO", "SEM", "Paid Media", "E-Commerce SEO", "Local SEO"],
+      services: [
+        {
+          tag: "SEO",
+          link: "/our-services/search-engine-optimization",
+        },
+        { tag: "SEM", link: "/our-services/search-engine-optimization" },
+        {
+          tag: "Paid Media",
+          link: "/our-services/media-planning-and-buying",
+        },
+        {
+          tag: "E-Commerce SEO",
+          link: "/our-services/search-engine-optimization",
+        },
+        { tag: "Local SEO", link: "/our-services/search-engine-optimization" },
+      ],
     },
   ];
+
   return (
     <div>
       {/* header */}
@@ -181,14 +230,17 @@ export default function Home() {
                   alt={service.title}
                   className="mb-4 w-full"
                 />
-                {service.services.map((service, index) => (
-                  <p
-                    key={index}
-                    className="content-center text-center text-2xl font-normal lg:text-xl"
-                  >
-                    {service}
-                  </p>
-                ))}
+                <div className="flex flex-col gap-2 text-center">
+                  {service.services.map((item, index) => (
+                    <Link
+                      key={index}
+                      href={item.link}
+                      className="text-2xl font-normal lg:text-xl"
+                    >
+                      {item.tag}
+                    </Link>
+                  ))}
+                </div>
               </div>
             ))}
           </div>
@@ -274,35 +326,77 @@ export default function Home() {
           </div>
         </section>
         <Divider />
-        {/* reviews */}
-        <section className="flex">
+        {/* Award */}
+        <section>
           {/* content */}
-          <div className="pr-10">
-            <h3 className="text-2xl font-normal xl:text-3xl">
-              Multiple Award Winning
-            </h3>
-            <h3 className="text-4xl font-bold xl:text-5xl">
-              Digital Marketing Agency
-            </h3>
-            <p className="my-10 text-lg font-normal xl:text-xl">
-              Vertical Click’s dedication to excellence in digital marketing has
-              earned us a reputation for outstanding achievement, as evidenced
-              by our impressive array of awards and client testimonials.
-            </p>
-            <img
-              src="/images/reviews.png"
-              alt="reviews"
-              className="hidden lg:block"
+          <h3 className="text-2xl font-normal xl:text-3xl">
+            Multiple Award Winning
+          </h3>
+          <h3 className="text-4xl font-bold xl:text-5xl">
+            Digital Marketing Agency
+          </h3>
+          <p className="my-10 text-lg font-normal xl:text-xl">
+            Vertical Click’s dedication to excellence in digital marketing has
+            earned us a reputation for outstanding achievement, as evidenced by
+            our impressive array of awards and client testimonials.
+          </p>
+          <div className="flex flex-wrap items-center justify-center">
+            <Image
+              src={"/images/award/dan-member.webp"}
+              alt="dan member"
+              width={200}
+              height={200}
+            />
+            <Image
+              src={"/images/award/accredit.webp"}
+              alt="dan member"
+              width={200}
+              height={200}
+            />
+            <Image
+              src={"/images/award/hubspot.webp"}
+              alt="dan member"
+              width={200}
+              height={200}
+            />
+            <Image
+              src={"/images/award/semrush-partner.webp"}
+              alt="dan member"
+              width={200}
+              height={200}
+            />
+            <Image
+              src={"/images/award/shopify.webp"}
+              alt="dan member"
+              width={200}
+              height={200}
             />
           </div>
-          {/* image */}
-          <Image
-            src="/images/happy-client.png"
-            alt="happy client"
-            height={500}
-            width={500}
-            className="hidden w-90 lg:block xl:w-100 2xl:w-110"
-          />
+        </section>
+        <Divider className="hidden lg:block" />
+        {/* reviews */}
+        <section className="hidden lg:block">
+          <h2 className="mb-8 text-center text-5xl font-bold md:mb-16 xl:text-6xl">
+            Here are our happy clients
+          </h2>
+          <div className="flex items-center justify-center">
+            <div>
+              <Image
+                src="/images/reviews.png"
+                alt="reviews"
+                height={900}
+                width={900}
+                className="hidden w-full lg:block"
+              />
+            </div>
+            <Image
+              src="/images/happy-client.png"
+              alt="happy client"
+              height={500}
+              width={500}
+              className="hidden w-60 lg:block xl:w-80 2xl:w-110"
+            />
+          </div>
         </section>
         <Divider />
         {/* blogs */}
