@@ -106,7 +106,7 @@ const ContactForm = () => {
           </select>
         </div>
 
-        <div>
+        {/* <div>
           <label htmlFor="city" className="mb-1 block text-sm font-medium">
             Select City
           </label>
@@ -122,9 +122,9 @@ const ContactForm = () => {
             <option value="commack">Commack</option>
             <option value="other">Other</option>
           </select>
-        </div>
+        </div> */}
 
-        <div>
+        {/* <div>
           <label htmlFor="budget" className="mb-1 block text-sm font-medium">
             Select Budget
           </label>
@@ -140,7 +140,7 @@ const ContactForm = () => {
             <option value="5000-10000">$5,000 - $10,000</option>
             <option value="10000+">$10,000+</option>
           </select>
-        </div>
+        </div> */}
 
         <div>
           <label htmlFor="message" className="mb-1 block text-sm font-medium">
