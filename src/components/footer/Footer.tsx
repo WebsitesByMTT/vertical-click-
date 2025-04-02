@@ -9,11 +9,15 @@ import { link } from "fs";
 function Footer() {
   const footerItems = [
     { tag: "Explore", link: "/our-services" },
-    { tag: "Our Blogs", link: "" },
+    { tag: "Our Blogs", link: "/blog" },
     { tag: "Our Work", link: "/our-work" },
     {
       tag: "Website Seo Audit",
       link: "/our-services/search-engine-optimization",
+    },
+    {
+      tag: "FAQs",
+      link: "/faq",
     },
     { tag: "Get in Touch", link: "/contact-us" },
     { tag: "Work with us", link: "" },
