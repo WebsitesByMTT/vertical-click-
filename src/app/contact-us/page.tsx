@@ -37,7 +37,7 @@ const ContactPage: React.FC = () => {
                       href="mailto:hi@verticalclick.com"
                       className="text-black hover:underline"
                     >
-                      hi@verticalclick.com
+                      contact@verticalclick.com
                     </a>
                   </div>
                 </div>
@@ -54,9 +54,12 @@ const ContactPage: React.FC = () => {
                     <p className="text-gray-700">
                       Come say hello at our office HQ.
                     </p>
-                    <p className="text-black">
-                      85 Crooked Hill Road, Commack NY 11725
-                    </p>
+                    
+                      <ul>
+                        <li className="list-disc">1001 W Euless Blvd, suit 408, Euless, TX 76040, United States</li>
+                        <li className="list-disc">Ohio Cleveland, United States</li>
+                      </ul>
+              
                   </div>
                 </div>
               </div>
@@ -69,12 +72,12 @@ const ContactPage: React.FC = () => {
                   />
                   <div>
                     <h2 className="text-xl font-bold">CALL US</h2>
-                    <p className="text-gray-700">Mon-Fri from 9am to 5pm.</p>
+                    <p className="text-gray-700">Available 24x7 from saturday to sunday</p>
                     <a
                       href="tel:+5303933738788"
                       className="text-black hover:underline"
                     >
-                      +5303933738788
+                     +1 469-854-1204
                     </a>
                   </div>
                 </div>

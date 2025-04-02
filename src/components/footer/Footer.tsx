@@ -93,6 +93,12 @@ function Footer() {
                 1001 W Euless Blvd, suit 408, Euless, TX 76040, United States
               </p>
             </div>
+            <div className="flex items-start gap-3">
+              <MapPin className="mt-1 h-5 w-5 text-[#F05186]" />
+              <p className="text-sm text-gray-600 md:text-base">
+              Ohio Cleveland, United States
+              </p>
+            </div>
             {/* <div className="flex items-start gap-3">
               <MapPin className="mt-1 h-5 w-5 text-[#F05186]" />
               <p className="text-sm text-gray-600 md:text-base">
