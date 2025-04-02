@@ -34,12 +34,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en-us">
       <Head>
-        <meta
-          name="google-site-verification"
-          content="A9IPkQrZRNxrrT6bahoACofVPDAjgaApAyU7Duixbvs"
-        />
+      <meta name="google-site-verification" content="A9IPkQrZRNxrrT6bahoACofVPDAjgaApAyU7Duixbvs" />
       </Head>
       <body
         className={`${bandeins.className} ${geistSans.variable} ${geistMono.variable} `}
