@@ -13,7 +13,7 @@ function Footer() {
     { tag: "Our Work", link: "/our-work" },
     {
       tag: "Website Seo Audit",
-      link: "/our-services/search-engine-optimization",
+      link: "/our-services/website-seo-audit",
     },
     {
       tag: "FAQs",
@@ -100,7 +100,7 @@ function Footer() {
             <div className="flex items-start gap-3">
               <MapPin className="mt-1 h-5 w-5 text-[#F05186]" />
               <p className="text-sm text-gray-600 md:text-base">
-              Ohio Cleveland, United States
+                Ohio Cleveland, United States
               </p>
             </div>
             {/* <div className="flex items-start gap-3">
@@ -112,7 +112,7 @@ function Footer() {
             <div className="flex items-center gap-3">
               <Phone className="h-5 w-5 text-[#F05186]" />
               <p className="text-sm text-gray-600 md:text-base">
-                +1 469-810-5586
+                +1 469-854-1204
               </p>
             </div>
             <div className="flex items-center gap-3">
