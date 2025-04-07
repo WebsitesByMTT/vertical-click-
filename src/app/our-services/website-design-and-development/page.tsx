@@ -13,6 +13,9 @@ export const metadata: Metadata = {
   title: "Website Design & Development | Custom Websites for Business Growth.",
   description:
     "Vertical Click offers professional website design & development services, creating responsive, SEO-friendly sites to enhance user experience & conversions.",
+    alternates : {
+      canonical : "https://verticalclick.us/our-services/website-design-and-development"
+    }
 };
 
 const WDD = () => {

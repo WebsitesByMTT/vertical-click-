@@ -5,11 +5,13 @@ import FacebookIcon from "@/assets/images/facebookIcon.png";
 import TweetIcon from "@/assets/images/tweetIcon.png";
 import Image from "next/image";
 import { link } from "fs";
+import LocationOnMap from "../LocationOnMap";
+
 
 function Footer() {
   const footerItems = [
     { tag: "Explore", link: "/our-services" },
-    { tag: "Our Blogs", link: "/blog" },
+    // { tag: "Our Blogs", link: "/blog" },
     { tag: "Our Work", link: "/our-work" },
     {
       tag: "Website Seo Audit",
@@ -146,7 +148,7 @@ function Footer() {
           </div>
         </div>
       </div>
-
+      <LocationOnMap/>
       {/* Copyright */}
       <div className="my-4 border-t border-gray-200 pt-4 text-center text-sm text-gray-500">
         © {new Date().getFullYear()} Vertical Click. All rights reserved.

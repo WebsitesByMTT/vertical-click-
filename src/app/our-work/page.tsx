@@ -5,6 +5,16 @@ import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import WorkBox from "@/components/WorkBox";
 import React from "react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Our Work | Proven Digital Marketing Results – Vertical Click",
+  description:
+    "Explore Vertical Click’s expertise in SEO, social media, web design, video editing, portfolio sites & game design. Boost your brand’s growth & visibility today!",
+    alternates : {
+      canonical : "https://verticalclick.us/our-work"
+    }
+};
 
 const OurWorkPage = () => {
   const data = [

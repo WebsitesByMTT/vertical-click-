@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   title: "Marketing Services | SEO, PPC, Social Media & Branding Experts",
   description:
     "Boost your business with Vertical Click’s marketing services: SEO, PPC, social media, content marketing & branding. Drive traffic & maximize conversions!",
+    alternates : {
+      canonical : "https://verticalclick.us/our-services"
+    }
 };
 
 const OurServicesPage = () => {

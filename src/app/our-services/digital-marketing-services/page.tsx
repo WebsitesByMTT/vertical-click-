@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: "Digital Marketing Agency | Grow Your Business Online.",
   description:
     "Boost your online presence with our expert digital marketing services. We offer SEO, SEM, Paid Media, and more to drive traffic, leads, and sales.",
+    alternates : {
+      canonical : "https://verticalclick.us/our-services/digital-marketing-services"
+    }
 };
 
 const TextCardArr = [

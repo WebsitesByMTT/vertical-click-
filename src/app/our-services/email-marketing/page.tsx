@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   title: "Email Marketing Services | Drive Engagement & Conversion.",
   description:
     "Boost sales & customer retention with Vertical Click’s email marketing services. We craft targeted campaigns that increase engagement & conversions.",
+    alternates : {
+      canonical : "https://verticalclick.us/our-services/email-marketing"
+    }
 };
 
 function page() {

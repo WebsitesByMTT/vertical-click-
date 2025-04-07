@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: "App Development Services | Custom Mobile App Solutions",
   description:
     "Build powerful and user-friendly mobile apps with our expert app development services. We create custom iOS, Android, and cross-platform solutions for businesses.",
+    alternates : {
+      canonical : "https://verticalclick.us/our-services/app-development"
+    }
 };
 
 const TextCardArr = [

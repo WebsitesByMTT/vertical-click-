@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: "About Us | Vertical Click - Expert Digital Marketing & SEO Solutions",
   description:
     "Discover Vertical Click, a results-driven digital marketing agency specializing in SEO, PPC, social media, and branding to grow your business online.",
+    alternates : {
+      canonical : "https://verticalclick.us/about-us"
+    }
 };
 
 const AboutUs = () => {

@@ -271,3 +271,16 @@
   max-width: 100vw;
   overflow-x: auto;
 }
+
+/* dialer button */
+@keyframes vibrateX {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-2px); }
+  50% { transform: translateX(2px); }
+  75% { transform: translateX(-2px); }
+  100% { transform: translateX(0); }
+}
+
+.animate-vibrateX {
+  animation: vibrateX 0.4s infinite;
+}

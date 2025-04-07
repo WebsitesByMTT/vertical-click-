@@ -113,3 +113,81 @@ export interface GetPostBySlugParams {
     post: PostData;
   }
   
+
+  // ---------- Get GetPreviewPost
+
+ export interface GetPreviewPostParams {
+
+  }
+
+// ------------ getAllPostsWithSlug
+
+ export interface getAllPostsWithSlug {
+
+  }
+
+// ----------- getAllCategoriesWithSlug
+
+export interface getAllCategoriesWithSlug{
+
+ }
+
+// ----------- getPostsByCategoryId
+
+export interface getPostsByCategoryId {
+
+}
+
+// ---------- getMorePosts
+
+export interface getMorePosts{
+
+}
+
+// --------  commentOnPost
+
+export interface commentOnPost {
+
+}
+
+// -------- getAllCategoriesForHome
+
+export interface getAllCategoriesForHome {
+
+}
+
+// -------  getCategoriesForSidebar
+
+export interface getCategoriesForSidebar{
+
+}
+
+// ------- getCategoryBySlug
+ 
+export interface getCategoryBySlug {
+
+}
+
+// ---------- getPostsByCategoryName
+
+export interface getPostsByCategoryName {
+
+}
+
+// ----------  getRecentPosts
+
+export interface getRecentPosts {
+
+}
+
+// ----------- getCategories
+
+export interface getCategories {
+
+}
+
+// ---------- getAllPosts
+
+export interface getAllPosts {
+    
+}

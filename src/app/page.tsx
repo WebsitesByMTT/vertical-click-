@@ -401,8 +401,8 @@ export default function Home() {
         </section>
         <Divider />
         {/* blogs */}
-        <HomeBlogs />
-        <Divider />
+        {/* <HomeBlogs /> */}
+        {/* <Divider /> */}
       </Container>
       {/* footer */}
       <Footer />

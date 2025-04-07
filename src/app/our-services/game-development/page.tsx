@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: "Game Development Services | Custom Game Solutions",
   description:
     "Elevate your gaming vision with our custom game development services. We create immersive, high-performance games for mobile, PC, and consoles.",
+    alternates : {
+      canonical : "https://verticalclick.us/our-services/game-development"
+    }
 };
 
 const GameDevPage = () => {

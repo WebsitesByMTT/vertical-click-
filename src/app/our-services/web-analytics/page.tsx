@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: "Web Analytics Services | Data-Driven Insights for Better Performance",
   description:
     "Unlock growth with Vertical Click’s web analytics services. Track user behavior, measure performance & optimize marketing strategies with real-time data.",
+    alternates : {
+      canonical : "https://verticalclick.us/our-services/web-analytics"
+    }
 };
 
 function page() {

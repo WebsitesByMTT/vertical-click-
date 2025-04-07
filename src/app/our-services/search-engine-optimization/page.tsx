@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: "SEO Services | Boost Rankings & Organic Traffic with Expert SEO",
   description:
     "Vertical Click offers expert SEO services, including keyword optimization, on-page & technical SEO, to improve search rankings & drive organic traffic.",
+    alternates : {
+      canonical : "https://verticalclick.us/our-services/search-engine-optimization"
+    }
 };
 
 const SEO = () => {

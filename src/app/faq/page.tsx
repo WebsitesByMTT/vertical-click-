@@ -1,13 +1,16 @@
 import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/footer/Footer";
-import { Metadata } from "next";
 import { FaqSection } from "@/components/FaqSection";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "FAQs | Expert Digital Marketing Advice & Solutions – Vertical Click.",
   description:
     "Get expert answers to common digital marketing questions on SEO, PPC, social media, and more. Learn how to grow your business with Vertical Click.",
+    alternates : {
+      canonical : "https://verticalclick.us/faq"
+    }
 };
 
 function FAQPage() {

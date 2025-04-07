@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: "Video, GIF & Content Marketing Services | Engage & Convert",
   description:
     "Vertical Click creates high-impact videos, GIFs & content marketing strategies to boost engagement, brand awareness & drive conversions. Start growing!",
+    alternates : {
+      canonical : "https://verticalclick.us/our-services/videos-gifs-and-content-marketing"
+    }
 };
 
 const VGCM = () => {

@@ -5,6 +5,17 @@ import Header from "@/components/Header";
 import Footer from "@/components/footer/Footer";
 import HeroSection from "@/components/HeroSection";
 import TextBox from "@/components/TextBox";
+import SeoAuditForm from "@/components/SeoAuditForm";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Free Website Audit | Improve SEO & Boost Performance.",
+  description:
+    "Get a free website audit from Vertical Click! Identify SEO issues, optimize performance & enhance user experience to grow your online presence.",
+  alternates: {
+    canonical: "https://verticalclick.us/our-services/website-seo-audit"
+  }
+};
 
 const audits = [
   {
@@ -48,11 +59,23 @@ function WSA() {
     <React.Fragment>
       <Header />
       <Container>
-        <div className="h-10"></div>
-        <TextBox
-          title="Detailed Website Audit for Optimized Conversions"
-          description="Delivering an exceptional user experience is crucial for retaining and re-engaging website visitors. By leveraging Vertical Click’s complimentary SEO audit, our experts can help you uncover innovative strategies to enhance your online presence. A comprehensive SEO audit enables you to pinpoint areas for improvement, discover new techniques to elevate your search engine rankings, and resolve ongoing SEO issues that may be hindering your site's performance, ultimately paving the way for increased organic traffic."
-        />
+        {/* <div className="h-10"></div> */}
+        <section className="mx-auto my-5 flex w-full flex-col items-center justify-center">
+          <h2 className="mt-4 text-center text-3xl font-bold uppercase md:mt-10 md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl">
+            Detailed Website Audit for
+          </h2>
+          <h2 className="mb-4 rounded-md bg-[#F05186] px-2 text-center text-2xl font-bold text-white uppercase md:mb-10 md:text-4xl lg:text-3xl ">
+            Optimized Conversions
+          </h2>
+        </section>
+        <SeoAuditForm />
+        <Divider />
+        <div className="w-full flex flex-col lg:flex-row justify-between items-center md:py-4">
+          <img src="/images/seo-audit/seo_audit.webp" alt="" className="w-120 rounded-lg" />
+          <p className="max-w-4xl text-center text-md py-8 md:px-8 mx-auto font-normal lg:text-lg">Delivering an exceptional user experience is crucial for retaining and re-engaging website visitors. By leveraging Vertical Click’s complimentary SEO audit, our experts can help you uncover innovative strategies to enhance your online presence.
+            A comprehensive SEO audit enables you to pinpoint areas for improvement, discover new techniques to elevate your search engine rankings, and resolve ongoing SEO issues that may be hindering your site's performance, ultimately paving the way for increased organic traffic.</p>
+        </div>
+
         <Divider />
         <TextBox
           title="Optimize Your Online Presence with Vertical Click Expert Analysis"
