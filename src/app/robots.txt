@@ -1,0 +1,18 @@
+User-agent: *
+Disallow: /privacy-policy/
+
+# Block sensitive directories
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+Disallow : /not-found
+
+# Allow all content pages
+Allow: /our-services/
+Allow: /about-us/
+Allow: /contact-us/
+Allow: /our-blog/
+Allow: /faq/
+
+# Sitemap
+Sitemap: https://verticalclick.us/sitemap.xml

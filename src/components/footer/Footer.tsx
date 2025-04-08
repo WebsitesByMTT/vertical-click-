@@ -5,15 +5,21 @@ import FacebookIcon from "@/assets/images/facebookIcon.png";
 import TweetIcon from "@/assets/images/tweetIcon.png";
 import Image from "next/image";
 import { link } from "fs";
+import LocationOnMap from "../LocationOnMap";
+
 
 function Footer() {
   const footerItems = [
     { tag: "Explore", link: "/our-services" },
-    { tag: "Our Blogs", link: "" },
+    // { tag: "Our Blogs", link: "/blog" },
     { tag: "Our Work", link: "/our-work" },
     {
       tag: "Website Seo Audit",
-      link: "/our-services/search-engine-optimization",
+      link: "/our-services/website-seo-audit",
+    },
+    {
+      tag: "FAQs",
+      link: "/faq",
     },
     { tag: "Get in Touch", link: "/contact-us" },
     { tag: "Work with us", link: "" },
@@ -93,6 +99,12 @@ function Footer() {
                 1001 W Euless Blvd, suit 408, Euless, TX 76040, United States
               </p>
             </div>
+            <div className="flex items-start gap-3">
+              <MapPin className="mt-1 h-5 w-5 text-[#F05186]" />
+              <p className="text-sm text-gray-600 md:text-base">
+                Ohio Cleveland, United States
+              </p>
+            </div>
             {/* <div className="flex items-start gap-3">
               <MapPin className="mt-1 h-5 w-5 text-[#F05186]" />
               <p className="text-sm text-gray-600 md:text-base">
@@ -102,7 +114,7 @@ function Footer() {
             <div className="flex items-center gap-3">
               <Phone className="h-5 w-5 text-[#F05186]" />
               <p className="text-sm text-gray-600 md:text-base">
-                +1 469-810-5586
+                +1 469-854-1204
               </p>
             </div>
             <div className="flex items-center gap-3">
@@ -136,7 +148,7 @@ function Footer() {
           </div>
         </div>
       </div>
-
+      <LocationOnMap/>
       {/* Copyright */}
       <div className="my-4 border-t border-gray-200 pt-4 text-center text-sm text-gray-500">
         © {new Date().getFullYear()} Vertical Click. All rights reserved.

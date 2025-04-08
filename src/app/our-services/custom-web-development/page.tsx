@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: "Custom Web Development Services | Scalable & Secure Solutions",
   description:
     "Get tailored web development solutions for your business. We build responsive, secure, and high-performance websites to enhance user experience and growth.",
+    alternates : {
+      canonical : "https://verticalclick.us/our-services/custom-web-development"
+    }
 };
 
 const TextCardArr = [

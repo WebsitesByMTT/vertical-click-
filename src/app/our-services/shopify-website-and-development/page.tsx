@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: "Shopify Website Development | Custom Shopify Store Solutions",
   description:
     "Get a high-performing Shopify store with Vertical Click’s expert development services. We design, optimize & scale your eCommerce business for success.",
+    alternates : {
+      canonical : "https://verticalclick.us/our-services/shopify-website-and-development"
+    }
 };
 
 const SWD = () => {

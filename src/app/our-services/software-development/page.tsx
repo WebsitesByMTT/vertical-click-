@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: "Custom Software Development Services | Scalable Solutions.",
   description:
     "Get tailored software solutions for your business. Our expert developers create secure, scalable, and high-performance software for web, mobile, and enterprise needs.",
+    alternates : {
+      canonical : "https://verticalclick.us/our-services/software-development"
+    }
 };
 
 const SoftwareDevPage = () => {

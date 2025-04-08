@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: "Digital Strategy & Planning | Data-Driven Marketing Solutions.",
   description:
     "Optimize your business with Vertical Click’s digital strategy & planning services. We create data-driven marketing plans for growth, visibility & success!",
+    alternates : {
+      canonical : "https://verticalclick.us/our-services/digital-strategy-and-planning"
+    }
 };
 
 const DSAP = () => {

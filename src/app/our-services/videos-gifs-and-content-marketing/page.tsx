@@ -4,6 +4,7 @@ import Footer from "@/components/footer/Footer";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import ImageBox from "@/components/ImageBox";
+import TextBox from "@/components/TextBox";
 import { Metadata } from "next";
 import React from "react";
 
@@ -11,6 +12,9 @@ export const metadata: Metadata = {
   title: "Video, GIF & Content Marketing Services | Engage & Convert",
   description:
     "Vertical Click creates high-impact videos, GIFs & content marketing strategies to boost engagement, brand awareness & drive conversions. Start growing!",
+    alternates : {
+      canonical : "https://verticalclick.us/our-services/videos-gifs-and-content-marketing"
+    }
 };
 
 const VGCM = () => {
@@ -50,17 +54,13 @@ const VGCM = () => {
           subtitle="The Key to Unlocking Your"
           pinkBgText="Brand's Potential"
         />
-        <section className="flex flex-col gap-8 md:flex-row">
-          <h3 className="text-4xl font-medium uppercase lg:text-5xl">
-            In today's digital landscape, content is king.
-          </h3>
-          <p className="max-w-2xl text-xl font-normal lg:text-2xl">
-            When marketed effectively, it can propel your brand and business to
+        <TextBox
+          title="In today's digital landscape, content is king."
+          description="When marketed effectively, it can propel your brand and business to
             new heights. The most popular content formats now include videos,
             GIFs, and interactive media, in addition to traditional text and
-            static images.
-          </p>
-        </section>
+            static images."
+        />
         <section className="mt-10 rounded-md bg-[#8F5BFE17] p-4 md:p-0">
           <ImageBox
             title="Our Expertise"

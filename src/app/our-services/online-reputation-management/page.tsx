@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: "Online Reputation Management (ORM) Services | Build Your Brand.",
   description:
     "Protect and enhance your brand's image with our ORM services. We manage reviews, mitigate negativity, and boost your online reputation for long-term success.",
+    alternates : {
+      canonical : "https://verticalclick.us/our-services/online-reputation-management"
+    }
 };
 
 const TextCardArr = [

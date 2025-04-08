@@ -3,14 +3,19 @@ import { MessageSquare, MapPin, Phone } from "lucide-react";
 import Footer from "@/components/footer/Footer";
 import Link from "next/link";
 import Container from "@/components/Container";
-import { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
+import { Metadata } from "next";
+import { SubmitHandler } from "react-hook-form";
 
 export const metadata: Metadata = {
   title: "Contact Us | Get in Touch with Our Marketing Experts.",
   description:
     "Have questions or need digital marketing help? Contact Vertical Click for expert SEO, PPC, and social media strategies to grow your business today!",
+    alternates : {
+      canonical : "https://verticalclick.us/contact-us"
+    }
 };
+
 
 const ContactPage: React.FC = () => {
   return (
@@ -19,7 +24,7 @@ const ContactPage: React.FC = () => {
         <div className="px-4 py-8 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             {/* Contact Form Section */}
-            <ContactForm />
+            <ContactForm/>
             {/* Contact Information Section */}
             <div className="space-y-10">
               <div className="rounded-lg bg-gray-100 p-6">
@@ -37,7 +42,7 @@ const ContactPage: React.FC = () => {
                       href="mailto:hi@verticalclick.com"
                       className="text-black hover:underline"
                     >
-                      hi@verticalclick.com
+                      contact@verticalclick.com
                     </a>
                   </div>
                 </div>
@@ -54,9 +59,12 @@ const ContactPage: React.FC = () => {
                     <p className="text-gray-700">
                       Come say hello at our office HQ.
                     </p>
-                    <p className="text-black">
-                      85 Crooked Hill Road, Commack NY 11725
-                    </p>
+                    
+                      <ul>
+                        <li className="list-disc">1001 W Euless Blvd, suit 408, Euless, TX 76040, United States</li>
+                        <li className="list-disc">Ohio Cleveland, United States</li>
+                      </ul>
+              
                   </div>
                 </div>
               </div>
@@ -69,12 +77,12 @@ const ContactPage: React.FC = () => {
                   />
                   <div>
                     <h2 className="text-xl font-bold">CALL US</h2>
-                    <p className="text-gray-700">Mon-Fri from 9am to 5pm.</p>
+                    <p className="text-gray-700"> We are available 24x7 </p>
                     <a
                       href="tel:+5303933738788"
                       className="text-black hover:underline"
                     >
-                      +5303933738788
+                     +1 469-854-1204
                     </a>
                   </div>
                 </div>

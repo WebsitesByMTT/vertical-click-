@@ -6,6 +6,7 @@ import Divider from "@/components/Divider";
 import Footer from "@/components/footer/Footer";
 import Container from "@/components/Container";
 import { cn } from "@/lib/utils";
+import HomeBlogs from "@/components/HomeBlogs";
 
 export default function Home() {
   const wwp = [
@@ -400,48 +401,8 @@ export default function Home() {
         </section>
         <Divider />
         {/* blogs */}
-        <section>
-          <div className="max-full mx-auto">
-            <h2 className="mb-8 text-center text-5xl font-bold md:mb-16 md:text-6xl">
-              BLOGS
-            </h2>
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-              <img
-                src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80"
-                alt="Desktop setup with dual monitors"
-                className="h-[300px] w-full rounded-3xl object-cover"
-              />
-              <img
-                src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80"
-                alt="Person in warehouse"
-                className="h-[300px] w-full rounded-3xl object-cover"
-              />
-
-              <img
-                src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2944&q=80"
-                alt="Person working on laptop"
-                className="h-full w-full rounded-3xl object-cover"
-              />
-
-              <img
-                src="https://images.unsplash.com/photo-1517842645767-c639042777db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80"
-                alt="Person writing on paper"
-                className="h-[300px] w-full rounded-3xl object-cover"
-              />
-              <img
-                src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2944&q=80"
-                alt="Laptop and coffee setup"
-                className="h-[300px] w-full rounded-3xl object-cover"
-              />
-              <img
-                src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80"
-                alt="Music equipment"
-                className="h-[300px] w-full rounded-3xl object-cover"
-              />
-            </div>
-          </div>
-        </section>
-        <Divider />
+        {/* <HomeBlogs /> */}
+        {/* <Divider /> */}
       </Container>
       {/* footer */}
       <Footer />

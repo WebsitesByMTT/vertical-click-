@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: "Social Media Marketing Services | Grow Your Brand & Engagement",
   description:
     "Boost your brand with Vertical Click’s social media marketing services. We drive engagement, visibility & sales through strategic content & paid ads!",
+    alternates : {
+      canonical : "https://verticalclick.us/our-services/social-media-marketing"
+    }
 };
 
 const SMM = () => {
