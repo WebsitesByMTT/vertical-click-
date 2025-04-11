@@ -13,8 +13,28 @@ export const metadata: Metadata = {
   description:
     "Get a free website audit from Vertical Click! Identify SEO issues, optimize performance & enhance user experience to grow your online presence.",
   alternates: {
-    canonical: "https://verticalclick.us/our-services/website-seo-audit"
-  }
+    canonical: "https://verticalclick.us/website-seo-audit"
+  },
+  openGraph : {
+    title : "Free Website Audit | Improve SEO & Boost Performance.",
+    description : "Get a free website audit from Vertical Click! Identify SEO issues, optimize performance & enhance user experience to grow your online presence.",
+    url : "https://verticalclick.us/website-seo-audit",
+    type : 'website',
+    images : [
+      {
+        url : 'https://verticalclick.us/logo.svg',
+        height : 630,
+        width : 1200,
+        alt : 'Vertical Click'
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Free Website Audit | Improve SEO & Boost Performance.",
+    description: "Get a free website audit from Vertical Click! Identify SEO issues, optimize performance & enhance user experience to grow your online presence.",
+    images: ["https://verticalclick.us/logo.svg"],
+  },
 };
 
 const audits = [

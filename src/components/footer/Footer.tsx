@@ -11,11 +11,11 @@ import LocationOnMap from "../LocationOnMap";
 function Footer() {
   const footerItems = [
     { tag: "Explore", link: "/our-services" },
-    // { tag: "Our Blogs", link: "/blog" },
+    { tag: "Our Blogs", link: "/blog" },
     { tag: "Our Work", link: "/our-work" },
     {
       tag: "Website Seo Audit",
-      link: "/our-services/website-seo-audit",
+      link: "/website-seo-audit",
     },
     {
       tag: "FAQs",

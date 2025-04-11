@@ -12,7 +12,27 @@ export const metadata: Metadata = {
     "Vertical Click offers expert media planning & buying services to optimize ad placements, maximize reach, and boost ROI across digital & traditional channels.",
     alternates : {
       canonical : "https://verticalclick.us/our-services/media-planning-and-buying"
-    }
+    },
+    openGraph : {
+      title : "Media Planning & Buying Services | Maximize Ad Reach & ROI",
+      description : "Vertical Click offers expert media planning & buying services to optimize ad placements, maximize reach, and boost ROI across digital & traditional channels.",
+      url : "https://verticalclick.us/our-services/media-planning-and-buying",
+      type : 'website',
+      images : [
+        {
+          url : 'https://verticalclick.us/logo.svg',
+          height : 630,
+          width : 1200,
+          alt : 'Vertical Click'
+        }
+      ]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Media Planning & Buying Services | Maximize Ad Reach & ROI",
+      description: "Vertical Click offers expert media planning & buying services to optimize ad placements, maximize reach, and boost ROI across digital & traditional channels.",
+      images: ["https://verticalclick.us/logo.svg"],
+    },
 };
 
 const MPB = () => {

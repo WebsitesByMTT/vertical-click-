@@ -14,7 +14,27 @@ export const metadata: Metadata = {
     "Get tailored web development solutions for your business. We build responsive, secure, and high-performance websites to enhance user experience and growth.",
     alternates : {
       canonical : "https://verticalclick.us/our-services/custom-web-development"
-    }
+    },
+    openGraph : {
+      title : "Custom Web Development Services | Scalable & Secure Solutions",
+      description : "Get tailored web development solutions for your business. We build responsive, secure, and high-performance websites to enhance user experience and growth.",
+      url : "https://verticalclick.us/our-services/custom-web-development",
+      type : 'website',
+      images : [
+        {
+          url : 'https://verticalclick.us/logo.svg',
+          height : 630,
+          width : 1200,
+          alt : 'Vertical Click'
+        }
+      ]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Custom Web Development Services | Scalable & Secure Solutions",
+      description: "Get tailored web development solutions for your business. We build responsive, secure, and high-performance websites to enhance user experience and growth.",
+      images: ["https://verticalclick.us/logo.svg"],
+    },
 };
 
 const TextCardArr = [

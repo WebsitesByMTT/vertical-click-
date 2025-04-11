@@ -14,7 +14,27 @@ export const metadata: Metadata = {
     "Build powerful and user-friendly mobile apps with our expert app development services. We create custom iOS, Android, and cross-platform solutions for businesses.",
     alternates : {
       canonical : "https://verticalclick.us/our-services/app-development"
-    }
+    },
+    openGraph : {
+      title : "App Development Services | Custom Mobile App Solutions",
+      description : "Build powerful and user-friendly mobile apps with our expert app development services. We create custom iOS, Android, and cross-platform solutions for businesses.",
+      url : "https://verticalclick.us/our-services/app-development",
+      type : 'website',
+      images : [
+        {
+          url : 'https://verticalclick.us/logo.svg',
+          height : 630,
+          width : 1200,
+          alt : 'Vertical Click'
+        }
+      ]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "App Development Services | Custom Mobile App Solutions",
+      description: "Build powerful and user-friendly mobile apps with our expert app development services. We create custom iOS, Android, and cross-platform solutions for businesses.",
+      images: ["https://verticalclick.us/logo.svg"],
+    },
 };
 
 const TextCardArr = [

@@ -13,7 +13,27 @@ export const metadata: Metadata = {
     "Discover Vertical Click, a results-driven digital marketing agency specializing in SEO, PPC, social media, and branding to grow your business online.",
     alternates : {
       canonical : "https://verticalclick.us/about-us"
-    }
+    },
+    openGraph : {
+      title : "About Us | Vertical Click - Expert Digital Marketing & SEO Solutions",
+      description : "Discover Vertical Click, a results-driven digital marketing agency specializing in SEO, PPC, social media, and branding to grow your business online.",
+      url : "https://verticalclick.us/about-us",
+      type : 'website',
+      images : [
+        {
+          url : 'https://verticalclick.us/logo.svg',
+          height : 630,
+          width : 1200,
+          alt : 'Vertical Click'
+        }
+      ]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "About Us | Vertical Click - Expert Digital Marketing & SEO Solutions",
+      description: "Discover Vertical Click, a results-driven digital marketing agency specializing in SEO, PPC, social media, and branding to grow your business online.",
+      images: ["https://verticalclick.us/logo.svg"],
+    },
 };
 
 const AboutUs = () => {

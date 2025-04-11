@@ -14,7 +14,27 @@ export const metadata: Metadata = {
     "Boost your brand with Vertical Click’s social media marketing services. We drive engagement, visibility & sales through strategic content & paid ads!",
     alternates : {
       canonical : "https://verticalclick.us/our-services/social-media-marketing"
-    }
+    },
+    openGraph : {
+      title : "Social Media Marketing Services | Grow Your Brand & Engagement",
+      description : "Boost your brand with Vertical Click’s social media marketing services. We drive engagement, visibility & sales through strategic content & paid ads!",
+      url : "https://verticalclick.us/our-services/social-media-marketing",
+      type : 'website',
+      images : [
+        {
+          url : 'https://verticalclick.us/logo.svg',
+          height : 630,
+          width : 1200,
+          alt : 'Vertical Click'
+        }
+      ]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Social Media Marketing Services | Grow Your Brand & Engagement",
+      description: "Boost your brand with Vertical Click’s social media marketing services. We drive engagement, visibility & sales through strategic content & paid ads!",
+      images: ["https://verticalclick.us/logo.svg"],
+    },
 };
 
 const SMM = () => {

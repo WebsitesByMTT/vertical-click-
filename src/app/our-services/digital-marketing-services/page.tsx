@@ -14,7 +14,27 @@ export const metadata: Metadata = {
     "Boost your online presence with our expert digital marketing services. We offer SEO, SEM, Paid Media, and more to drive traffic, leads, and sales.",
     alternates : {
       canonical : "https://verticalclick.us/our-services/digital-marketing-services"
-    }
+    },
+    openGraph : {
+      title : "Digital Marketing Agency | Grow Your Business Online.",
+      description : "Boost your online presence with our expert digital marketing services. We offer SEO, SEM, Paid Media, and more to drive traffic, leads, and sales.",
+      url : "https://verticalclick.us/our-services/digital-marketing-services",
+      type : 'website',
+      images : [
+        {
+          url : 'https://verticalclick.us/logo.svg',
+          height : 630,
+          width : 1200,
+          alt : 'Vertical Click'
+        }
+      ]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Digital Marketing Agency | Grow Your Business Online.",
+      description: "Boost your online presence with our expert digital marketing services. We offer SEO, SEM, Paid Media, and more to drive traffic, leads, and sales.",
+      images: ["https://verticalclick.us/logo.svg"],
+    },
 };
 
 const TextCardArr = [

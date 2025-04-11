@@ -1,12 +1,49 @@
 // API calling function
 
+export async function getJwtToken() {
+  try {
+    const response = await fetch("http://3.111.254.7/wp-json/jwt-auth/v1/token", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        username: "user",
+        password: "/REB@G9mSGlf",
+      }),
+    });
+
+    const data = await response.json();
+
+    if (!response.ok || !data.token) {
+      throw new Error("Failed to fetch token");
+    }
+
+    return data.token;
+  } catch (err) {
+    console.error("❌ Error getting JWT token:", err);
+    return null;
+  }
+}
+
+
+
 export const fetchData = async (
   query = "",
   { variables }: { variables: Record<string, any> },
 ) => {
-  const headers = { "Content-Type": "application/json" };
+ const token = process.env.AUTH_TOKEN
+  // const token = await getJwtToken()
+  console.log("token is : ", token)
+  const headers = { 
+    "Content-Type": "application/json",
+    "Authorization" : `Bearer ${token}`
+   };
+  //  cms.trippybug.com
+  //
+
   try {
-    const response = await fetch(`https://cms.trippybug.com/graphql`, {
+    const response = await fetch(`https://cms.verticalclick.us/graphql`, {
       method: "POST",
       headers,
       body: JSON.stringify({
@@ -14,6 +51,7 @@ export const fetchData = async (
         variables,
       }),
     });
+    console.log("response is : ", response)
     const data = await response.json();
     return data;
   } catch (error) {
@@ -196,6 +234,8 @@ export async function getPostBySlug(
     },
   );
 
+  console.log("topdata" , data)
+
   // Draft posts may not have an slug
   if (isDraft) data.post.slug = postPreview.id;
   // Apply a revision (changes in a published post)
@@ -210,6 +250,6 @@ export async function getPostBySlug(
   // data.posts.edges = data.posts.edges.filter(({ node }) => node.slug !== slug)
   // // If there are still 3 posts, remove the last one
   // if (data.posts.edges.length > 2) data.posts.edges.pop()
-
+  console.log("data is : ", data.data)
   return data.data;
 }
