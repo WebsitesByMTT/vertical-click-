@@ -1,47 +1,16 @@
 // API calling function
 
-export async function getJwtToken() {
-  try {
-    const response = await fetch("http://3.111.254.7/wp-json/jwt-auth/v1/token", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        username: "user",
-        password: "/REB@G9mSGlf",
-      }),
-    });
-
-    const data = await response.json();
-
-    if (!response.ok || !data.token) {
-      throw new Error("Failed to fetch token");
-    }
-
-    return data.token;
-  } catch (err) {
-    console.error("❌ Error getting JWT token:", err);
-    return null;
-  }
-}
-
-
 
 export const fetchData = async (
   query = "",
   { variables }: { variables: Record<string, any> },
 ) => {
  const token = process.env.AUTH_TOKEN
-  // const token = await getJwtToken()
-  console.log("token is : ", token)
   const headers = { 
     "Content-Type": "application/json",
     "Authorization" : `Bearer ${token}`
    };
-  //  cms.trippybug.com
-  //
-
+ 
   try {
     const response = await fetch(`https://cms.verticalclick.us/graphql`, {
       method: "POST",
