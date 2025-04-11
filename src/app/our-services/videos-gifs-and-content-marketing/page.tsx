@@ -14,7 +14,27 @@ export const metadata: Metadata = {
     "Vertical Click creates high-impact videos, GIFs & content marketing strategies to boost engagement, brand awareness & drive conversions. Start growing!",
     alternates : {
       canonical : "https://verticalclick.us/our-services/videos-gifs-and-content-marketing"
-    }
+    },
+    openGraph : {
+      title : "Video, GIF & Content Marketing Services | Engage & Convert",
+      description : "Vertical Click creates high-impact videos, GIFs & content marketing strategies to boost engagement, brand awareness & drive conversions. Start growing!",
+      url : "https://verticalclick.us/our-services/videos-gifs-and-content-marketing",
+      type : 'website',
+      images : [
+        {
+          url : 'https://verticalclick.us/logo.svg',
+          height : 630,
+          width : 1200,
+          alt : 'Vertical Click'
+        }
+      ]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Video, GIF & Content Marketing Services | Engage & Convert",
+      description: "Vertical Click creates high-impact videos, GIFs & content marketing strategies to boost engagement, brand awareness & drive conversions. Start growing!",
+      images: ["https://verticalclick.us/logo.svg"],
+    },
 };
 
 const VGCM = () => {

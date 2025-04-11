@@ -23,18 +23,15 @@ const ContactForm = () => {
   });
 
   const onSubmit: SubmitHandler<FormData> = (data) => {
-    setLoading(true)
+    // setLoading(true)
      sendMail(data)
        .then((res : any)=>{
-        Swal.fire({
-          title: "Good job!",
-          text: "You clicked the button!",
-          icon: "success"
-        })
+          alert("Form Submitted Successfully!")
           reset()
        })
        .catch((err : any)=>{
-          
+          alert("Form Submission Failed !")
+          console.log(err)
        })
       .finally(()=>{
          setLoading(false)

@@ -27,6 +27,7 @@ export const metadata: Metadata = {
     "Digital Marketing Agency Austin |  Vertical Click - Grow Your Business",
   description:
     "Vertical Click, a leading digital marketing agency in Austin, boosts businesses with SEO Agency, PPC, and social media. Drive growth and get results today!",
+   
 };
 
 export default function RootLayout({

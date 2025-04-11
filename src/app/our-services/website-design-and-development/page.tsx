@@ -15,7 +15,27 @@ export const metadata: Metadata = {
     "Vertical Click offers professional website design & development services, creating responsive, SEO-friendly sites to enhance user experience & conversions.",
     alternates : {
       canonical : "https://verticalclick.us/our-services/website-design-and-development"
-    }
+    },
+    openGraph : {
+      title : "Website Design & Development | Custom Websites for Business Growth.",
+      description : "Vertical Click offers professional website design & development services, creating responsive, SEO-friendly sites to enhance user experience & conversions.",
+      url : "https://verticalclick.us/our-services/website-design-and-development",
+      type : 'website',
+      images : [
+        {
+          url : 'https://verticalclick.us/logo.svg',
+          height : 630,
+          width : 1200,
+          alt : 'Vertical Click'
+        }
+      ]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Website Design & Development | Custom Websites for Business Growth.",
+      description: "Vertical Click offers professional website design & development services, creating responsive, SEO-friendly sites to enhance user experience & conversions.",
+      images: ["https://verticalclick.us/logo.svg"],
+    },
 };
 
 const WDD = () => {

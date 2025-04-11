@@ -1,12 +1,18 @@
 // API calling function
 
+
 export const fetchData = async (
   query = "",
   { variables }: { variables: Record<string, any> },
 ) => {
-  const headers = { "Content-Type": "application/json" };
+ const token = process.env.AUTH_TOKEN
+  const headers = { 
+    "Content-Type": "application/json",
+    "Authorization" : `Bearer ${token}`
+   };
+ 
   try {
-    const response = await fetch(`https://cms.trippybug.com/graphql`, {
+    const response = await fetch(`https://cms.verticalclick.us/graphql`, {
       method: "POST",
       headers,
       body: JSON.stringify({
@@ -14,6 +20,7 @@ export const fetchData = async (
         variables,
       }),
     });
+    console.log("response is : ", response)
     const data = await response.json();
     return data;
   } catch (error) {
@@ -196,6 +203,8 @@ export async function getPostBySlug(
     },
   );
 
+  console.log("topdata" , data)
+
   // Draft posts may not have an slug
   if (isDraft) data.post.slug = postPreview.id;
   // Apply a revision (changes in a published post)
@@ -210,6 +219,6 @@ export async function getPostBySlug(
   // data.posts.edges = data.posts.edges.filter(({ node }) => node.slug !== slug)
   // // If there are still 3 posts, remove the last one
   // if (data.posts.edges.length > 2) data.posts.edges.pop()
-
+  console.log("data is : ", data.data)
   return data.data;
 }

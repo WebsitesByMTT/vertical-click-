@@ -30,7 +30,7 @@ const SeoAuditForm = () => {
     });
   
     const onSubmit: SubmitHandler<AuditFormData> = (data) => {
-       setLoading(true)
+      //  setLoading(true)
        sendMail(data)
          .then((res : any)=>{
           Swal.fire({

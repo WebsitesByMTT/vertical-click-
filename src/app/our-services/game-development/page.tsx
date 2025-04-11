@@ -13,7 +13,27 @@ export const metadata: Metadata = {
     "Elevate your gaming vision with our custom game development services. We create immersive, high-performance games for mobile, PC, and consoles.",
     alternates : {
       canonical : "https://verticalclick.us/our-services/game-development"
-    }
+    },
+    openGraph : {
+      title : "Game Development Services | Custom Game Solutions",
+      description : "Elevate your gaming vision with our custom game development services. We create immersive, high-performance games for mobile, PC, and consoles.",
+      url : "https://verticalclick.us/our-services/game-development",
+      type : 'website',
+      images : [
+        {
+          url : 'https://verticalclick.us/logo.svg',
+          height : 630,
+          width : 1200,
+          alt : 'Vertical Click'
+        }
+      ]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Game Development Services | Custom Game Solutions",
+      description: "Elevate your gaming vision with our custom game development services. We create immersive, high-performance games for mobile, PC, and consoles.",
+      images: ["https://verticalclick.us/logo.svg"],
+    },
 };
 
 const GameDevPage = () => {

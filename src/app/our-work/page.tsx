@@ -13,7 +13,27 @@ export const metadata: Metadata = {
     "Explore Vertical Click’s expertise in SEO, social media, web design, video editing, portfolio sites & game design. Boost your brand’s growth & visibility today!",
     alternates : {
       canonical : "https://verticalclick.us/our-work"
-    }
+    },
+    openGraph : {
+      title : "Our Work | Proven Digital Marketing Results – Vertical Click",
+      description : "Explore Vertical Click’s expertise in SEO, social media, web design, video editing, portfolio sites & game design. Boost your brand’s growth & visibility today!",
+      url : "https://verticalclick.us/our-work",
+      type : 'website',
+      images : [
+        {
+          url : 'https://verticalclick.us/logo.svg',
+          height : 630,
+          width : 1200,
+          alt : 'Vertical Click'
+        }
+      ]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Our Work | Proven Digital Marketing Results – Vertical Click",
+      description: "Explore Vertical Click’s expertise in SEO, social media, web design, video editing, portfolio sites & game design. Boost your brand’s growth & visibility today!",
+      images: ["https://verticalclick.us/logo.svg"],
+    },
 };
 
 const OurWorkPage = () => {

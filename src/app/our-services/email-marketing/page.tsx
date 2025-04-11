@@ -12,7 +12,27 @@ export const metadata: Metadata = {
     "Boost sales & customer retention with Vertical Click’s email marketing services. We craft targeted campaigns that increase engagement & conversions.",
     alternates : {
       canonical : "https://verticalclick.us/our-services/email-marketing"
-    }
+    },
+    openGraph : {
+      title : "Email Marketing Services | Drive Engagement & Conversion.",
+      description : "Boost sales & customer retention with Vertical Click’s email marketing services. We craft targeted campaigns that increase engagement & conversions.",
+      url : "https://verticalclick.us/our-services/email-marketing",
+      type : 'website',
+      images : [
+        {
+          url : 'https://verticalclick.us/logo.svg',
+          height : 630,
+          width : 1200,
+          alt : 'Vertical Click'
+        }
+      ]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Email Marketing Services | Drive Engagement & Conversion.",
+      description: "Boost sales & customer retention with Vertical Click’s email marketing services. We craft targeted campaigns that increase engagement & conversions.",
+      images: ["https://verticalclick.us/logo.svg"],
+    },
 };
 
 function page() {

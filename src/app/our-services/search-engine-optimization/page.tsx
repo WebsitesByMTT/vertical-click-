@@ -14,7 +14,27 @@ export const metadata: Metadata = {
     "Vertical Click offers expert SEO services, including keyword optimization, on-page & technical SEO, to improve search rankings & drive organic traffic.",
     alternates : {
       canonical : "https://verticalclick.us/our-services/search-engine-optimization"
-    }
+    },
+    openGraph : {
+      title : "SEO Services | Boost Rankings & Organic Traffic with Expert SEO",
+      description : "Vertical Click offers expert SEO services, including keyword optimization, on-page & technical SEO, to improve search rankings & drive organic traffic.",
+      url : "https://verticalclick.us/our-services/search-engine-optimization",
+      type : 'website',
+      images : [
+        {
+          url : 'https://verticalclick.us/logo.svg',
+          height : 630,
+          width : 1200,
+          alt : 'Vertical Click'
+        }
+      ]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "SEO Services | Boost Rankings & Organic Traffic with Expert SEO",
+      description: "Vertical Click offers expert SEO services, including keyword optimization, on-page & technical SEO, to improve search rankings & drive organic traffic.",
+      images: ["https://verticalclick.us/logo.svg"],
+    },
 };
 
 const SEO = () => {

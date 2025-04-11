@@ -14,7 +14,27 @@ export const metadata: Metadata = {
     "Optimize your business with Vertical Click’s digital strategy & planning services. We create data-driven marketing plans for growth, visibility & success!",
     alternates : {
       canonical : "https://verticalclick.us/our-services/digital-strategy-and-planning"
-    }
+    },
+    openGraph : {
+      title : "Digital Strategy & Planning | Data-Driven Marketing Solutions",
+      description : "Optimize your business with Vertical Click’s digital strategy & planning services. We create data-driven marketing plans for growth, visibility & success!",
+      url : "https://verticalclick.us/our-services/digital-strategy-and-planning",
+      type : 'website',
+      images : [
+        {
+          url : 'https://verticalclick.us/logo.svg',
+          height : 630,
+          width : 1200,
+          alt : 'Vertical Click'
+        }
+      ]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Digital Strategy & Planning | Data-Driven Marketing Solutions",
+      description: "Optimize your business with Vertical Click’s digital strategy & planning services. We create data-driven marketing plans for growth, visibility & success!",
+      images: ["https://verticalclick.us/logo.svg"],
+    },
 };
 
 const DSAP = () => {
