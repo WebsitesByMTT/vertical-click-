@@ -22,7 +22,7 @@ function Footer() {
       link: "/faq",
     },
     { tag: "Get in Touch", link: "/contact-us" },
-    { tag: "Work with us", link: "" },
+    // { tag: "Work with us", link: "" },
   ];
 
   const SocialIcons = [
