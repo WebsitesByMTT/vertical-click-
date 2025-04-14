@@ -33,19 +33,21 @@ const SeoAuditForm = () => {
       //  setLoading(true)
        sendMail(data)
          .then((res : any)=>{
-          Swal.fire({
-            title: "Good job!",
-            text: "You clicked the button!",
-            icon: "success"
-          })
+          // Swal.fire({
+          //   title: "Good job!",
+          //   text: "You clicked the button!",
+          //   icon: "success"
+          // })
+            alert("Form Submission Done")
              reset()
          })
          .catch((err : any)=>{
-          Swal.fire({
-            title: "Good job!",
-            text: "You clicked the button!",
-            icon: "success"
-          })
+          // Swal.fire({
+          //   title: "Good job!",
+          //   text: "You clicked the button!",
+          //   icon: "success"
+          // })
+          alert("Form Submission Failed")
          })
          .finally(()=>{
 

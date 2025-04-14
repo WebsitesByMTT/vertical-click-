@@ -10,7 +10,7 @@ function CallButton() {
 
         {/* Button */}
         <a
-          href="tel:+1234567890"
+          href="tel:+1 469-854-1204"
           className="relative inline-flex items-center justify-center h-12 w-12 sm:h-14 sm:w-14 bg-purple-600 hover:bg-purple-700 text-white text-xl sm:text-2xl rounded-full shadow-xl transition-transform duration-300"
           aria-label="Call us now"
         >

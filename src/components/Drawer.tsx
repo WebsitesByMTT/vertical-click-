@@ -16,7 +16,7 @@ const menuItems = [
 ]
 const footerItems = [
 
-  { tag: "Our Blogs", link: "/blogs" },
+  { tag: "Our Blogs", link: "/blog" },
   { tag: "Our Work", link: "/our-work" },
   { tag: "Get in Touch", link: "/contact-us" },
   // { tag: "Work with us", link: "/contact-us" },
