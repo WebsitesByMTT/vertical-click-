@@ -22,7 +22,7 @@ export const metadata: Metadata = {
       type : 'website',
       images : [
         {
-          url : 'https://verticalclick.us/logo.svg',
+          url : 'https://verticalclick.us/logo-og.png',
           height : 630,
           width : 1200,
           alt : 'Vertical Click'
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
       card: "summary_large_image",
       title: "Digital Strategy & Planning | Data-Driven Marketing Solutions",
       description: "Optimize your business with Vertical Click’s digital strategy & planning services. We create data-driven marketing plans for growth, visibility & success!",
-      images: ["https://verticalclick.us/logo.svg"],
+      images: ["https://verticalclick.us/logo-og.png"],
     },
 };
 

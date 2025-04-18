@@ -5,6 +5,7 @@ import "./globals.css";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import Head from "next/head";
 import CallButton from "@/components/CallButton";
+import ToastContainerWrapper from "@/lib/toast";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -101,6 +102,7 @@ return (
     <body
       className={`${bandeins.className} ${geistSans.variable} ${geistMono.variable} `}
     >
+      <ToastContainerWrapper/>
       {children}
       <GoogleAnalytics gaId="G-EK11VJ6YW4" />
       

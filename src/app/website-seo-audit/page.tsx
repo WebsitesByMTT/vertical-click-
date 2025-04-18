@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     type : 'website',
     images : [
       {
-        url : 'https://verticalclick.us/logo.svg',
+        url : 'https://verticalclick.us/logo-og.png',
         height : 630,
         width : 1200,
         alt : 'Vertical Click'
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Free Website Audit | Improve SEO & Boost Performance.",
     description: "Get a free website audit from Vertical Click! Identify SEO issues, optimize performance & enhance user experience to grow your online presence.",
-    images: ["https://verticalclick.us/logo.svg"],
+    images: ["https://verticalclick.us/logo-og.png"],
   },
 };
 

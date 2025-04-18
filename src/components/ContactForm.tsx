@@ -3,10 +3,11 @@ import React , {useState} from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { formSchema } from "@/schema/form";
-import { sendMail } from '@/actions/contact'
+import { sendMail } from '@/actions/mailer'
 import Loader from "./Loader";
 import Swal from "sweetalert2";
 import { FormData } from "@/types/contact-us";
+import { showSuccess , showError } from "@/lib/toast";
 
 
 const ContactForm = () => {
@@ -23,15 +24,26 @@ const ContactForm = () => {
   });
 
   const onSubmit: SubmitHandler<FormData> = (data) => {
-    // setLoading(true)
-     sendMail(data)
+    const mailData = {
+      name : data.name,
+      email : data.email,
+      phone : data.phone,
+      services : data.interest ? data.interest : "NA",
+      message : data.message
+    }
+    setLoading(true)
+     sendMail(mailData , process.env.NEXT_PUBLIC_CONTACT_FORM_TEMPLATE_ID ?? '')
        .then((res : any)=>{
-          alert("Form Submitted Successfully!")
-          reset()
+            if(res.success){
+              showSuccess(res.message)
+              reset()
+            }
+            else{
+              showError(res.message)
+            }
        })
        .catch((err : any)=>{
-          alert("Form Submission Failed !")
-          console.log(err)
+          showError(err.message)
        })
       .finally(()=>{
          setLoading(false)
@@ -74,10 +86,10 @@ const ContactForm = () => {
           </label>
           <select id="interest" {...register("interest")} className="w-full rounded-sm border border-gray-300 bg-white px-3 py-2">
             <option value="">Select an option</option>
-            <option value="web-design">Web Design</option>
-            <option value="seo">SEO Services</option>
-            <option value="marketing">Digital Marketing</option>
-            <option value="other">Other Services</option>
+            <option value="Web-Design">Web Design</option>
+            <option value="SEO">SEO Services</option>
+            <option value="Digital Marketing">Digital Marketing</option>
+            <option value="Other">Other Services</option>
           </select>
         </div>
 

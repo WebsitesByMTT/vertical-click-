@@ -6,7 +6,7 @@ import React from "react";
 import Link from "next/link";
 import he from 'he'
 import Divider from "@/components/Divider";
-
+import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
       type : 'website',
       images : [
         {
-          url : 'https://verticalclick.us/logo.svg',
+          url : 'https://verticalclick.us/logo-og.png',
           height : 630,
           width : 1200,
           alt : 'Vertical Click'
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
       card: "summary_large_image",
       title: "Marketing Insights & Tips | Digital Marketing Blog by Experts.",
       description: "Stay ahead with Vertical Click’s marketing blog! Get expert tips on SEO, PPC, social media, and branding to grow your business online.",
-      images: ["https://verticalclick.us/logo.svg"],
+      images: ["https://verticalclick.us/logo-og.png"],
     },
 };
 
@@ -54,14 +54,21 @@ const BlogsPage = async () => {
           <h1 className="my-8 text-center text-4xl md:text-5xl font-bold uppercase">Blogs</h1>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {posts?.edges?.map((post: any, index: number) => ( 
-              <div key={index} className="flex flex-col overflow-hidden rounded-lg shadow-lg border border-purple-300 bg-white hover:shadow-xl transition-shadow duration-300">
-                <div className="h-48 overflow-hidden">
+              <div key={index} className="flex flex-col overflow-hidden rounded-lg shadow-md border border-purple-300 bg-white hover:shadow-lg transition-shadow duration-300">
+                <div className="aspect-[2/1] overflow-hidden relative">
                   {post?.node?.featuredImage?.node?.sourceUrl ? (
-                    <img 
-                      src={post?.node?.featuredImage?.node?.sourceUrl} 
-                      alt={post?.node?.title || "Blog post image"}
-                      className="w-full h-full object-cover" 
-                    />
+                   <div className="relative  h-full">
+                   <Image
+                     src={post?.node?.featuredImage?.node?.sourceUrl}
+                     alt={post?.node?.title || "Blog post image"}
+                     height={2000}
+                     width={2000}
+                     className="object-cover w-full h-full"
+                     quality={100}
+                     priority={true}
+                    
+                   />
+                 </div>
                   ) : (
                     <div className="w-full h-full bg-gradient-to-r from-purple-300 to-violet-400 flex items-center justify-center">
                       <span className="text-white font-semibold">Vertical Click</span>
