@@ -22,7 +22,7 @@ export const metadata: Metadata = {
       type : 'website',
       images : [
         {
-          url : 'https://verticalclick.us/logo.svg',
+          url : 'https://verticalclick.us/logo-og.png',
           height : 630,
           width : 1200,
           alt : 'Vertical Click'
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
       card: "summary_large_image",
       title: "Online Reputation Management (ORM) Services | Build Your Brand.",
       description: "Protect and enhance your brand's image with our ORM services. We manage reviews, mitigate negativity, and boost your online reputation for long-term success.",
-      images: ["https://verticalclick.us/logo.svg"],
+      images: ["https://verticalclick.us/logo-og.png"],
     },
 };
 

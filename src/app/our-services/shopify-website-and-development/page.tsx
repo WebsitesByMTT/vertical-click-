@@ -21,7 +21,7 @@ export const metadata: Metadata = {
       type : 'website',
       images : [
         {
-          url : 'https://verticalclick.us/logo.svg',
+          url : 'https://verticalclick.us/logo-og.png',
           height : 630,
           width : 1200,
           alt : 'Vertical Click'
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
       card: "summary_large_image",
       title: "Shopify Website Development | Custom Shopify Store Solutions",
       description: "Get a high-performing Shopify store with Vertical Click’s expert development services. We design, optimize & scale your eCommerce business for success.",
-      images: ["https://verticalclick.us/logo.svg"],
+      images: ["https://verticalclick.us/logo-og.png"],
     },
 };
 

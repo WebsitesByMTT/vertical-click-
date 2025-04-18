@@ -22,7 +22,7 @@ export const metadata: Metadata = {
       type : 'website',
       images : [
         {
-          url : 'https://verticalclick.us/logo.svg',
+          url : 'https://verticalclick.us/logo-og.png',
           height : 630,
           width : 1200,
           alt : 'Vertical Click'
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
       card: "summary_large_image",
       title: "SEO Services | Boost Rankings & Organic Traffic with Expert SEO",
       description: "Vertical Click offers expert SEO services, including keyword optimization, on-page & technical SEO, to improve search rankings & drive organic traffic.",
-      images: ["https://verticalclick.us/logo.svg"],
+      images: ["https://verticalclick.us/logo-og.png"],
     },
 };
 

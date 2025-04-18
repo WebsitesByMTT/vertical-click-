@@ -3,9 +3,9 @@ import React, { useState } from 'react';
 import { useForm, SubmitHandler } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { auditFormSchema } from "@/schema/form";
-import { sendMail } from '@/actions/contact'
+import { sendMail } from '@/actions/mailer'
 import Loader from "./Loader";
-import Swal from "sweetalert2";
+import { showSuccess , showError } from '@/lib/toast';
 import { AuditFormData } from "@/types/contact-us";
 
 const services = [
@@ -30,27 +30,30 @@ const SeoAuditForm = () => {
     });
   
     const onSubmit: SubmitHandler<AuditFormData> = (data) => {
-      //  setLoading(true)
-       sendMail(data)
+       const mailData = {
+          name : data.name,
+          email : data.email,
+          phone : data.phone,
+          website : data.website,
+          services :  data.services?.join(" , ") ?? "",
+          message : data.message ?? ""
+       }
+       setLoading(true)
+       sendMail(mailData , process.env.NEXT_PUBLIC_AUDIT_FORM_TEMPLATE_ID ?? '')
          .then((res : any)=>{
-          // Swal.fire({
-          //   title: "Good job!",
-          //   text: "You clicked the button!",
-          //   icon: "success"
-          // })
-            alert("Form Submission Done")
-             reset()
+          if(res.success){
+            showSuccess(res.message)
+            reset()
+          }
+          else{
+           showError(res.message)
+          }
          })
          .catch((err : any)=>{
-          // Swal.fire({
-          //   title: "Good job!",
-          //   text: "You clicked the button!",
-          //   icon: "success"
-          // })
-          alert("Form Submission Failed")
+          showError(err.message)
          })
          .finally(()=>{
-
+           setLoading(false)
          })
       
     }
@@ -68,10 +71,8 @@ const SeoAuditForm = () => {
               placeholder="Your Name"
               {...register("name")}              
               className="w-full p-4 border border-pink-300 rounded-lg focus:outline-none focus:ring-2  focus:ring-purple-400 bg-pink-50 placeholder-pink-400"
-              required
             />
-          {/* Email Field */}
-           
+            {errors.name && <p className="text-red-500">{errors.name.message}</p>}
           </div>
           <div>
           <input
@@ -81,22 +82,29 @@ const SeoAuditForm = () => {
               className="w-full p-4 border border-pink-300 rounded-lg focus:outline-none focus:ring-2  focus:ring-purple-400 bg-pink-50 placeholder-pink-400"
               required
             />
+            {errors.email && <p className="text-red-500">{errors.email.message}</p>}
           </div>
           
           {/* Phone and Website - Two Column Layout */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
             <input
               type="tel"
               {...register("phone")}
               placeholder="Phone Number"
               className="w-full p-4 border border-pink-300 rounded-lg focus:outline-none focus:ring-2  focus:ring-purple-400 bg-pink-50 placeholder-pink-400"
             />
+            {errors.phone && <span className="text-red-500">{errors.phone.message}</span>}
+            </div>
+            <div>
             <input
               type="text"
               {...register("website")}
               placeholder="Website"
               className="w-full p-4 border border-pink-300 rounded-lg focus:outline-none focus:ring-2  focus:ring-purple-400 bg-pink-50 placeholder-pink-400"
             />
+            </div>
+            
           </div>
           
           {/* Services Section */}
@@ -122,7 +130,9 @@ const SeoAuditForm = () => {
                     )
                   })
               }
+             
             </div>
+            {errors.services && <p className="text-red-500">{errors.services.message}</p>}
           </div>
           
           {/* Message Field */}
@@ -133,12 +143,13 @@ const SeoAuditForm = () => {
               rows={5}
               className="w-full p-4 border border-pink-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400 bg-pink-50 placeholder-pink-400"
             ></textarea>
+            {errors.message && <p className="text-red-500">{errors.message.message}</p>}
           </div>
           
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full bg-purple-500 hover:bg-purple-600 text-white py-4 rounded-lg text-lg font-semibold transition-colors duration-300 mt-6"
+            className="w-full bg-purple-500 hover:bg-purple-600 text-white py-4 rounded-lg text-lg font-semibold transition-colors duration-300 mt-6 cursor-pointer"
           >
             SUBMIT
           </button>

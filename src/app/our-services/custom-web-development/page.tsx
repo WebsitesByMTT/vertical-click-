@@ -22,7 +22,7 @@ export const metadata: Metadata = {
       type : 'website',
       images : [
         {
-          url : 'https://verticalclick.us/logo.svg',
+          url : 'https://verticalclick.us/logo-og.png',
           height : 630,
           width : 1200,
           alt : 'Vertical Click'
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
       card: "summary_large_image",
       title: "Custom Web Development Services | Scalable & Secure Solutions",
       description: "Get tailored web development solutions for your business. We build responsive, secure, and high-performance websites to enhance user experience and growth.",
-      images: ["https://verticalclick.us/logo.svg"],
+      images: ["https://verticalclick.us/logo-og.png"],
     },
 };
 

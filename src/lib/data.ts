@@ -48,7 +48,7 @@ export const getAllPosts = async (
 				date
 				featuredImage {
 				  node {
-					sourceUrl(size:MEDIUM )
+					sourceUrl
 				  }
 				}
 				author {

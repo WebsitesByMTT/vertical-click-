@@ -22,7 +22,7 @@ export const metadata: Metadata = {
       type : 'website',
       images : [
         {
-          url : 'https://verticalclick.us/logo.svg',
+          url : 'https://verticalclick.us/logo-og.png',
           height : 630,
           width : 1200,
           alt : 'Vertical Click'
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
       card: "summary_large_image",
       title: "Digital Marketing Agency | Grow Your Business Online.",
       description: "Boost your online presence with our expert digital marketing services. We offer SEO, SEM, Paid Media, and more to drive traffic, leads, and sales.",
-      images: ["https://verticalclick.us/logo.svg"],
+      images: ["https://verticalclick.us/logo-og.png"],
     },
 };
 

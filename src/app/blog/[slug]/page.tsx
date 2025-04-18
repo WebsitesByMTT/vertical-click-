@@ -6,12 +6,13 @@ import { getPostBySlug } from "@/lib/data";
 import Divider from "@/components/Divider";
 import Script from "next/script";
 import { Metadata } from "next";
+import Image from "next/image";
 
 export async function generateMetadata({ params } :{ params: Promise<{ slug: string }> }): Promise<Metadata> {
     const { slug } = await params;
     const { post } = await getPostBySlug(slug, false, []);
   
-    const ogImage = post?.seo?.opengraphImage?.sourceUrl || "https://verticalclick.us/logo.svg";
+    const ogImage = post?.seo?.opengraphImage?.sourceUrl || "https://verticalclick.us/logo-og.png";
   
     return {
       title: post?.seo?.title || post?.title,
@@ -66,7 +67,7 @@ async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
       name: post?.author?.node?.name,
       logo: {
         "@type": "ImageObject",
-        url: "https://verticalclick.us/logo.svg",
+        url: "https://verticalclick.us/logo-og.png",
       },
     },
     datePublished: post?.date,
