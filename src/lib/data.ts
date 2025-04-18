@@ -19,6 +19,7 @@ export const fetchData = async (
         query,
         variables,
       }),
+      cache : "no-store"
     });
     console.log("response is : ", response)
     const data = await response.json();
